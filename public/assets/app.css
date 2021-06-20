@@ -19,3 +19,31 @@ ul.simple-list li::before {
   font-family: 'Arial',sans-serif;
   padding-right: 10px;
 }
+
+.scroll-btn{       /**.subscribe-section **/
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: -29px;
+  z-index: 99;
+}
+
+.scroll-btn i{     /**.subscribe-section **/
+  position: relative;
+  display: inline-block;
+  height: 57px;
+  width: 57px;
+  line-height: 57px;
+  background: #6ecc84;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 2s ease;
+  -webkit-animation: pulse-2 3s infinite;
+  -o-animation: pulse-2 3s infinite;
+  animation: pulse-2 3s infinite;
+  z-index: 99;
+}
