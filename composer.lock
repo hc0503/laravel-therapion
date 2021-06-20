@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7759431e303e2d722a264a8a991a9e84",
+    "content-hash": "bce9eeaf9d0a088f77d8ecb22e1e25c7",
     "packages": [
+        {
+            "name": "agatanga/flags",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agatanga/flags.git",
+                "reference": "951913a290ec6800fb71f19e28b5475f40e9670a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agatanga/flags/zipball/951913a290ec6800fb71f19e28b5475f40e9670a",
+                "reference": "951913a290ec6800fb71f19e28b5475f40e9670a",
+                "shasum": ""
+            },
+            "require": {
+                "components/flag-icon-css": "^3.0.0",
+                "illuminate/contracts": "^7.14|^8.0",
+                "illuminate/filesystem": "^7.14|^8.0",
+                "illuminate/support": "^7.14|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Agatanga\\Flags\\FlagsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Agatanga\\Flags\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vova Yatsyuk",
+                    "email": "vova.yatsyuk@gmail.com"
+                }
+            ],
+            "description": "Country flags in SVG format for Laravel application.",
+            "homepage": "https://github.com/agatanga/flags",
+            "keywords": [
+                "blade",
+                "flags",
+                "laravel",
+                "svg"
+            ],
+            "time": "2020-12-06T17:20:02+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -117,6 +174,44 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "components/flag-icon-css",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lipis/flag-icon-css.git",
+                "reference": "5141384c57972b0b08fc3bb67bea297321fbd799"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/5141384c57972b0b08fc3bb67bea297321fbd799",
+                "reference": "5141384c57972b0b08fc3bb67bea297321fbd799",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "name": "flag-icon-css",
+                    "files": [
+                        "less/**",
+                        "css/**",
+                        "flags/**"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Panayiotis Lipiridis (Lipis)",
+                    "email": "lipiridis@gmail.com"
+                }
+            ],
+            "description": "CSS for vector based country flags",
+            "time": "2020-06-10T11:53:19+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -7341,5 +7436,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

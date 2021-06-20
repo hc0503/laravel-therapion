@@ -15,6 +15,7 @@
 	<!-- Stylesheets -->
 	<link href="{{ asset('assets/css/style.css')}} " rel="stylesheet">
 	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/app.css') }}" rel="stylesheet">
 
 	@stack('css')
 
@@ -34,7 +35,7 @@
 	@yield('content')
 
 	<!-- subscribe-section -->
-	<section class="subscribe-section centred">
+	{{-- <section class="subscribe-section centred">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-sm-12 left-column">
@@ -58,13 +59,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="scroll-btn scroll-to-target wow zoomIn" data-wow-delay="1000ms" data-wow-duration="1500ms"
-			data-target="html"><i class="flaticon-up-arrow-1"></i></div>
-	</section>
+	</section> --}}
 	<!-- subscribe-section end -->
 
 	<!-- main-footer -->
 	<footer class="main-footer">
+		<div class="scroll-btn scroll-to-target wow zoomIn" data-wow-delay="1000ms" data-wow-duration="1500ms"
+			data-target="html"><i class="flaticon-up-arrow-1"></i></div>
 		<div class="footer-top">
 			<div class="container">
 				<div class="widget-section">

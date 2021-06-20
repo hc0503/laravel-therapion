@@ -2273,15 +2273,15 @@ img{
   color: #fff;
 }
 
-.subscribe-section .scroll-btn{
+.scroll-btn{       /**.subscribe-section **/
   position: absolute;
   left: 50%;
   margin-left: -25px;
-  bottom: -29px;
+  top: -29px;
   z-index: 99;
 }
 
-.subscribe-section .scroll-btn i{
+.scroll-btn i{     /**.subscribe-section **/
   position: relative;
   display: inline-block;
   height: 57px;

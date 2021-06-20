@@ -1,7 +1,7 @@
 <!-- Main Header -->
 <header class="main-header">
 
-<div class="header-top clearfix">
+<!-- <div class="header-top clearfix">
     <div class="top-left pull-left">
         <div class="text">Counseling and psychotherapy for individuals, couples and families.</div>
     </div>
@@ -11,7 +11,7 @@
             <li><i class="fas fa-phone"></i><a href="tel:(251)235-3256">(251) 235-3256</a></li>
         </ul>
     </div>
-</div>
+</div> -->
 <div class="header-bottom">
     <div class="outer-container">
         <div class="clearfix">
@@ -59,7 +59,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="outer-box clearfix">
+                <!-- <div class="outer-box clearfix">
                     <div class="search-box-outer">
                         <div class="dropdown">
                             <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="btn-box"><a href="#" class="theme-btn">Free Consultation</a></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

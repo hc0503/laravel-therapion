@@ -1,0 +1,21 @@
+a.link {
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #3D5B65;
+}
+
+a.link.small {
+  font-size: 14px;
+}
+
+ul.simple-list li::before {
+  color: #488A30;
+  content: "\f111";
+  font-size: 6px;
+  position: relative;
+  top: -3px;
+  font-family: 'Arial',sans-serif;
+  padding-right: 10px;
+}
