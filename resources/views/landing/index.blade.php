@@ -26,23 +26,17 @@
 				<h1 class="mt-5">The Many Benefits of Online Therapy</h1>
 				<p>Online therapy offers you numerous benefits.</p>
 				<ul class="simple-list">
-					<li>Efficient time-management: never again will you waste time in traffic jams, trying to get to a counselor’s consulting room on time.</li>
-					<br>
-					<li>Many options of therapists and psychologists: In our team you will find specialists from all the most important areas of psychology 
+					<li class="mt-2">Efficient time-management: never again will you waste time in traffic jams, trying to get to a counselor’s consulting room on time.</li>
+					<li class="mt-2">Many options of therapists and psychologists: In our team you will find specialists from all the most important areas of psychology 
 						and psychotherapy. Choose the expert according to your needs!</li>
-					<br>
-					<li>Save money: We provide professional counseling at affordable fees. Get the help you need at a lower cost!</li>
-					<br>
-					<li>Continuity: Are you changing city or neighborhood? It doesn't matter, you can keep the same therapist with whom you already started 
+					<li class="mt-2">Save money: We provide professional counseling at affordable fees. Get the help you need at a lower cost!</li>
+					<li class="mt-2">Continuity: Are you changing city or neighborhood? It doesn't matter, you can keep the same therapist with whom you already started 
 						to talk.</li>
-					<br>
-					<li>Positive treatment results: Several clinical studies worldwide have shown that online therapy is a very effective treatment. 
+					<li class="mt-2">Positive treatment results: Several clinical studies worldwide have shown that online therapy is a very effective treatment. 
 						In fact, it is as efficient as the more traditional forms of face-to-face psychotherapy, and its results can be durable. </li>
-					<br>
-					<li>Privacy and comfort: Use our services from your home or office. Choose the time that you like best. Choose the communication channel. 
+					<li class="mt-2">Privacy and comfort: Use our services from your home or office. Choose the time that you like best. Choose the communication channel. 
 						You control the process and the level of privacy at all times.</li>
-					<br>
-					<li>
+					<li class="mt-2">
 						Wide variety of problems that can be dealt with:
 						Our online therapy and online counseling specialties include, but are not limited to, stress, depression,
 						anxiety, loneliness, isses with self-esteem, social anxiety, eating disorders and obesity, shyness, guilt,

@@ -12,11 +12,11 @@ a.link.small {
 
 ul.simple-list li::before {
   color: #488A30;
-  content: "\f111";
-  font-size: 6px;
+  content: "\002E";   /**\f111**/
+  font-size: 40px;
   position: relative;
   top: -3px;
-  font-family: 'Arial',sans-serif;
+  font-family: FontAwesome;
   padding-right: 10px;
 }
 
