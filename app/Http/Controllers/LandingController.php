@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class LandingController extends Controller
 {
     private $pageTitle;
 
@@ -15,7 +15,11 @@ class WelcomeController extends Controller
     public function index()
     {
         $pageTitle = 'Welcome';
-        
         return view('landing.index', compact('pageTitle'));
+    }
+    public function book()
+    {
+        $pageTitle = 'Book a Session';
+        return view('landing.book', compact('pageTitle'));
     }
 }

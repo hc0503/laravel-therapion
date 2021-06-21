@@ -47,3 +47,32 @@ ul.simple-list li::before {
   animation: pulse-2 3s infinite;
   z-index: 99;
 }
+
+.profile-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  background: #6ecc84;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 500ms ease;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: inherit;
+  padding-right: inherit;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+.profile-btn:hover{
+  background: #000;
+  color: #ffffff;
+}
