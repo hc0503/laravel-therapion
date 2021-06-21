@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h2 class="mt-4 mb-3">About Our Services</h1>
+				<h2 class="mt-4 mb-3">About Our Services</h2>
 				<p class="mt-1 mb-1">Online Therapy (the term E-Therapy is also used) is the delivery of mental health services online via e-mail, live chat, or webcam. Telephone therapy is also included in this broad definition.  </p>
 				<p class="mt-1 mb-1">E-mail therapy is provided via an exchange of detailed e-mail messages. This form of therapy functions in delayed time.  </p>
 				<p class="mt-1 mb-1">Live chat therapy functions by the therapist and client exchanging written messages in real time in a secure chat room, or other form of instant messaging, such as Skype or Zoom. </p>
@@ -31,7 +31,7 @@
 			<div class="col-md-6">
 				<img class="mt-5" src="{{ asset('assets/images/resource/counseling-at-home.jpg') }}"
 				alt="Get professional help at affordable prices." style="border: 2px solid #6ecc84;"/>
-				<h2 class="mt-4">Ethical Guidelines</h1>
+				<h2 class="mt-4">Ethical Guidelines</h2>
 				<p class="mt-1 mb-1">We respect strict ethical guidelines in our work. All client information is kept confidential and is not used for marketing purposes.  </p>
 				<h3 class="mt-4">Important</h3>
 				<p class="mt-1 mb-1 font-weight-bold text-dark">This is not an emergency service. </p>

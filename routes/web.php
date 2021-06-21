@@ -18,5 +18,6 @@ Route::get('/', [LandingController::class, 'index'])->name("home");
 Route::get('/booking-new', [LandingController::class, 'book'])->name("book");
 Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost");
 Route::get('/service', [LandingController::class, 'service'])->name("service");
+Route::get('/jobs', [LandingController::class, 'jobs'])->name("jobs");
 
 Auth::routes();
