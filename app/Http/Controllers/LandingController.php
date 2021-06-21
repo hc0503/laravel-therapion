@@ -27,4 +27,9 @@ class LandingController extends Controller
         $pageTitle = 'Fees and Costs';
         return view('landing.fee_cost', compact('pageTitle'));
     }
+    public function service()
+    {
+        $pageTitle = 'Our Services';
+        return view('landing.service', compact('pageTitle'));
+    }
 }

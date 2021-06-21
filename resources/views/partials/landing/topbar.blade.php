@@ -34,7 +34,7 @@
                                 <li class="{{ \Route::current()->getName() === "home" ? "current" : "" }}"><a href="/">Home</a></li> 
                                 <li class="{{ \Route::current()->getName() === "book" ? "current" : "" }}"><a href="/booking-new">Book a Session</a></li>
                                 <li class="{{ \Route::current()->getName() === "fee_cost" ? "current" : "" }}"><a href="/fee-cost">Fees and Costs</a></li>
-                                <li class="{{ \Route::current()->getName() === "service" ? "current" : "" }}"><a href="about.html">Our Services</a></li>
+                                <li class="{{ \Route::current()->getName() === "service" ? "current" : "" }}"><a href="/service">Our Services</a></li>
                                 <li class="{{ \Route::current()->getName() === "jobs" ? "current" : "" }}"><a href="about.html">Jobs</a></li>
                                 <li class="dropdown"><a href="#">Language</a>
                                     <ul>
@@ -103,7 +103,7 @@
                         <li class="{{ \Route::current()->getName() === "home" ? "current" : "" }}"><a href="/">Home</a></li> 
                         <li class="{{ \Route::current()->getName() === "book" ? "current" : "" }}"><a href="/booking-new">Book a Session</a></li>
                         <li class="{{ \Route::current()->getName() === "fee_cost" ? "current" : "" }}"><a href="/fee-cost">Fees and Costs</a></li>
-                        <li class="{{ \Route::current()->getName() === "service" ? "current" : "" }}"><a href="about.html">Our Services</a></li>
+                        <li class="{{ \Route::current()->getName() === "service" ? "current" : "" }}"><a href="/service">Our Services</a></li>
                         <li class="{{ \Route::current()->getName() === "jobs" ? "current" : "" }}"><a href="about.html">Jobs</a></li>
                         <li class="dropdown"><a href="#">Language</a>
                             <ul>
