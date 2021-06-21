@@ -22,4 +22,9 @@ class LandingController extends Controller
         $pageTitle = 'Book a Session';
         return view('landing.book', compact('pageTitle'));
     }
+    public function fee_cost()
+    {
+        $pageTitle = 'Fees and Costs';
+        return view('landing.fee_cost', compact('pageTitle'));
+    }
 }

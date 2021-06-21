@@ -16,5 +16,6 @@ use App\Http\Controllers\LandingController;
 
 Route::get('/', [LandingController::class, 'index'])->name("home");
 Route::get('/booking-new', [LandingController::class, 'book'])->name("book");
+Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost");
 
 Auth::routes();
