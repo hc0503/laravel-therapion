@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,7 @@ Route::get('/booking-new', [LandingController::class, 'book'])->name("book");
 Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost");
 Route::get('/service', [LandingController::class, 'service'])->name("service");
 Route::get('/jobs', [LandingController::class, 'jobs'])->name("jobs");
+
+Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
 Auth::routes();

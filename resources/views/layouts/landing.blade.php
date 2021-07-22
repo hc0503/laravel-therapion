@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="@if(session()->has('locale')){{ session()->get('locale') }}@else{{ 'en' }}@endif">
 
 <head>
 	<meta charset="utf-8">
