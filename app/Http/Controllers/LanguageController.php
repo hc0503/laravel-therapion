@@ -9,9 +9,20 @@ class LanguageController extends Controller
     public function swap($locale) {
         $availableLocale = [
             'en' => 'en',
-            'fr' => 'fr',
+            'es' => 'es',
+            'pt' => 'pt',
+            'fi' => 'fi',
+            'se' => 'se',
+            'no' => 'no',
+            'dk' => 'dk',
             'de' => 'de',
-            'pt' => 'pt'
+            'nl' => 'nl',
+            'fr' => 'fr',
+            'it' => 'it',
+            'ru' => 'ru',
+            'tr' => 'tr',
+            'jp' => 'jp',
+            'cn' => 'cn',
         ];
         if (array_key_exists($locale, $availableLocale)) {
             session()->put('locale', $locale);
