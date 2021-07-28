@@ -20,7 +20,7 @@ class CreatePsychologistsTable extends Migration
             $table->string('email')->nullable();
             $table->string('title')->nullable();
             $table->text('info')->nullable();
-            $table->string('education')->nullable();
+            $table->string('education', 255)->nullable();
             $table->text('topic')->nullable();
             $table->text('about')->nullable();
             $table->string('country_code')->default('en');
