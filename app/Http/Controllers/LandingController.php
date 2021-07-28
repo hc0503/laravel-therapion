@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Models\Psychologist;
 
 class LandingController extends Controller
 {
@@ -19,8 +21,11 @@ class LandingController extends Controller
     }
     public function book()
     {
-        $pageTitle = 'Book a Session';
-        return view('landing.book', compact('pageTitle'));
+        $pageTitle = 'Appointment Scheduling and Booking';
+        $locale = session()->get('locale') ?? 'en';
+        $psychologists = Psychologist::query()->where('country_code', $locale)->get();
+
+        return view('landing.book', compact('pageTitle', 'psychologists'));
     }
     public function fee_cost()
     {
@@ -36,5 +41,22 @@ class LandingController extends Controller
     {
         $pageTitle = 'Jobs';
         return view('landing.jobs', compact('pageTitle'));
+    }
+    public function dbMigrate()
+    {
+        $oldPsicologos = DB::table('psicologo')->where('id_equipo', '1')->get();
+        foreach($oldPsicologos as $oldPsicologo) {
+            Psychologist::create([
+                'name' => $oldPsicologo->nombres_apellidos,
+                'photo' => $oldPsicologo->foto,
+                'email' => $oldPsicologo->email,
+                'title' => $oldPsicologo->titulo,
+                'info' => $oldPsicologo->informacion_adicional,
+                'education' => $oldPsicologo->educacion,
+                'topic' => $oldPsicologo->temas_consulta,
+                'about' => $oldPsicologo->about
+            ]);
+        }
+        dd('Success');
     }
 }

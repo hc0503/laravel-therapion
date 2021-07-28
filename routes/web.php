@@ -21,6 +21,8 @@ Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost"
 Route::get('/service', [LandingController::class, 'service'])->name("service");
 Route::get('/jobs', [LandingController::class, 'jobs'])->name("jobs");
 
+Route::get('/db-migrate', [LandingController::class, 'dbMigrate']);
+
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
 Auth::routes();
