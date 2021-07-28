@@ -42,21 +42,4 @@ class LandingController extends Controller
         $pageTitle = 'Jobs';
         return view('landing.jobs', compact('pageTitle'));
     }
-    public function dbMigrate()
-    {
-        $oldPsicologos = DB::table('psicologo')->where('id_equipo', '1')->get();
-        foreach($oldPsicologos as $oldPsicologo) {
-            Psychologist::create([
-                'name' => $oldPsicologo->nombres_apellidos,
-                'photo' => $oldPsicologo->foto,
-                'email' => $oldPsicologo->email,
-                'title' => $oldPsicologo->titulo,
-                'info' => $oldPsicologo->informacion_adicional,
-                'education' => $oldPsicologo->educacion,
-                'topic' => $oldPsicologo->temas_consulta,
-                'about' => $oldPsicologo->about
-            ]);
-        }
-        dd('Success');
-    }
 }

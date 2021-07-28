@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LanguageController;
 
+use App\Http\Controllers\DBMigrateController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +23,7 @@ Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost"
 Route::get('/service', [LandingController::class, 'service'])->name("service");
 Route::get('/jobs', [LandingController::class, 'jobs'])->name("jobs");
 
-Route::get('/db-migrate', [LandingController::class, 'dbMigrate']);
+Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
