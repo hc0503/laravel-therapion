@@ -35,7 +35,7 @@
 	@yield('content')
 
 	<!-- subscribe-section -->
-	{{-- <section class="subscribe-section centred">
+	<section class="subscribe-section centred">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-sm-12 left-column">
@@ -59,7 +59,7 @@
 				</div>
 			</div>
 		</div>
-	</section> --}}
+	</section>
 	<!-- subscribe-section end -->
 
 	<!-- main-footer -->
