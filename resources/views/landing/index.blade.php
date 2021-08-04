@@ -17,7 +17,7 @@
 				<p>Use our services from the comfort of your home or office. It’s easy, safe and affordable.</p>
 				<p>Start today! Talk with a qualified psychologist or counselor by e-mail, chat, videoconferencing or phone.</p>
 				<div class="text-center mt-2">
-					<a href="/booking-new" class="theme-btn">BOOK A SESSION</a>
+					<a href="/booking" class="theme-btn">BOOK A SESSION</a>
 				</div>
 				<div class="mt-4">
 					<img class="scale-with-grid" src="{{ asset('assets/images/resource/mental-health.webp') }}"
