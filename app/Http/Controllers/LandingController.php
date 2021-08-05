@@ -27,6 +27,36 @@ class LandingController extends Controller
 
         return view('landing.book', compact('pageTitle', 'psychologists'));
     }
+    public function services()
+    {
+        $pageTitle = 'Services All';
+
+        return view('landing.services.all', compact('pageTitle'));
+    }
+    public function psychotherapy()
+    {
+        $pageTitle = 'Individual psychotherapy and counseling';
+
+        return view('landing.services.psychotherapy', compact('pageTitle'));
+    }
+    public function couples()
+    {
+        $pageTitle = 'Couples and families';
+
+        return view('landing.services.couples', compact('pageTitle'));
+    }
+    public function community()
+    {
+        $pageTitle = 'Community services';
+
+        return view('landing.services.community', compact('pageTitle'));
+    }
+    public function health()
+    {
+        $pageTitle = 'Mental health for startups';
+
+        return view('landing.services.health', compact('pageTitle'));
+    }
     public function fee_cost()
     {
         $pageTitle = 'Fees and Costs';
