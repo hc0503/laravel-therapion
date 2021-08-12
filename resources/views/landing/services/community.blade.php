@@ -30,7 +30,7 @@
 						<div class="title-box">
 							<div class="sec-title">
 								<div class="title">services</div>
-								<h1>Teens & Youth Therapy</h1>
+								<h1>Community title</h1>
 							</div>
 							<div class="bold-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
 						</div>

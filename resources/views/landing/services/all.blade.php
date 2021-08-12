@@ -32,7 +32,7 @@
                             <div class="title">services</div>
                             <h1>All Services</h1>
                         </div>
-                        <div class="bold-text">You cange the content.</div>
+                        <div class="bold-text">You cange the content. the change is 2.</div>
                     </div>
                     <div class="inner-box centred">
                         <div class="row">
