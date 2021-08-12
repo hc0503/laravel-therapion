@@ -32,9 +32,7 @@
                             <div class="title">services</div>
                             <h1>All Services</h1>
                         </div>
-                        <div class="bold-text">I believe you have the power to make the changes you seek. There are
-                            times in our lives when we feel disempowered and disconnected from ourselves and others. I
-                            am here to walk with you on your journey towards healing.</div>
+                        <div class="bold-text">You cange the content.</div>
                     </div>
                     <div class="inner-box centred">
                         <div class="row">
