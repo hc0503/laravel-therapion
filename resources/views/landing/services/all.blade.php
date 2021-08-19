@@ -42,7 +42,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-argument"></i></div>
-                                    <h4><a href="{{ route('services.psychotherapy') }}">Individuals</a></h4>
+                                    <h4><a href="{{ route('services.individuals') }}">Individuals</a></h4>
                                     <div class="text">Online therapy and counseling for individuals. Private online sessions per e-mail, chat, videoconference
 and phone. Buy a single session, or start one of our 4-session therapy programs.</div>
                                 </div>
@@ -50,7 +50,7 @@ and phone. Buy a single session, or start one of our 4-session therapy programs.
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-woman"></i></div>
-                                    <h4><a href="{{ route('services.couples') }}">Couples and families</a></h4>
+                                    <h4><a href="{{ route('services.couples-and-families') }}">Couples and families</a></h4>
                                     <div class="text">Do you need help or assistance with your personal relationships? 
 Would you like to share a counseling session with your partner or with your family? You found the right place!</div>
                                 </div>
@@ -58,7 +58,7 @@ Would you like to share a counseling session with your partner or with your fami
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-brain-1"></i></div>
-                                    <h4><a href="{{ route('services.community') }}">Communities</a></h4>
+                                    <h4><a href="{{ route('services.communities') }}">Communities</a></h4>
                                     <div class="text">Therapion collaborates with civil associations, 
 NGOs or other type of organizations. Get that help and support that your community is looking for.</div>
                                 </div>
@@ -66,7 +66,7 @@ NGOs or other type of organizations. Get that help and support that your communi
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-anger"></i></div>
-                                    <h4><a href="{{ route('services.health') }}">Startup Mental Health</a></h4>
+                                    <h4><a href="{{ route('services.startups') }}">Startup Mental Health</a></h4>
                                     <div class="text">Therapion supports new business projects of all type. 
 Get help with stress and pressure, office climate challenges, remote work management, hectic lifestyle, and multicultural issues. </div>
                                 </div>

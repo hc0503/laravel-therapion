@@ -17,7 +17,7 @@ class LandingController extends Controller
     public function home()
     {
         $pageTitle = 'Home';
-        return view('landing.index', compact('pageTitle'));
+        return view('landing.home', compact('pageTitle'));
     }
     public function book()
     {
