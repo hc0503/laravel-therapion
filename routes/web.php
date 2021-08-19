@@ -17,7 +17,8 @@ use App\Http\Controllers\DBMigrateController;
 |
 */
 
-Route::get('/', [LandingController::class, 'services'])->name("home");
+Route::redirect('/', '/home');
+Route::get('/home', [LandingController::class, 'home'])->name('home');
 Route::get('/services', [LandingController::class, 'services'])->name("services.all");
 Route::get('/services/psychotherapy', [LandingController::class, 'psychotherapy'])->name("services.psychotherapy");
 Route::get('/services/couples', [LandingController::class, 'couples'])->name("services.couples");

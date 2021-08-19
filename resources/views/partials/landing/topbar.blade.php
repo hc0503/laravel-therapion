@@ -15,7 +15,7 @@
         <div class="outer-container">
             <div class="clearfix">
                 <div class="logo-box">
-                    <figure class="logo"><a href="index.html"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a></figure>
+                    <figure class="logo"><a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a></figure>
                 </div>
                 <div class="nav-outer clearfix">
                     <div class="menu-area">
