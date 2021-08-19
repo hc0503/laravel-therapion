@@ -29,40 +29,46 @@
                 <div class="service-content">
                     <div class="title-box">
                         <div class="sec-title">
-                            <div class="title">services</div>
-                            <h1>All Services</h1>
+                            <div class="title">Our Services</div>
+                            <h1 class="text-uppercase">all services</h1>
                         </div>
-                        <div class="bold-text">You cange the content.</div>
+                        <div class="bold-text">
+                            Psychotherapy and counseling for individuals, couples and families.<br>
+                            Mental health care for communities and startups.
+                        </div>
                     </div>
                     <div class="inner-box centred">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-argument"></i></div>
-                                    <h4><a href="{{ route('services.psychotherapy') }}">Individual psychotherapy and
-                                            counseling</a></h4>
-                                    <div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte mpor encid.</div>
+                                    <h4><a href="{{ route('services.psychotherapy') }}">Individuals</a></h4>
+                                    <div class="text">Online therapy and counseling for individuals. Private online sessions per e-mail, chat, videoconference
+and phone. Buy a single session, or start one of our 4-session therapy programs.</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-woman"></i></div>
                                     <h4><a href="{{ route('services.couples') }}">Couples and families</a></h4>
-                                    <div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte mpor encid.</div>
+                                    <div class="text">Do you need help or assistance with your personal relationships? 
+Would you like to share a counseling session with your partner or with your family? You found the right place!</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-brain-1"></i></div>
-                                    <h4><a href="{{ route('services.community') }}">Community services</a></h4>
-                                    <div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte mpor encid.</div>
+                                    <h4><a href="{{ route('services.community') }}">Communities</a></h4>
+                                    <div class="text">Therapion collaborates with civil associations, 
+NGOs or other type of organizations. Get that help and support that your community is looking for.</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 service-block">
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-anger"></i></div>
-                                    <h4><a href="{{ route('services.health') }}">Mental health for startups</a></h4>
-                                    <div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte mpor encid.</div>
+                                    <h4><a href="{{ route('services.health') }}">Startup Mental Health</a></h4>
+                                    <div class="text">Therapion supports new business projects of all type. 
+Get help with stress and pressure, office climate challenges, remote work management, hectic lifestyle, and multicultural issues. </div>
                                 </div>
                             </div>
                         </div>
