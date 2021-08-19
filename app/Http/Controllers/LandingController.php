@@ -33,29 +33,29 @@ class LandingController extends Controller
 
         return view('landing.services.all', compact('pageTitle'));
     }
-    public function psychotherapy()
+    public function individuals()
     {
         $pageTitle = 'Individual psychotherapy and counseling';
 
-        return view('landing.services.psychotherapy', compact('pageTitle'));
+        return view('landing.services.individuals', compact('pageTitle'));
     }
-    public function couples()
+    public function couplesAndFamilies()
     {
         $pageTitle = 'Couples and families';
 
-        return view('landing.services.couples', compact('pageTitle'));
+        return view('landing.services.couples-and-families', compact('pageTitle'));
     }
-    public function community()
+    public function communities()
     {
         $pageTitle = 'Community services';
 
-        return view('landing.services.community', compact('pageTitle'));
+        return view('landing.services.communities', compact('pageTitle'));
     }
-    public function health()
+    public function startups()
     {
         $pageTitle = 'Mental health for startups';
 
-        return view('landing.services.health', compact('pageTitle'));
+        return view('landing.services.startups', compact('pageTitle'));
     }
     public function fee_cost()
     {
