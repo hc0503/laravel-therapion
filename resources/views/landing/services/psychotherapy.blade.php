@@ -29,20 +29,38 @@
 					<div class="inner-box">
 						<div class="title-box">
 							<div class="sec-title">
-								<div class="title">services</div>
-								<h1>Teens & Youth Therapy</h1>
+								<div class="title">Individuals</div>
+								<h1>ONLINE THERAPY FOR INDIVIDUALS</h1>
 							</div>
-							<div class="bold-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
+							<div class="bold-text">At Therapion, we provide a rich variety of online therapy and
+    counseling options. You can choose from private e-mail, chat, videoconferencing and phone sessions. Book a single session, or start one of our 4-session therapy programs.</div>
 						</div>
 						<div class="content-style-one">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-12 text-column">
 									<div class="text-content">
-										<h3>Approach</h3>
+										<h3>Our Approach</h3>
 										<div class="text">
-											<p>My approach is to tailor therapy to each client's individual needs. I treat adults with concerns about business/school performance and creativity, depression, anxiety, panic attacks, phobias, childhood sexual or physical abuse, adult trauma, alcohol/drug problems, PTSD, codependency, adult children of alcoholics, and self-esteem.</p>
-											<p>Prior stressful events can contribute to the stress we experience now. This can lead to frustration, feeling defeated, compulsive behavior to cope (e.g., drinking/drug abuse.</p>
-										</div>
+											
+                                    <p>
+Our online therapy and online counseling specialties include, 
+but are not limited to, stress, depression, anxiety, loneliness, 
+issues with self-esteem, social anxiety, eating disorders and obesity, 
+shyness, guilt, anger, relationship advice, marriage and couples counseling, 
+divorce and breakup, life transition and expat coaching.</p>
+
+											<p>
+											To make the selection of your specialist easy, all of our psychologists, 
+											counselors and therapists have their respective online profiles
+                                            available on our site. That makes it easy for
+                                            you to choose the right person to talk with.
+											</p>
+
+											<p>
+                                   Use the language switcher in the menu would you like to change your preferred language.
+                                    </p>
+
+								</div>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 image-column">
@@ -50,12 +68,13 @@
 								</div>
 							</div>
 							<div class="list-content">
-								<h3>Marriage Counselling</h3>
+							<h3>Online Therapy and Counseling for Individuals</h3>
+								
 								<ul class="list">
-									<li>Do you want help through a rough patch in your relationship?</li>
-									<li>Lost communication or emotional connection in your marriage?</li>
-									<li>Forever stuck in the same soul-destroying arguments?</li>
-									<li>Are you feeling betrayed or trapped?</li>
+									<li>Promotes mental health and well-being</li>
+									<li>Helps you get through life challenges</li>
+									<li>Creates new ways to overcome past events and traumas</li>
+									<li>Increases happiness and balance in your life</li>
 								</ul>
 							</div>
 						</div>
@@ -65,22 +84,26 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">1</div>
-										<h4>Make Schedule</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Make a Booking</h4>
+										<div class="text">
+                                    Make an appoitment on the bookings page. 
+                                  Choose from a single session, or start one of our
+                                    4-session therapy programs.</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">2</div>
-										<h4>Start Discussion</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Have the Session</h4>
+										<div class="text">Join the counselor online for a live session, or 
+                                        use e-mail to communicate with him/her.</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">3</div>
-										<h4>Enjoy Plan</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Enjoy a Program</h4>
+										<div class="text">Our 4-session therapy programs are easy-to-use packages to promote mental health.</div>
 									</div>
 								</div>
 							</div>

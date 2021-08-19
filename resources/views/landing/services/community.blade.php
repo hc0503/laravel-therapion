@@ -29,20 +29,40 @@
 					<div class="inner-box">
 						<div class="title-box">
 							<div class="sec-title">
-								<div class="title">services</div>
-								<h1>Community title</h1>
+								<div class="title">Communities</div>
+								<h1>ONLINE COUNSELING FOR COMMUNITIES</h1>
 							</div>
-							<div class="bold-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
+							<div class="bold-text">Therapion collaborates with many associations, 
+                             NGOs and other type of organizations. Our shared goal is to promote mental health
+                             and make it a priority in everyday life.</div>
 						</div>
 						<div class="content-style-one">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-12 text-column">
 									<div class="text-content">
-										<h3>Approach</h3>
+										<h3>Our Approach</h3>
 										<div class="text">
-											<p>My approach is to tailor therapy to each client's individual needs. I treat adults with concerns about business/school performance and creativity, depression, anxiety, panic attacks, phobias, childhood sexual or physical abuse, adult trauma, alcohol/drug problems, PTSD, codependency, adult children of alcoholics, and self-esteem.</p>
-											<p>Prior stressful events can contribute to the stress we experience now. This can lead to frustration, feeling defeated, compulsive behavior to cope (e.g., drinking/drug abuse.</p>
-										</div>
+											<p>
+                             Strong and healthy communities are essential in making life happy and 
+                             meaningful. We are at your community's service in both
+                            preventive stages of mental health care, as well as would active problem solving be needed some day.
+                                           </p>
+                                           <p>
+                            Good mental health needs nurturing. 
+                            Let us design a special program for your community, 
+                            respecting the important aspects of your believe and value system.
+                            Our mutual goal is to keep your community on track 
+                            in a happy and satisfying life.</p>
+
+							<p>
+							Contact us today and request a plan for your community.
+                            Therapion will then develop a special
+                            program for you. It can
+                            include discounts, special events, 
+                            workshops and other type of activities
+                            to promote mental health in your community.
+							</p>
+									</div>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 image-column">
@@ -50,12 +70,12 @@
 								</div>
 							</div>
 							<div class="list-content">
-								<h3>Marriage Counselling</h3>
+								<h3>Online Counseling for Communities</h3>
 								<ul class="list">
-									<li>Do you want help through a rough patch in your relationship?</li>
-									<li>Lost communication or emotional connection in your marriage?</li>
-									<li>Forever stuck in the same soul-destroying arguments?</li>
-									<li>Are you feeling betrayed or trapped?</li>
+									<li>Ensure well-being and good mental health in your community</li>
+									<li>Avoid conflicts and tensions</li>
+									<li>Help both individuals and families</li>
+									<li>Non-judgemental, respectful environment</li>
 								</ul>
 							</div>
 						</div>
@@ -65,22 +85,24 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">1</div>
-										<h4>Make Schedule</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Contact Customer Services</h4>
+										<div class="text">Contact our customer services and tell that you are instered in a community program.</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">2</div>
-										<h4>Start Discussion</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Tell Us about Your Needs</h4>
+										<div class="text">Tell us about your community, what do you need help for 
+                                         and how you can be reached.</div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 column">
 									<div class="single-item">
 										<div class="count-box">3</div>
-										<h4>Enjoy Plan</h4>
-										<div class="text">Lorem ipsum dolor amet adipelit sed eiusmtempor encid.</div>
+										<h4>Enjoy Your Community Plan</h4>
+										<div class="text">Therapion will provide you a special tailor-made 
+									   program to promote mental health in your community.  </div>
 									</div>
 								</div>
 							</div>
