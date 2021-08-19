@@ -13,21 +13,25 @@ use App\Http\Controllers\DBMigrateController;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| contains the 'web' middleware group. Now create something great!
 |
 */
 
 Route::redirect('/', '/home');
 Route::get('/home', [LandingController::class, 'home'])->name('home');
-Route::get('/services', [LandingController::class, 'services'])->name("services.all");
-Route::get('/services/individuals', [LandingController::class, 'individuals'])->name("services.individuals");
-Route::get('/services/couples-and-families', [LandingController::class, 'couplesAndFamilies'])->name("services.couples-and-families");
-Route::get('/services/communities', [LandingController::class, 'communities'])->name("services.communities");
-Route::get('/services/startups', [LandingController::class, 'startups'])->name("services.startups");
-Route::get('/booking', [LandingController::class, 'book'])->name("book");
-Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name("fee_cost");
-Route::get('/service', [LandingController::class, 'service'])->name("service");
-Route::get('/jobs', [LandingController::class, 'jobs'])->name("jobs");
+
+Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
+	Route::get('/', [LandingController::class, 'services'])->name('all');
+	Route::get('/individuals', [LandingController::class, 'individuals'])->name('individuals');
+	Route::get('/couples-and-families', [LandingController::class, 'couplesAndFamilies'])->name('couples-and-families');
+	Route::get('/communities', [LandingController::class, 'communities'])->name('communities');
+	Route::get('/startups', [LandingController::class, 'startups'])->name('startups');
+});
+
+Route::get('/booking', [LandingController::class, 'book'])->name('book');
+Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name('fee_cost');
+Route::get('/service', [LandingController::class, 'service'])->name('service');
+Route::get('/jobs', [LandingController::class, 'jobs'])->name('jobs');
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 
