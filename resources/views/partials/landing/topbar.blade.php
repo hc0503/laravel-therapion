@@ -32,7 +32,7 @@
                                 <ul class="navigation clearfix">
                                     <li class="{{ \Route::current()->getName() === "home" ? "current" : "" }}"><a href="{{ route('home') }}">Home</a></li> 
                                     <li class="{{ \Route::current()->getName() === "booking" ? "current" : "" }}"><a href="{{ route('booking') }}">Book a Session</a></li>
-                                    <li class="{{ \Route::current()->getName() === "fee_cost" ? "current" : "" }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
+                                    <li class="{{ \Route::current()->getName() === "fee-cost" ? "current" : "" }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
                                     <li class="{{ \Route::current()->getName() === "services.all" ? "current" : "" }}"><a href="{{ route('services.all') }}">Our Services</a></li>
                                     <li class="{{ \Route::current()->getName() === "jobs" ? "current" : "" }}"><a href="{{ route('jobs') }}">Jobs</a></li>
                                     <li class="dropdown"><a href="#">Language</a>
