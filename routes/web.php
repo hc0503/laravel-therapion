@@ -28,9 +28,8 @@ Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
 	Route::get('/startups', [LandingController::class, 'startups'])->name('startups');
 });
 
-Route::get('/booking', [LandingController::class, 'book'])->name('book');
-Route::get('/fee-cost', [LandingController::class, 'fee_cost'])->name('fee_cost');
-Route::get('/service', [LandingController::class, 'service'])->name('service');
+Route::get('/booking', [LandingController::class, 'booking'])->name('booking');
+Route::get('/fee-cost', [LandingController::class, 'feeCost'])->name('fee-cost');
 Route::get('/jobs', [LandingController::class, 'jobs'])->name('jobs');
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);

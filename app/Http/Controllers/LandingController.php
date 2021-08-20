@@ -19,13 +19,13 @@ class LandingController extends Controller
         $pageTitle = 'Home';
         return view('landing.home', compact('pageTitle'));
     }
-    public function book()
+    public function booking()
     {
         $pageTitle = 'Appointment Scheduling and Booking';
         $locale = session()->get('locale') ?? 'en';
         $psychologists = Psychologist::query()->where('country_code', $locale)->get();
 
-        return view('landing.book', compact('pageTitle', 'psychologists'));
+        return view('landing.booking', compact('pageTitle', 'psychologists'));
     }
     public function services()
     {
@@ -57,15 +57,10 @@ class LandingController extends Controller
 
         return view('landing.services.startups', compact('pageTitle'));
     }
-    public function fee_cost()
+    public function feeCost()
     {
         $pageTitle = 'Fees and Costs';
-        return view('landing.fee_cost', compact('pageTitle'));
-    }
-    public function service()
-    {
-        $pageTitle = 'Our Services';
-        return view('landing.service', compact('pageTitle'));
+        return view('landing.fee-cost', compact('pageTitle'));
     }
     public function jobs()
     {
