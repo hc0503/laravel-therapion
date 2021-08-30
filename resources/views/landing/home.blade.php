@@ -6,9 +6,10 @@
 			<div class="slide" style="background-image:url({{ asset('/assets/images/main-slider/slider-1.jpg') }})">
 					<div class="container clearfix">
 						<div class="content-box">
-							<h1>Be Smart,<br />Help Yourself Now</h1>
-							<span>Free Consultation</span>
-							<div class="text">Excepteur sint occaecat cupidatat non proident sunt in culpa.</div>
+							<h1>We are Always,<br />Always at Your Service</h1>
+							<span>Customer Services</span>
+							<div class="text">Our Customer Service Center is ready to assist you at all times.
+							<br />We'll be glad to tell you more about online therapy services.</div>
 							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Contact us</a></div>
 						</div>
 					</div>
@@ -16,10 +17,12 @@
 			<div class="slide" style="background-image:url({{ asset('/assets/images/main-slider/slider-2.jpg') }})">
 					<div class="container clearfix">
 						<div class="content-box">
-							<h1>Be Smart,<br />Help Yourself Now</h1>
-							<span>Free Consultation</span>
-							<div class="text">Excepteur sint occaecat cupidatat non proident sunt in culpa.</div>
-							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Contact us</a></div>
+							<h1>Be Brave,<br />Help Yourself Now</h1>
+							<span>Start Today</span>
+							<div class="text">Be brave, take the first step. Get to us. Here you're not alone.
+			                <br/>Talk to one of our qualified counselors today.
+							</div>
+							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Book a Session</a></div>
 						</div>
 					</div>
 			</div>
@@ -27,9 +30,10 @@
 					<div class="container clearfix">
 						<div class="content-box">
 							<h1>Be Smart,<br />Help Yourself Now</h1>
-							<span>Free Consultation</span>
-							<div class="text">Excepteur sint occaecat cupidatat non proident sunt in culpa.</div>
-							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Contact us</a></div>
+							<span>Get Help</span>
+							<div class="text">Helping yourself is the best investment you can make. Period.
+							<br/>It's also the best way to help people around you. Start now!</div>
+							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Book a Session</a></div>
 						</div>
 					</div>
 			</div>
@@ -44,14 +48,18 @@
 				<div class="col-lg-6 col-md-12 col-sm-12 content-column">
 					<div class="content-box">
 						<div class="sec-title">
-							<div class="title">about me</div>
-							<h1>Professional Psychology Therapy</h1>
+							<div class="title">about us</div>
+							<h1>Professional Online Therapy and Counseling</h1>
 						</div>
-						<div class="bold-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu santium doloreque laudantum.</div>
+						<div class="bold-text">
+						Welcome to Therapion!
+                        Our website provides confidential online therapy and counseling services.
+				</div>
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim ad minim veniam, quis nostrud exer citation ulla mco laboris nisi ut aliquip commodo.</p>
+							<p>Start today! Talk with a qualified psychologist, therapist or counselor from the comfort of your home or office. It’s easy, safe and affordable.
+							</p>
 						</div>
-						<div class="btn-box"><a href="contact.html" class="theme-btn">Contact Us</a></div>
+						<div class="btn-box"><a href="contact.html" class="theme-btn">Book a Session</a></div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12 video-column">
@@ -77,38 +85,38 @@
 				<div class="col-xl-6 col-lg-12 col-md-12 offset-xl-6 content-column">
 					<div class="content-box">
 						<div class="sec-title">
-							<div class="title">my services</div>
-							<h1>What Service<br />Provide</h1>
-							<p>Excepteur sint occaecat cupidatat proident sunt culpa officia desernt mollit anim est laborum sed perspiciatis.</p>
+							<div class="title">our services</div>
+							<h1>What Services<br />We Provide</h1>
+							<p>Therapion provides a wide range of online therapy and counseling options.</p>
 						</div>
 						<div class="inner-box centred">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-12 service-block">
 									<div class="service-block-one">
 										<div class="icon-box"><i class="flaticon-argument"></i></div>
-										<h4><a href="service-details-1.html">Couples Therapy</a></h4>
-										<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte.</div>
+										<h4><a href="service-details-1.html">Individuals</a></h4>
+										<div class="text">Professional online therapy and counseling for individuals.</div>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 service-block">
 									<div class="service-block-one">
 										<div class="icon-box"><i class="flaticon-woman"></i></div>
-										<h4><a href="service-details-2.html">Teens & Youth</a></h4>
-										<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte.</div>
+										<h4><a href="service-details-2.html">Couples and Families</a></h4>
+										<div class="text">Help and guidance in your personal relationships.</div>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 service-block">
 									<div class="service-block-one">
 										<div class="icon-box"><i class="flaticon-brain"></i></div>
-										<h4><a href="service-details-4.html">Individuals</a></h4>
-										<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte.</div>
+										<h4><a href="service-details-4.html">Communities</a></h4>
+										<div class="text">Mental health care and preventive action plans for communities.</div>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 service-block">
 									<div class="service-block-one">
 										<div class="icon-box"><i class="flaticon-brain-1"></i></div>
-										<h4><a href="service-details-3.html">Family Therapy</a></h4>
-										<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmte.</div>
+										<h4><a href="service-details-3.html">Startup Mental Health</a></h4>
+										<div class="text">Psychological wellbeing for new businesses of all sizes and types.</div>
 									</div>
 								</div>
 							</div>
@@ -125,8 +133,9 @@
 		<div class="container">
 			<div class="sec-title">
 				<div class="title">work proccess</div>
-				<h1>How Morriston work?</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim ad minim<br />veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip commodo.</p>
+				<h1>How does Therapion work?</h1>
+				<p>Private online counseling sessions are available by e-mail, chat, video conferencing and phone.
+<br />Our services are professional, easy to use and affordable. Start today!</p>
 			</div>
 			<div class="inner-box">
 				<div class="row">
@@ -136,8 +145,9 @@
 								<div class="number">1</div>
 								<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-1.png') }}" alt=""></figure>
 							</div>
-							<h3><a href="#">Make Schedule</a></h3>
-							<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+							<h3><a href="#">Book a Session</a></h3>
+							<div class="text">Book a session as you like it. <br>
+							It can by e-mail, chat, video conferencing or phone.</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 col-sm-12 column">
@@ -146,8 +156,9 @@
 									<div class="number">2</div>
 									<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-2.png') }}" alt=""></figure>
 								</div>
-								<h3><a href="#">Start Discussion</a></h3>
-								<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+								<h3><a href="#">Talk with the Counselor</a></h3>
+								<div class="text">Talk with your counselor, either in a private online counseling
+									session or by e-mail.</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 col-sm-12 column">
@@ -156,8 +167,8 @@
 								<div class="number">3</div>
 								<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-3.png') }}" alt=""></figure>
 							</div>
-							<h3><a href="#">Enjoy Plan</a></h3>
-							<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+							<h3><a href="#">Enjoy Our Programs</a></h3>
+							<div class="text">You can as well move on and enjoy one of our special Therapy Programs. They are practical and affordable 4-session packages.</div>
 						</div>
 					</div>
 				</div>
@@ -171,7 +182,7 @@
 		<div class="container">
 			<div class="sec-title">
 				<div class="title">upcoming events</div>
-				<h1>My Programs</h1>
+				<h1>Free Live Events</h1>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-sm-12 event-block">
@@ -179,9 +190,9 @@
 						<div class="inner-box">
 							<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-1.jpg') }}" alt=""></figure>
 							<div class="lower-content">
-								<div class="date">26<br /><span>April</span></div>
-								<h3><a href="#">Psychology Therapy</a></h3>
-								<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+								<div class="date">24<br /><span>October</span></div>
+								<h3><a href="#">Personal Growth</a></h3>
+								<div class="text">Join this event to talk about personal growth, self exploration and much more.</div>
 								<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
@@ -192,9 +203,9 @@
 						<div class="inner-box">
 							<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-2.jpg') }}" alt=""></figure>
 							<div class="lower-content">
-								<div class="date">24<br /><span>April</span></div>
-								<h3><a href="#">Restoring Confidense</a></h3>
-								<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+								<div class="date">25<br /><span>October</span></div>
+								<h3><a href="#">Life Changes</a></h3>
+								<div class="text">Join this event to talk about major life changes and how to cope with them.</div>
 								<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
@@ -205,9 +216,9 @@
 							<div class="inner-box">
 								<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-3.jpg') }}" alt=""></figure>
 								<div class="lower-content">
-									<div class="date">23<br /><span>April</span></div>
-									<h3><a href="#">Work Improvements</a></h3>
-									<div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor encid dolore.</div>
+									<div class="date">26<br /><span>October</span></div>
+									<h3><a href="#">Counselor Training</a></h3>
+									<div class="text">Join this free training session to find out more about our online counseling methods.</div>
 									<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 								</div>
 							</div>
@@ -227,49 +238,50 @@
 					<div class="content-box">
 						<div class="sec-title">
 							<div class="title">testimonials</div>
-							<h1>Customers Say</h1>
+							<h1>Read What Our Customers Say</h1>
 						</div>
 						<div class="client-testimonial-carousel owl-carousel owl-theme">
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">William Ayrton</h5>
+									<div class="text">Therapion's online counseling service is an excellent way to get professional help, no matter where you live. 
+											</div> 
+									<h5 class="author">Tanja, 43 years</h5>
 								</div>
 							</div>
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">Robertson</h5>
+									<div class="text">As an expat I truly appreciate being able to talk in my native language to a qualified counselor from the comfort of my home.</div> 
+									<h5 class="author">Lisa from Singapore</h5>
 								</div>
 							</div>
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">William Ayrton</h5>
+									<div class="text">Very happy with the personal attention I've received from my counselor Carla, thank you!</div> 
+									<h5 class="author">Carlos</h5>
 								</div>
 							</div>
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">William Ayrton</h5>
+									<div class="text">Great online workshops! I participated in the training session which was very informative and actually, quite fun, too!</div> 
+									<h5 class="author">Helena, professional counselor</h5>
 								</div>
 							</div>
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">Robertson</h5>
+									<div class="text">Thank you so much, Britt! Help that I've got from you has been fantastic!</div> 
+									<h5 class="author">Lena from Uppsala</h5>
 								</div>
 							</div>
 							<div class="testimonial-content">
 								<div class="inner-box">
 									<div class="icon-box"><i class="flaticon-left-quote"></i></div>
-									<div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercullamco</div> 
-									<h5 class="author">William Ayrton</h5>
+									<div class="text">I've learnt to know and understand myself so much better! Thank you so much!</div> 
+									<h5 class="author">John Mark, NYC</h5>
 								</div>
 							</div>
 						</div>
@@ -312,11 +324,12 @@
 					<div class="content-box">
 						<div class="sec-title">
 							<div class="title">faq’s</div>
-							<h1>Freequently<br />Asked Questions</h1>
+							<h1>Frequently<br />Asked Questions</h1>
 						</div>
-						<div class="bold-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu santium doloreque laudantum.</div>
+						<div class="bold-text">Clinical studies worldwide have shown that online therapy is a very effective treatment. In fact, it is as efficient as the more traditional forms of face-to-face psychotherapy, and its results can be durable.
+						</div>
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim ad minim veniam, quis nostrud exer citation ulla mco laboris nisi ut aliquip commodo.</p>
+							<p>Read this section to find more about its many benefits.</p>
 						</div>
 					</div>
 				</div>
@@ -326,11 +339,12 @@
 							<li class="accordion block active-block">
 								<div class="acc-btn active">
 									<div class="icon-outer"><i class="flaticon-add-1"></i></div>
-									<h5>What is a Marriage and Family Therapist?</h5>
+									<h5>What is this kind of treatment good for?</h5>
 								</div>
 								<div class="acc-content current">
 									<div class="content">
-										<div class="text">Dolor sit amet consectetur elit sed do eius mod tempor incd idunt labore magna.aliqua enim ad minim veniam quis nostrud exercita. tion ullamco laboris nisi ut alique.</div>
+										<div class="text">Wide variety of issues can be helped with, or completely solved with online therapy and counseling. Our specialties include, but are not limited to, stress, depression, anxiety, loneliness, issues with self-esteem, social anxiety, eating disorders and obesity, shyness, guilt, anger, relationship advice, marriage and couples counseling, divorce and breakup, life transition and expat coaching.
+											Note that this is not an emergency service. Contact a local hotline if you need immediate help.</div>
 									</div>
 								</div>
 							</li>
@@ -341,18 +355,23 @@
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Dolor sit amet consectetur elit sed do eius mod tempor incd idunt labore magna.aliqua enim ad minim veniam quis nostrud exercita. tion ullamco laboris nisi ut alique.</div>
+										<div class="text">In our team you will find specialists from all the most important areas of psychology and psychotherapy. Choose the expert according to your needs!
+											All our psychologists, counselors and therapists are fully licensed and registered. 
+											At Therapion, we strongly believe that each and one of us needs to be able to choose how he or she communicates with the others. Therefore, with us, you have a rich selection of communication methods available. It means that you are completely free to choose whether you want to write or talk with the counselor.</div>
 									</div>
 								</div>
 							</li>
 							<li class="accordion block">
 								<div class="acc-btn">
 									<div class="icon-outer"><i class="flaticon-add-1"></i></div>
-									<h5>How long does therapy last?</h5>
+									<h5>How long does online therapy last?</h5>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Dolor sit amet consectetur elit sed do eius mod tempor incd idunt labore magna.aliqua enim ad minim veniam quis nostrud exercita. tion ullamco laboris nisi ut alique.</div>
+										<div class="text">Online therapy is best suited for short or medium term. 
+											Typical duration of it varies from one session to a few months of treatment. 
+											You can start with a single session, and ask the therapist for a treatment plan if you like.
+											</div>
 									</div>
 								</div>
 							</li>
@@ -377,15 +396,15 @@
 						<div class="inner-box">
 							<figure class="image-box"><a href="blog-details.html"><img src="{{ asset('/assets/images/resource/news-1.jpg') }}" alt=""></a></figure>
 							<div class="categorie-list">
-								<a href="#">Couples</a>
-								<a href="#">Therapy</a>
+								<a href="#">Clinical</a>
+								<a href="#">Psychotherapy</a>
 							</div>
 							<div class="lower-content">
 								<ul class="post-info">
-									<li>by <span>Kirstin Hagen</span></li>
-									<li>On 25 Mar, 2019</li>
+									<li>by <span>Britt Berglind</span></li>
+									<li>Clinical Professional Counselor</li>
 								</ul>
-								<h3><a href="blog-details.html">You Can’t Judge Depression by its Cover</a></h3>
+								<h3><a href="blog-details.html">Life in the time of Covid-19: What has changed and what has not?</a></h3>
 								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
@@ -396,15 +415,15 @@
 						<div class="inner-box">
 							<figure class="image-box"><a href="blog-details.html"><img src="{{ asset('/assets/images/resource/news-2.jpg') }}" alt=""></a></figure>
 							<div class="categorie-list">
-								<a href="#">Couples</a>
+								<a href="#">Cognitive-Behavioral</a>
 								<a href="#">Therapy</a>
 							</div>
 							<div class="lower-content">
 								<ul class="post-info">
-									<li>by <span>Kirstin Hagen</span></li>
-									<li>On 24 Mar, 2019</li>
+									<li>by <span>Nicholas P. Sarantakis</span></li>
+									<li>Integrative Therapist</li>
 								</ul>
-								<h3><a href="blog-details.html">Ratione voluptem seque nesciunt.</a></h3>
+								<h3><a href="blog-details.html">Remote counselling & video-conference based CBT</a></h3>
 								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
@@ -415,15 +434,15 @@
 						<div class="inner-box">
 							<figure class="image-box"><a href="blog-details.html"><img src="{{ asset('/assets/images/resource/news-3.jpg') }}" alt=""></a></figure>
 							<div class="categorie-list">
-								<a href="#">Couples</a>
-								<a href="#">Therapy</a>
+								<a href="#">Therapion</a>
+								<a href="#">Newsletter</a>
 							</div>
 							<div class="lower-content">
 								<ul class="post-info">
-									<li>by <span>Kirstin Hagen</span></li>
-									<li>On 23 Mar, 2019</li>
+									<li>by <span>Timo Kojonen</span></li>
+									<li>Psychologist, Therapion CEO</li>
 								</ul>
-								<h3><a href="blog-details.html">We Schedule your discuss it and create a plan</a></h3>
+								<h3><a href="blog-details.html">Therapion Newsletter tells you the latest news</a></h3>
 								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
