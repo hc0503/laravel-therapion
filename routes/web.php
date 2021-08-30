@@ -31,6 +31,7 @@ Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
 Route::get('/booking', [LandingController::class, 'booking'])->name('booking');
 Route::get('/fee-cost', [LandingController::class, 'feeCost'])->name('fee-cost');
 Route::get('/jobs', [LandingController::class, 'jobs'])->name('jobs');
+Route::get('/faq', [LandingController::class, 'faq'])->name('faq');
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 
