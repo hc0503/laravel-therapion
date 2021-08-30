@@ -43,7 +43,7 @@
                                 <div class="service-block-one">
                                     <div class="icon-box"><i class="flaticon-argument"></i></div>
                                     <h4><a href="{{ route('services.individuals') }}">Individuals</a></h4>
-                                    <div class="text">Online therapy and counseling for individuals. Private online sessions per e-mail, chat, videoconference
+                                    <div class="text">Online therapy and counseling for individuals. Private online sessions by e-mail, chat, videoconference
 and phone. Buy a single session, or start one of our 4-session therapy programs.</div>
                                 </div>
                             </div>
