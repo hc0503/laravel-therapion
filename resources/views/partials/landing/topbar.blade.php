@@ -30,12 +30,12 @@
                             </div>
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="{{ \Route::current()->getName() === "home" ? "current" : "" }}"><a href="{{ route('home') }}">Home</a></li> 
-                                    <li class="{{ \Route::current()->getName() === "booking" ? "current" : "" }}"><a href="{{ route('booking') }}">Book a Session</a></li>
-                                    <li class="{{ \Route::current()->getName() === "fee-cost" ? "current" : "" }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
-                                    <li class="{{ \Route::current()->getName() === "services.all" ? "current" : "" }}"><a href="{{ route('services.all') }}">Our Services</a></li>
-                                    <li class="{{ \Route::current()->getName() === "jobs" ? "current" : "" }}"><a href="{{ route('jobs') }}">Jobs</a></li>
-                                    <li class="{{ \Route::current()->getName() === "faq" ? "current" : "" }}"><a href="{{ route('faq') }}">FAQ</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('home') ? 'current' : '' }}"><a href="{{ route('home') }}">Home</a></li> 
+                                    <li class="{{ \Route::currentRouteNamed('booking') ? 'current' : '' }}"><a href="{{ route('booking') }}">Book a Session</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('faq') ? 'current' : '' }}"><a href="{{ route('faq') }}">FAQ</a></li>
                                     <li class="dropdown"><a href="#">Language</a>
                                         <ul>
                                             <li><a href="{{ url('/lang/en') }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
@@ -80,11 +80,12 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="{{ \Route::current()->getName() === "home" ? "current" : "" }}"><a href="/">Home</a></li> 
-                            <li class="{{ \Route::current()->getName() === "book" ? "current" : "" }}"><a href="/booking">Book a Session</a></li>
-                            <li class="{{ \Route::current()->getName() === "fee_cost" ? "current" : "" }}"><a href="/fee-cost">Fees and Costs</a></li>
-                            <li class="{{ \Route::current()->getName() === "service" ? "current" : "" }}"><a href="/service">Our Services</a></li>
-                            <li class="{{ \Route::current()->getName() === "jobs" ? "current" : "" }}"><a href="/jobs">Jobs</a></li>
+                            <li class="{{ \Route::currentRouteNamed('home') ? 'current' : '' }}"><a href="{{ route('home') }}">Home</a></li> 
+                            <li class="{{ \Route::currentRouteNamed('booking') ? 'current' : '' }}"><a href="{{ route('booking') }}">Book a Session</a></li>
+                            <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
+                            <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
+                            <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
+                            <li class="{{ \Route::currentRouteNamed('faq') ? 'current' : '' }}"><a href="{{ route('faq') }}">FAQ</a></li>
                             <li class="dropdown"><a href="#">Language</a>
                                 <ul>
                                     <li><a href="{{ url('/lang/en') }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
