@@ -67,4 +67,9 @@ class LandingController extends Controller
         $pageTitle = 'Jobs';
         return view('landing.jobs', compact('pageTitle'));
     }
+    public function faq()
+    {
+        $pageTitle = 'FAQ';
+        return view('landing.faq', compact('pageTitle'));
+    }
 }
