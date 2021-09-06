@@ -35,7 +35,6 @@
                                     <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
                                     <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
                                     <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
-                                    <li class="{{ \Route::currentRouteNamed('faq') ? 'current' : '' }}"><a href="{{ route('faq') }}">FAQ</a></li>
                                     <li class="dropdown"><a href="#">Language</a>
                                         <ul>
                                             <li><a href="{{ url('/lang/en') }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
@@ -85,7 +84,6 @@
                             <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
                             <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
                             <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
-                            <li class="{{ \Route::currentRouteNamed('faq') ? 'current' : '' }}"><a href="{{ route('faq') }}">FAQ</a></li>
                             <li class="dropdown"><a href="#">Language</a>
                                 <ul>
                                     <li><a href="{{ url('/lang/en') }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
