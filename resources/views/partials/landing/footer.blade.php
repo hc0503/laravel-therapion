@@ -28,7 +28,7 @@
 									<li><a href="#">About Us</a></li>
 									<li><a href="{{ route('contact-us') }}">Contact Us</a></li>
 									<li><a href="{{ route('services.all') }}">Services</a></li>
-									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
 								</ul>
 							</div>
 						</div>
@@ -59,7 +59,7 @@
 				<div class="right-content pull-right">
 					<ul class="footer-nav">
 						<li><a href="{{ route('terms-of-service') }}">Terms of Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
 					</ul>
 					<ul class="footer-social">
 						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
