@@ -25,7 +25,7 @@
 							<div class="widget-content">
 								<ul>
 									<li><a href="#">Company History</a></li>
-									<li><a href="#">About Us</a></li>
+									<li><a href="{{ route('about-us') }}">About Us</a></li>
 									<li><a href="{{ route('contact-us') }}">Contact Us</a></li>
 									<li><a href="{{ route('services.all') }}">Services</a></li>
 									<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
