@@ -77,4 +77,9 @@ class LandingController extends Controller
         $pageTitle = 'Contact Us';
         return view('landing.contact-us', compact('pageTitle'));
     }
+    public function getTermsOfService()
+    {
+        $pageTitle = 'Terms of Service';
+        return view('landing.terms-of-service', compact('pageTitle'));
+    }
 }

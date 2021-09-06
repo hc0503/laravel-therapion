@@ -33,6 +33,7 @@ Route::get('/fee-cost', [LandingController::class, 'getFeeCost'])->name('fee-cos
 Route::get('/jobs', [LandingController::class, 'getJobs'])->name('jobs');
 Route::get('/training', [LandingController::class, 'getTraining'])->name('training');
 Route::get('/contact-us', [LandingController::class, 'getContactUs'])->name('contact-us');
+Route::get('/terms-of-service', [LandingController::class, 'getTermsOfService'])->name('terms-of-service');
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 

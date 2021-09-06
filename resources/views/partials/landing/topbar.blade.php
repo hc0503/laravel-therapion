@@ -66,7 +66,7 @@
     <!--Sticky Header-->
     <div class="sticky-header">
         <div class="container clearfix">
-            <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/small-logo.png') }}" alt=""></a></figure>
+            <figure class="logo-box"><a href="{{ route('home') }}"><img src="{{ asset('assets/images/small-logo.png') }}" alt=""></a></figure>
             <div class="menu-area">
                 <nav class="main-menu navbar-expand-lg">
                     <div class="navbar-header">
