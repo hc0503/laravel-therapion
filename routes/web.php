@@ -35,6 +35,7 @@ Route::get('/training', [LandingController::class, 'getTraining'])->name('traini
 Route::get('/contact-us', [LandingController::class, 'getContactUs'])->name('contact-us');
 Route::get('/terms-of-service', [LandingController::class, 'getTermsOfService'])->name('terms-of-service');
 Route::get('/privacy-policy', [LandingController::class, 'getPrivacyPolicy'])->name('privacy-policy');
+Route::get('/about-us', [LandingController::class, 'getAboutUs'])->name('about-us');
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 

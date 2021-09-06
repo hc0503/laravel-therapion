@@ -87,4 +87,9 @@ class LandingController extends Controller
         $pageTitle = 'Privacy Policy';
         return view('landing.privacy-policy', compact('pageTitle'));
     }
+    public function getAboutUs()
+    {
+        $pageTitle = 'About Us';
+        return view('landing.about-us', compact('pageTitle'));
+    }
 }

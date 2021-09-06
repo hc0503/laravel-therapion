@@ -1,7 +1,7 @@
 @extends('layouts.landing')
 @section('content')
 <!--Page Title-->
-<section class="page-title centred" style="background-image: url({{ asset('/assets/images/background/page-title-4.jpg') }});">
+<section class="page-title centred" style="background-image: url({{ asset('/assets/images/background/page-title.jpg') }});">
 	<div class="container">
 		<div class="content-box">
 			<h1>{{ $pageTitle }}</h1>
@@ -90,7 +90,7 @@
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-12 col-sm-12 image-column">
-									<figure class="image-box"><img src="images/resource/about-4.jpg" alt=""></figure>
+									<figure class="image-box"><img src="{{ asset('assets/images/resource/about-4.jpg') }}" alt=""></figure>
 								</div>
 							</div>
 						</div>
@@ -129,10 +129,10 @@
 								<h3>My Certifications</h3>
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 image-column">
-										<figure class="image-box"><img src="images/resource/certificate-1.jpg" alt=""></figure>
+										<figure class="image-box"><img src="{{ asset('assets/images/resource/certificate-1.jpg') }}" alt=""></figure>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 image-column">
-										<figure class="image-box"><img src="images/resource/certificate-2.jpg" alt=""></figure>
+										<figure class="image-box"><img src="{{ asset('assets/images/resource/certificate-2.jpg') }}" alt=""></figure>
 									</div>
 								</div>
 							</div>
