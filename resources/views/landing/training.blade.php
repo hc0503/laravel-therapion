@@ -14,7 +14,6 @@
 </section>
 <!--End Page Title-->
 
-<!-- faq-page-section -->
 <section class="faq-page-section">
 	<div class="container">
 		<div class="row">
@@ -183,7 +182,6 @@
 		</div>
 	</div>
 </section>
-<!-- faq-page-section  end -->
 @endsection
 
 @push('css')
