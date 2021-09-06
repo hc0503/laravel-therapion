@@ -72,4 +72,9 @@ class LandingController extends Controller
         $pageTitle = 'Training';
         return view('landing.training', compact('pageTitle'));
     }
+    public function getContactUs()
+    {
+        $pageTitle = 'Contact Us';
+        return view('landing.contact-us', compact('pageTitle'));
+    }
 }
