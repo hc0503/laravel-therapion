@@ -19,66 +19,99 @@
 	<div class="container">
 		<div class="sec-title">
 			<div class="title">pricing table</div>
-			<h1>Choose Your Plan</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim ad<br />minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip commodo.</p>
+			<h1>Fees and Costs</h1>
+			<br/>
+			<p>This is our list of fees and costs for individuals. Choose a single session or enjoy one of our affordable 4-session packages.</p>
 		</div>
+
+							<div class="list-content">
+							<h3>SINGLE SESSIONS FOR INDIVIDUALS</h3>
+								<br/>
+								<ul class="list">
+									<li>E-mail counseling: 25 USD</li>
+									<li>Chat counseling (30 min): 40 USD</li>
+									<li>Videoconference counseling (45 min): 60 USD</li>
+									<li>Phone* counseling (45 min): 60 USD</li>
+								</ul>
+							</div>
+
+							 
+<br />
+
 		<div class="row">
 				<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
 					<div class="pricing-table">
 						<div class="table-header">
-							<span>Basic Plan</span>
-							<h1>$39.75 <span>/ mo</span></h1>
+							<span>Program One</span>
+							<h1>$153.00 <span></span></h1>
 						</div>
 						<div class="table-content">
 							<ul>
 								<li>1 User</li>
-								<li>Competitive analysis</li>
-								<li>Monthly management</li>
-								<li>Marketing strategy</li>
-								<li>Single Project</li>
+								<li>Four private sessions with your counselor</li>
+								<li>Includes 2 x e-mail + 2 x videoconference sessions</li>
+								<li>Estimated duration: 4 weeks</li>
+								<li>The price includes a 10% discount</li>
 							</ul>
 						</div>
-						<div class="table-footer"><a href="#">Select A Plan</a></div>
+						<div class="table-footer"><a href="#">Select A Program</a></div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
 					<div class="pricing-table">
 						<div class="table-header">
-							<span>Standard Plan</span>
-							<h1>$69.75 <span>/ mo</span></h1>
+							<span>Program Two</span>
+							<h1>$180.00 <span></span></h1>
 						</div>
 						<div class="table-content">
 							<ul>
 								<li>1 User</li>
-								<li>Competitive analysis</li>
-								<li>Monthly management</li>
-								<li>Marketing strategy</li>
-								<li>Single Project</li>
+								<li>Four private sessions with your counselor</li>
+								<li>Includes 2 x chat + 2 x videoconference sessions</li>
+								<li>Estimated duration: 4 weeks</li>
+								<li>The price includes a 10% discount</li>
 							</ul>
 						</div>
-						<div class="table-footer"><a href="#">Select A Plan</a></div>
+						<div class="table-footer"><a href="#">Select A Program</a></div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
 					<div class="pricing-table">
 						<div class="table-header">
-							<span>Premium Plan</span>
-							<h1>$99.75 <span>/ mo</span></h1>
+							<span>Program Three</span>
+							<h1>$216.00 <span></span></h1>
 						</div>
 						<div class="table-content">
 							<ul>
-								<li>1 User</li>
-								<li>Competitive analysis</li>
-								<li>Monthly management</li>
-								<li>Marketing strategy</li>
-								<li>Single Project</li>
+							    <li>1 User</li>
+								<li>Four private sessions with your counselor</li>
+								<li>Includes 4 x videoconference sessions</li>
+								<li>Estimated duration: 4 weeks</li>
+								<li>The price includes a 10% discount</li>
 							</ul>
 						</div>
-						<div class="table-footer"><a href="#">Select A Plan</a></div>
+						<div class="table-footer"><a href="#">Select A Program</a></div>				
 					</div>
 				</div>
 		</div>
 	</div>
+
+	<br/>
+
+	<h3>Payment Options</h3>
+<br/>
+<p>
+Note that the above listed fees are in dollars. However, you can pay in another currency (EUR, GBP) if you prefer. 
+  </p>
+  <p>
+All sessions require prepayment. The system automatically displays the payment options after you have sent your booking.
+ </p>
+ <p>
+ *Phone counseling: Your counselor will call you. The fee includes the outgoing call from him/her to you.
+</p>
+  <p>
+We accept all major debit and credit cards via Stripe. To use PayPal or international bank transfers, please visit this page / link.	
+ </p>
 </section>
 <!-- pricing-section end -->
 @endsection

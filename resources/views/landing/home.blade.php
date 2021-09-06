@@ -375,6 +375,21 @@
 									</div>
 								</div>
 							</li>
+							<li class="accordion block">
+								<div class="acc-btn">
+									<div class="icon-outer"><i class="flaticon-add-1"></i></div>
+									<h5>What is Therapion?</h5>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Therapion is a leading online therapy website.
+											We've been providing mental health care services all over the world for over ten years.
+										Today our counseling services are available in 15 different languages and we are present on all continents.
+											</div>
+									</div>
+								</div>
+							</li>
+
 						</ul>
 					</div>
 				</div>

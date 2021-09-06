@@ -12,11 +12,10 @@
 										alt=""></a></figure>
 							<div class="widget-content">
 								<div class="text">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-										nisi.</p>
+									<p>Therapion is a leading provider of online mental health care and counseling services.
+										We promote positive change in individuals, couples, families and communities.</p>
 								</div>
-								<div class="btn-box"><a href="contact.html" class="theme-btn">Contact Me</a></div>
+								<div class="btn-box"><a href="contact.html" class="theme-btn">Contact Us</a></div>
 							</div>
 						</div>
 					</div>
@@ -36,13 +35,13 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 footer-column">
 						<div class="contact-widget footer-widget">
-							<h3 class="widget-title">Contact Me</h3>
+							<h3 class="widget-title">Contact Us</h3>
 							<div class="widget-content">
-								<div class="text">Lorem ipsum dolor amet consectetur adipisicing elit sed do tempor.</div>
+								<div class="text">We are always open</div>
 								<ul class="info-list">
-									<li>Flat 20, Reynolds Neck, North Hele naville, FV77 8WS</li>
-									<li><a href="tel:+2(305)587-3407">+2(305) 587-3407</a></li>
-									<li><a href="mailto:info@example.com">info@example.com</a></li>
+							    	<li><a href="tel: + 358 9 2316 4346">+ 358 9 2316 43462</a></li>
+									<li><a href="Skype: therapion">Skype: therapion</a></li>
+									<li><a href="mailto:info@example.com">info@therapion.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -55,7 +54,7 @@
 		<div class="container">
 			<div class="clearfix">
 				<div class="left-content pull-left">
-					<div class="copyright"><a href="#">Morriston</a> &copy; 2019 All Right Reserved</div>
+					<div class="copyright"><a href="#">Therapion Consulting</a> &copy; 2021 All Right Reserved</div>
 				</div>
 				<div class="right-content pull-right">
 					<ul class="footer-nav">
@@ -63,10 +62,9 @@
 						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 					<ul class="footer-social">
-						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
 						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>

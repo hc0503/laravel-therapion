@@ -2,12 +2,12 @@
 <header class="main-header">
     <div class="header-top clearfix">
         <div class="top-left pull-left">
-            <div class="text">Counseling and psychotherapy for individuals, couples and families.</div>
+            <div class="text">Online therapy and counseling for individuals, couples and families.</div>
         </div>
         <div class="top-right pull-right">
             <ul class="topbar-info">
-                <li><i class="far fa-clock"></i>Mon - Sat  9.00 - 18.00</li>
-                <li><i class="fas fa-phone"></i><a href="tel:(251)235-3256">(251) 235-3256</a></li>
+                <li><i class="far fa-clock"></i>We are always open</li>
+                <li><i class="fas fa-phone"></i><a href="tel:+ 358 9 2316 43462">+ 358 9 2316 43462</a></li>
             </ul>
         </div>
     </div>
