@@ -14,12 +14,12 @@ class LandingController extends Controller
     {
 
     }
-    public function home()
+    public function getHome()
     {
         $pageTitle = 'Home';
         return view('landing.home', compact('pageTitle'));
     }
-    public function booking()
+    public function getBooking()
     {
         $pageTitle = 'Appointment Scheduling and Booking';
         $locale = session()->get('locale') ?? 'en';
@@ -27,49 +27,69 @@ class LandingController extends Controller
 
         return view('landing.booking', compact('pageTitle', 'psychologists'));
     }
-    public function services()
+    public function getServices()
     {
         $pageTitle = 'Services All';
 
         return view('landing.services.all', compact('pageTitle'));
     }
-    public function individuals()
+    public function getIndividuals()
     {
         $pageTitle = 'Individual psychotherapy and counseling';
 
         return view('landing.services.individuals', compact('pageTitle'));
     }
-    public function couplesAndFamilies()
+    public function getCouplesAndFamilies()
     {
         $pageTitle = 'Couples and families';
 
         return view('landing.services.couples-and-families', compact('pageTitle'));
     }
-    public function communities()
+    public function getCommunities()
     {
         $pageTitle = 'Community services';
 
         return view('landing.services.communities', compact('pageTitle'));
     }
-    public function startups()
+    public function getStartups()
     {
         $pageTitle = 'Mental health for startups';
 
         return view('landing.services.startups', compact('pageTitle'));
     }
-    public function feeCost()
+    public function getFeeCost()
     {
         $pageTitle = 'Fees and Costs';
         return view('landing.fee-cost', compact('pageTitle'));
     }
-    public function jobs()
+    public function getJobs()
     {
         $pageTitle = 'Jobs';
         return view('landing.jobs', compact('pageTitle'));
     }
-    public function faq()
+    public function getTraining()
     {
-        $pageTitle = 'FAQ';
-        return view('landing.faq', compact('pageTitle'));
+        $pageTitle = 'Training';
+        return view('landing.training', compact('pageTitle'));
+    }
+    public function getContactUs()
+    {
+        $pageTitle = 'Contact Us';
+        return view('landing.contact-us', compact('pageTitle'));
+    }
+    public function getTermsOfService()
+    {
+        $pageTitle = 'Terms of Service';
+        return view('landing.terms-of-service', compact('pageTitle'));
+    }
+    public function getPrivacyPolicy()
+    {
+        $pageTitle = 'Privacy Policy';
+        return view('landing.privacy-policy', compact('pageTitle'));
+    }
+    public function getAboutUs()
+    {
+        $pageTitle = 'About Us';
+        return view('landing.about-us', compact('pageTitle'));
     }
 }

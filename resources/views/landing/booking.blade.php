@@ -15,7 +15,6 @@
 </section>
 <!--End Page Title-->
 
-<!-- team-section -->
 <section class="team-section">
 	<div class="container">
 		<div class="row">

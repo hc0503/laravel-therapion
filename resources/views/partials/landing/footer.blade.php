@@ -8,14 +8,14 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 footer-column">
 						<div class="logo-widget footer-widget">
-							<figure class="footer-logo"><a href="index.html"><img src="{{ asset('assets/images/footer-logo.png') }}"
+							<figure class="footer-logo"><a href="{{ route('home') }}"><img src="{{ asset('assets/images/footer-logo.png') }}"
 										alt=""></a></figure>
 							<div class="widget-content">
 								<div class="text">
 									<p>Therapion is a leading provider of online mental health care and counseling services.
 										We promote positive change in individuals, couples, families and communities.</p>
 								</div>
-								<div class="btn-box"><a href="contact.html" class="theme-btn">Contact Us</a></div>
+								<div class="btn-box"><a href="{{ route('contact-us') }}" class="theme-btn">Contact Us</a></div>
 							</div>
 						</div>
 					</div>
@@ -25,10 +25,10 @@
 							<div class="widget-content">
 								<ul>
 									<li><a href="#">Company History</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="{{ route('about-us') }}">About Us</a></li>
+									<li><a href="{{ route('contact-us') }}">Contact Us</a></li>
+									<li><a href="{{ route('services.all') }}">Services</a></li>
+									<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
 								</ul>
 							</div>
 						</div>
@@ -54,12 +54,12 @@
 		<div class="container">
 			<div class="clearfix">
 				<div class="left-content pull-left">
-					<div class="copyright"><a href="#">Therapion Consulting</a> &copy; 2021 All Right Reserved</div>
+					<div class="copyright"><a href="{{ route('home') }}">Therapion Consulting</a> &copy; 2021 All Right Reserved</div>
 				</div>
 				<div class="right-content pull-right">
 					<ul class="footer-nav">
-						<li><a href="#">Terms of Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="{{ route('terms-of-service') }}">Terms of Service</a></li>
+						<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
 					</ul>
 					<ul class="footer-social">
 						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

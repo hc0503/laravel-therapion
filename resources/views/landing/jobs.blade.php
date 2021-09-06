@@ -14,7 +14,6 @@
 </section>
 <!--End Page Title-->
 
-<!-- career-page-section -->
 <section class="career-page-section">
 	<div class="container">
 		<div class="row">
@@ -145,7 +144,6 @@
 		</div>
 	</div>
 </section>
-<!-- career-page-section  end -->
 @endsection
 
 @push('css')
