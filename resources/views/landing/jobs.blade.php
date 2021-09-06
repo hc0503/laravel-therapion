@@ -22,106 +22,101 @@
 				<div class="career-content-box">
 					<div class="inner-content">
 						<div class="career">
-							<h1>Career</h1>
+							<h1>Career Possibilities</h1>
 							<div class="italic-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
 							<div class="text">
 								<p>I will provide a safe, non-judgmental environment where you can work toward your own personal empowerment to overcome your struggles.I have experience working with those who struggle with Substance Abuse, Eating Disorders, Anxiety, Depression, and Trauma. My primary therapeutic modalities include.Cognitive Behavioral Therapy and Acceptance and Commitment Therapy. However, I work collaboratively with my clients to provide the most effective interventions possible based on their needs.</p>
 							</div>
 						</div>
 						<div class="category">
-							<h3>Popular Category</h3>
+							<h3>Popular Categories</h3>
 							<div class="inner-box clearfix">
 								<div class="single-item">
-									<div class="icon-box"><i class="flaticon-work"></i></div>
-									<h4><a href="#">Accounting</a></h4>
-									<span>(25)</span>
+									<div class="icon-box"><i class="flaticon-support"></i></div>
+									<h4><a href="#">Online Counseling and Psychotherapy</a></h4>
+									<span>Various open positions</span>
 								</div>
 								<div class="single-item">
 									<div class="icon-box"><i class="flaticon-graphic"></i></div>
-									<h4><a href="#">Finance</a></h4>
-									<span>(10)</span>
-								</div>
-								<div class="single-item">
-									<div class="icon-box"><i class="flaticon-pen"></i></div>
-									<h4><a href="#">Design & Creative</a></h4>
-									<span>(40)</span>
+									<h4><a href="#">Team Management</a></h4>
+									<span>Various open positions</span>
 								</div>
 								<div class="single-item">
 									<div class="icon-box"><i class="flaticon-cube"></i></div>
 									<h4><a href="#">Marketing & Sales</a></h4>
-									<span>(37)</span>
-								</div>
-								<div class="single-item">
-									<div class="icon-box"><i class="flaticon-support"></i></div>
-									<h4><a href="#">Digital Media</a></h4>
-									<span>(52)</span>
-								</div>
-								<div class="single-item">
-									<div class="icon-box"><i class="flaticon-smart"></i></div>
-									<h4><a href="#">Technology</a></h4>
-									<span>(27)</span>
+									<span>Two different open positions</span>
 								</div>
 							</div>
 						</div>
 						<div class="positions">
 							<h3>Available Positions</h3>
 							<div class="text">
-								<p>I support people in finding their strengths, building on them, and finding balance and contentment in the emotional, relational, physical, cognitive, and spiritual components of their life. I seek to create a safe and respectful environment for individuals and couples to nurture growth and healing.</p>
+								<p>Here you'll find a detailed description of all currently open jobs with us.</p>
 							</div>
 							<div class="inner-box">
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
 										<div class="single-item">
-											<h3 class="inner-title"><span>01.</span> Marketing Executive</h3>
-											<div class="text">I uphold the autonomy within those seeking help. I gently challenge them to courageously face life’s invariable disappointments.</div>
-											<h4>Responsibilities</h4>
+											<h3 class="inner-title"><span>01.</span> Counselor, Psychologist, or Psychotherapist</h3>
+											<div class="text">If you are a qualified mental health professional looking for an independent and flexible part-time position, this job is for you!</div>
+
+											<h4>Job description</h4>
 											<ul class="list">
-												<li>Must have to 5 years experience of this field</li>
-												<li>Have sound knowledge of commercial activities.</li>
-												<li>Good verbal and written communication skills.</li>
-												<li>Leadership and problem-solving abilities.</li>
+											    <li>Category: Online Counseling and Psychotherapy</li>
+												<li>Duties: Provide online counseling sessions to private clients
+												<li>Master's degree in counseling, clinical psychology, psychotherapy, or the equivalent</li>
+												<li>Good Internet skills</li>
+												<li>Good verbal and written communication skills</li>
+												<li>Home-based part-time & online work</li>
 											</ul>
 											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
 										<div class="single-item">
-											<h3 class="inner-title"><span>02.</span> Web Developer</h3>
-											<div class="text">I uphold the autonomy within those seeking help. I gently challenge them to courageously face life’s invariable disappointments.</div>
-											<h4>Responsibilities</h4>
+											<h3 class="inner-title"><span>02.</span> Team Leader</h3>
+											<div class="text">Are you already part of our counseling team? Would you like to make your team grow? This job is for you!</div>
+											<h4>Job description</h4>
 											<ul class="list">
-												<li>Must have to 5 years experience of this field</li>
-												<li>Have sound knowledge of commercial activities.</li>
-												<li>Good verbal and written communication skills.</li>
-												<li>Leadership and problem-solving abilities.</li>
+												<li>Category: Team Management</li>
+												<li>Duties: Assist the manager with all tasks related to team management 
+												<li>Capacity to create new content (texts or videos) </li>
+												<li>Have sound knowledge of team management</li>
+												<li>Good verbal and written communication skills</li>
+												<li>Leadership and problem-solving abilities</li>
 											</ul>
 											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
 										<div class="single-item">
-											<h3 class="inner-title"><span>03.</span> Nutrition Advisor</h3>
-											<div class="text">I uphold the autonomy within those seeking help. I gently challenge them to courageously face life’s invariable disappointments.</div>
-											<h4>Responsibilities</h4>
+											<h3 class="inner-title"><span>03.</span> Project Manager: Community Services</h3>
+											<div class="text">Work as a liaison officer between Therapion and different type of communities such as civil associations, NGOs and
+												other type of organizations. Create tailored mental health plans for communities. </div>
+											<h4>Job descriptions</h4>
 											<ul class="list">
-												<li>Must have to 5 years experience of this field</li>
-												<li>Have sound knowledge of commercial activities.</li>
-												<li>Good verbal and written communication skills.</li>
-												<li>Leadership and problem-solving abilities.</li>
+											<li>Category: Sales & Marketingy</li>
+											<li>Duties: Target selected communities and generate new business<Ili> 
+												<li>Must have 2-5 years experience in sales and marketing and community work</li>
+												<li>Have sound knowledge of commercial activities</li>
+												<li>Good verbal and written communication skills</li>
+												<li>Leadership and problem-solving abilities</li>
 											</ul>
 											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
 										<div class="single-item">
-											<h3 class="inner-title"><span>04.</span> Project Manager</h3>
-											<div class="text">I uphold the autonomy within those seeking help. I gently challenge them to courageously face life’s invariable disappointments.</div>
-											<h4>Responsibilities</h4>
+											<h3 class="inner-title"><span>04.</span> Project Manager: Startup Mental Health</h3>
+											<div class="text">Work as a liaison officer between Therapion and different type of startups. Create tailored mental health plans and generate sales.</div>
+											<h4>Job description</h4>
 											<ul class="list">
-												<li>Must have to 5 years experience of this field</li>
-												<li>Have sound knowledge of commercial activities.</li>
-												<li>Good verbal and written communication skills.</li>
-												<li>Leadership and problem-solving abilities.</li>
+											   <li>Category: Sales & Marketing</li>
+											   <li>Duties: Target selected startups and generate new business<Ili> 
+											   <li>Must have 2-5 years experience in sales and marketing</li>
+												<li>Have sound knowledge of commercial activities</li>
+												<li>Good verbal and written communication skills</li>
+												<li>Leadership and problem-solving abilities</li>
 											</ul>
 											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
 										</div>
