@@ -1,0 +1,78 @@
+a.link {
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #3D5B65;
+}
+
+a.link.small {
+  font-size: 14px;
+}
+
+ul.simple-list li::before {
+  color: #488A30;
+  content: "\002E";   /**\f111**/
+  font-size: 40px;
+  position: relative;
+  top: -3px;
+  font-family: FontAwesome;
+  padding-right: 10px;
+}
+
+.scroll-btn{       /**.subscribe-section **/
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: -29px;
+  z-index: 99;
+}
+
+.scroll-btn i{     /**.subscribe-section **/
+  position: relative;
+  display: inline-block;
+  height: 57px;
+  width: 57px;
+  line-height: 57px;
+  background: #6ecc84;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 2s ease;
+  -webkit-animation: pulse-2 3s infinite;
+  -o-animation: pulse-2 3s infinite;
+  animation: pulse-2 3s infinite;
+  z-index: 99;
+}
+
+.profile-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  background: #6ecc84;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 500ms ease;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: inherit;
+  padding-right: inherit;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+.profile-btn:hover{
+  background: #000;
+  color: #ffffff;
+}

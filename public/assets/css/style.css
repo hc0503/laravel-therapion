@@ -5520,3 +5520,9 @@ img{
 .contact-section .contact-form-area .form-group .theme-btn{
   padding: 17px 44px;
 }
+
+/*sandokan*/
+.w-12 {
+  width: 24px;
+  height: 12px;
+}
