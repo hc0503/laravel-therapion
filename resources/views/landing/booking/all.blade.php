@@ -2,13 +2,13 @@
 @section('content')
 
 <!--Page Title-->
-<section class="page-title centred" style="background-image: url({{ asset('/assets/images/background/page-title-2.jpg') }});">
+<section class="page-title centred" style="background-image: url({{ asset('/assets/images/background/page-title-3.jpg') }});">
 	<div class="container">
 		 <div class="content-box">
-			  <h1>Appointment Scheduling and Booking</h1>
+			  <h1>{{ $pageTitle }}</h1>
 			  <ul class="bread-crumb clearfix">
 					<li><a href="{{ route('home') }}">Home</a></li>
-					<li>Book</li>
+					<li>{{ $pageTitle }}</li>
 			  </ul>
 		 </div>
 	</div>

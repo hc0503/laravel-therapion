@@ -31,7 +31,7 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="{{ \Route::currentRouteNamed('home') ? 'current' : '' }}"><a href="{{ route('home') }}">Home</a></li> 
-                                    <li class="{{ \Route::currentRouteNamed('booking') ? 'current' : '' }}"><a href="{{ route('booking') }}">Book a Session</a></li>
+                                    <li class="{{ \Route::currentRouteNamed('booking.all') ? 'current' : '' }}"><a href="{{ route('booking.all') }}">Book a Session</a></li>
                                     <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
                                     <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
                                     <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
@@ -80,7 +80,7 @@
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
                             <li class="{{ \Route::currentRouteNamed('home') ? 'current' : '' }}"><a href="{{ route('home') }}">Home</a></li> 
-                            <li class="{{ \Route::currentRouteNamed('booking') ? 'current' : '' }}"><a href="{{ route('booking') }}">Book a Session</a></li>
+                            <li class="{{ \Route::currentRouteNamed('booking.all') ? 'current' : '' }}"><a href="{{ route('booking.all') }}">Book a Session</a></li>
                             <li class="{{ \Route::currentRouteNamed('fee-cost') ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
                             <li class="{{ \Route::currentRouteNamed('services.all') ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
                             <li class="{{ \Route::currentRouteNamed('jobs') ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>

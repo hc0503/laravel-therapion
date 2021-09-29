@@ -28,7 +28,11 @@ Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
 	Route::get('/startups', [LandingController::class, 'getStartups'])->name('startups');
 });
 
-Route::get('/booking', [LandingController::class, 'getBooking'])->name('booking');
+Route::group(['prefix' => 'booking', 'as' => 'booking.'], function() {
+	Route::get('/', [LandingController::class, 'getBooking'])->name('all');
+	Route::get('/{psychologist}/details', [LandingController::class, 'getDetails'])->name('details');
+});
+
 Route::get('/fee-cost', [LandingController::class, 'getFeeCost'])->name('fee-cost');
 Route::get('/jobs', [LandingController::class, 'getJobs'])->name('jobs');
 Route::get('/training', [LandingController::class, 'getTraining'])->name('training');

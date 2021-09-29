@@ -25,7 +25,12 @@ class LandingController extends Controller
         $locale = session()->get('locale') ?? 'en';
         $psychologists = Psychologist::query()->where('country_code', $locale)->get();
 
-        return view('landing.booking', compact('pageTitle', 'psychologists'));
+        return view('landing.booking.all', compact('pageTitle', 'psychologists'));
+    }
+    public function getDetails(Psychologist $psychologist)
+    {
+        $pageTitle = 'Booking Details';
+        return view('landing.booking.details', compact('pageTitle', 'psychologist'));
     }
     public function getServices()
     {
