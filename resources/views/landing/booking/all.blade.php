@@ -28,11 +28,11 @@
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-									<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a href="mailto:{{ $psychologist->email }}"><i class="fab fa-google-plus-g"></i></a></li>
 								</ul>
 							</figure>
 							<div class="lower-content">
-								<h3><a href="#">{{ $psychologist->name }}</a></h3>
+								<h3><a href="{{ route('booking.details', $psychologist->id) }}">{{ $psychologist->name }}</a></h3>
 								<span class="designation">{{ $psychologist->title }}</span>
 								<div class="text">{{ $psychologist->about }}</div>
 							</div>

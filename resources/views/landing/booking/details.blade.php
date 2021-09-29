@@ -21,13 +21,13 @@
 			<div class="inner-box">
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12 image-column">
-						<figure class="image-box"><img src="{{ asset('/assets/images/resource/team-2.jpg') }}" alt=""></figure>
+						<figure class="image-box"><img src="{{ asset('storage/profiles/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}"></figure>
 					</div>
 					<div class="col-lg-7 col-md-12 col-sm-12 content-column">
 						<div class="content-box">
-							<h1>Dr.Alfonso Aguilar</h1>
-							<span class="designation">Psychologist, PhD</span>
-							<div class="text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
+							<h1>{{ $psychologist->name }}</h1>
+							<span class="designation">{{ $psychologist->title }}</span>
+							<div class="text">{{ $psychologist->about }}</div>
 						</div>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 			<div class="content-box pull-right">
 				<div class="call"><i class="fas fa-phone"></i><a href="tel:(251)235-3256">(251) 235-3256</a></div>
 				<ul class="social-style-one">
-					<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href="mailto:{{ $psychologist->email }}"><i class="fab fa-google-plus-g"></i></a></li>
 					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 					<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
 					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
