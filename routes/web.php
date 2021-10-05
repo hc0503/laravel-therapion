@@ -48,3 +48,7 @@ Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologi
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
 Auth::routes();
+
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+	Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
