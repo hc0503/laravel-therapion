@@ -5,7 +5,7 @@
 			<div class="col-lg-6 col-md-12 col-sm-12 left-column">
 				<div class="left-content">
 					<h2>Schedule Your Appointment Today!</h2>
-					<a href="#" class="theme-btn">Get Appointment</a>
+					<a href="booking" class="theme-btn">Get an Appointment</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12 right-column">

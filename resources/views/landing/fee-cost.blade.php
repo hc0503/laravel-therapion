@@ -104,8 +104,11 @@
 		*Phone counseling: Your counselor will call you. The fee includes the outgoing call from him/her to you.
 	</p>
   	<p>
-		We accept all major debit and credit cards via Stripe. To use PayPal or international bank transfers, please visit this page / link.	
+		We accept all major debit and credit cards via Stripe. To use PayPal or international bank transfers, 
+		take a look at our additional payment options.		
  	</p>
+	 <div class="btn-box"><a href="#" class="theme-btn-two">Additional Payment Options</a></div>
+
 </section>
 @endsection
 

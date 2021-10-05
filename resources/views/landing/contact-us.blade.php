@@ -19,37 +19,49 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-sm-12 info-column">
 				<div class="contact-info">
-					<h1>Contact Info</h1>
-					<div class="bold-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
+					<h1>Customer Services</h1>
+					<div class="bold-text">Our customer service center is confidential and free of charge. <br />
+						                   We'll be happy to tell you more about our services.</div>
 					<div class="inner-box">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12 column">
 								<div class="single-item">
-									<h4>Los Angeles</h4>
-									<div class="text">77408 Satterfield Motorway Suite 469 New Antonetta, BC K3L6P6</div>
+									<h4>Helsinki</h4>
+									<div class="text">
+										<a href="tel:(+358) 9 2316 4346"> (+358) 9 2316 4346</a>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 column">
 								<div class="single-item">
 									<h4>Email</h4>
 									<div class="text">
-										<a href="mailto:hello@example.com">hello@example.com</a><br />
-										<a href="mailto:support@example.com">support@example.com</a>
+										<a href="mailto:info@therapion.com">info@therapion.com</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 column">
 								<div class="single-item">
-									<h4>San Francisco</h4>
-									<div class="text">Bridges Counselling, 1 Blackwood Pl, Oatlands</div>
+									<h4>Madrid</h4>
+									<div class="text">
+										<a href="tel: (+34) 646 538762"> (+34) 646 538762</a>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 column">
 								<div class="single-item">
-									<h4>Los Angeles</h4>
+									<h4>Skype</h4>
 									<div class="text">
-										<a href="tel:(+081)3256659487">(+081) 325 665 9487</a><br />
-										<a href="tel:(+081)3256659489">(+081) 325 665 9489</a>
+										<a href="Skype:therapion">therapion</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 column">
+								<div class="single-item">
+									<h4>Mexico City</h4>
+									<div class="text">
+										<a href="tel: (+52) 55 27682353"> (+52) 55 27682353</a>
 									</div>
 								</div>
 							</div>
@@ -74,8 +86,8 @@
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12 form-column">
 				<div class="contact-form-area">
-					<h1>Drop a Line</h1>
-					<div class="text">Excepteur sint occaecat cupidatat proident sunt culpa officia desernt mollitanim est laborum.</div>
+					<h1>Send Us Email</h1>
+					<div class="text">You can send us email using this form.</div>
 					<form method="post" action="sendemail.php" id="contact-form"> 
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group">
