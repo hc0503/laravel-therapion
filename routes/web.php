@@ -40,6 +40,8 @@ Route::get('/contact-us', [LandingController::class, 'getContactUs'])->name('con
 Route::get('/terms-of-service', [LandingController::class, 'getTermsOfService'])->name('terms-of-service');
 Route::get('/privacy-policy', [LandingController::class, 'getPrivacyPolicy'])->name('privacy-policy');
 Route::get('/about-us', [LandingController::class, 'getAboutUs'])->name('about-us');
+Route::get('/friends', [LandingController::class, 'getFriends'])->name('friends');
+
 
 Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
 
