@@ -19,7 +19,6 @@ use App\Http\Controllers\DBMigrateController;
 
 Route::redirect('/', '/home');
 Route::get('/home', [LandingController::class, 'getHome'])->name('home');
-
 Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
 	Route::get('/', [LandingController::class, 'getServices'])->name('all');
 	Route::get('/individuals', [LandingController::class, 'getIndividuals'])->name('individuals');
@@ -27,12 +26,10 @@ Route::group(['prefix' => 'services', 'as' => 'services.'], function() {
 	Route::get('/communities', [LandingController::class, 'getCommunities'])->name('communities');
 	Route::get('/startups', [LandingController::class, 'getStartups'])->name('startups');
 });
-
 Route::group(['prefix' => 'booking', 'as' => 'booking.'], function() {
 	Route::get('/', [LandingController::class, 'getBooking'])->name('all');
 	Route::get('/{psychologist}/details', [LandingController::class, 'getDetails'])->name('details');
 });
-
 Route::get('/fee-cost', [LandingController::class, 'getFeeCost'])->name('fee-cost');
 Route::get('/jobs', [LandingController::class, 'getJobs'])->name('jobs');
 Route::get('/training', [LandingController::class, 'getTraining'])->name('training');
@@ -42,13 +39,15 @@ Route::get('/privacy-policy', [LandingController::class, 'getPrivacyPolicy'])->n
 Route::get('/about-us', [LandingController::class, 'getAboutUs'])->name('about-us');
 Route::get('/friends', [LandingController::class, 'getFriends'])->name('friends');
 
-
-Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+	Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
 
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
 Auth::routes();
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
-	Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-});
+
+
+
+Route::get('/db-migrate/psychologists', [DBMigrateController::class, 'psychologist']);
