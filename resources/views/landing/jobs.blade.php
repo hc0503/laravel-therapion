@@ -22,9 +22,19 @@
 					<div class="inner-content">
 						<div class="career">
 							<h1>Career Possibilities</h1>
-							<div class="italic-text">I believe you have the power to make the changes you seek. There are times in our lives when we feel disempowered and disconnected from ourselves and others. I am here to walk with you on your journey towards healing.</div>
+							<div class="italic-text">
+				    		Would you like to be part of our professional community? 
+                            Are you an independent mental health professional who thrives to learn something new?
+                            Is helping others your passion? Do you enjoy a modern and international lifestyle where differences 
+                            between persons mean potential for the team?</div>
+							
 							<div class="text">
-								<p>I will provide a safe, non-judgmental environment where you can work toward your own personal empowerment to overcome your struggles.I have experience working with those who struggle with Substance Abuse, Eating Disorders, Anxiety, Depression, and Trauma. My primary therapeutic modalities include.Cognitive Behavioral Therapy and Acceptance and Commitment Therapy. However, I work collaboratively with my clients to provide the most effective interventions possible based on their needs.</p>
+								<p>
+						    If you identify yourself with these questions, please read further. 
+							Below is a detailed description of our currently open jobs. 
+						    There are jobs in  online counseling and psychotherapy, but also jobs in sales, marketing and management.
+                            Send us your application today. We look forward to hearing from you!
+								</p>
 							</div>
 						</div>
 						<div class="category">
@@ -32,7 +42,7 @@
 							<div class="inner-box clearfix">
 								<div class="single-item">
 									<div class="icon-box"><i class="flaticon-support"></i></div>
-									<h4><a href="#">Online Counseling and Psychotherapy</a></h4>
+									<h4><a href="#">Online Counseling</a></h4>
 									<span>Various open positions</span>
 								</div>
 								<div class="single-item">
@@ -50,7 +60,7 @@
 						<div class="positions">
 							<h3>Available Positions</h3>
 							<div class="text">
-								<p>Here you'll find a detailed description of all currently open jobs with us.</p>
+								<p>Here you'll find a detailed description of the currently open jobs with us.</p>
 							</div>
 							<div class="inner-box">
 								<div class="row">
@@ -61,30 +71,31 @@
 
 											<h4>Job description</h4>
 											<ul class="list">
-											    <li>Category: Online Counseling and Psychotherapy</li>
+											    <li>Category: Online Counseling, Team ANGLO</li>
 												<li>Duties: Provide online counseling sessions to private clients
 												<li>Master's degree in counseling, clinical psychology, psychotherapy, or the equivalent</li>
 												<li>Good Internet skills</li>
 												<li>Good verbal and written communication skills</li>
 												<li>Home-based part-time & online work</li>
 											</ul>
-											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+											
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
 										<div class="single-item">
 											<h3 class="inner-title"><span>02.</span> Team Leader</h3>
-											<div class="text">Are you already part of our counseling team? Would you like to make your team grow? This job is for you!</div>
+											<div class="text">Are you already part of our counseling team? Would you like to make your team grow? 
+												Is leading a team your passion? This job is for you!</div>
 											<h4>Job description</h4>
 											<ul class="list">
-												<li>Category: Team Management</li>
+												<li>Category: Team Management, Team ANGLO</li>
 												<li>Duties: Assist the manager with all tasks related to team management 
 												<li>Capacity to create new content (texts or videos) </li>
-												<li>Have sound knowledge of team management</li>
 												<li>Good verbal and written communication skills</li>
 												<li>Leadership and problem-solving abilities</li>
+												<li>Home-based part-time & online work</li>
 											</ul>
-											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+										
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
@@ -94,14 +105,14 @@
 												other type of organizations. Create tailored mental health plans for communities. </div>
 											<h4>Job descriptions</h4>
 											<ul class="list">
-											<li>Category: Sales & Marketingy</li>
+											<li>Category: Sales & Marketing</li>
 											<li>Duties: Target selected communities and generate new business<Ili> 
 												<li>Must have 2-5 years experience in sales and marketing and community work</li>
 												<li>Have sound knowledge of commercial activities</li>
-												<li>Good verbal and written communication skills</li>
+												<li>Good language and written communication skills</li>
 												<li>Leadership and problem-solving abilities</li>
 											</ul>
-											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+											
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 column">
@@ -114,10 +125,10 @@
 											   <li>Duties: Target selected startups and generate new business<Ili> 
 											   <li>Must have 2-5 years experience in sales and marketing</li>
 												<li>Have sound knowledge of commercial activities</li>
-												<li>Good verbal and written communication skills</li>
+												<li>Good language and written communication skills</li>
 												<li>Leadership and problem-solving abilities</li>
 											</ul>
-											<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+											
 										</div>
 									</div>
 								</div>
@@ -128,15 +139,13 @@
 			</div>
 			<div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
 				<div class="career-sidebar gray-bg">
-					<h2>Job Overview</h2>
-					<div class="text">Excepteur sint occaecat cupidatat pro ident sunt culpa officia desernt mollit</div>
+					<h2>Special Instructions</h2>
+					<div class="text">Would you like to apply for one of our open jobs? Follow these instructions.</div>
 					<ul class="info-list">
-						<li><span>Publist on:</span> April 02, 2019 </li>
-						<li><span>Vacancy:</span> 07</li>
-						<li><span>Employment Status:</span> Full-time</li>
-						<li><span>Experience:</span> 2 to 3 years</li>
-						<li><span>Location:</span> New York City</li>
-						<li><span>Application Deadline:</span> April 15, 2019</li>
+						<li><span>Documents needed:</span> Your resumé and a short application</li>
+						<li><span>Mark you message:</span> Indicate the team and job you're applying for</li>
+						<li><span>Our contact:</span> Use this email (remove the spaces): info @ therapion.com</li>
+						<li><span>Process duration:</span> We process your application within 2-3 weeks and will contact you if interested</li>
 					</ul>
 					<div class="btn-box"><a href="#" class="theme-btn">Apply For The Job</a></div>
 				</div>

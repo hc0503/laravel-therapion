@@ -7,7 +7,7 @@
         <div class="top-right pull-right">
             <ul class="topbar-info">
                 <li><i class="far fa-clock"></i>We are always open</li>
-                <li><i class="fas fa-phone"></i><a href="tel:+ 358 9 2316 43462">+ 358 9 2316 43462</a></li>
+                <li><i class="fas fa-phone"></i><a href="tel:(+358) 9 2316 43462">(+358) 9 2316 43462</a></li>
             </ul>
         </div>
     </div>

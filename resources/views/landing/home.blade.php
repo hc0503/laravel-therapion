@@ -10,7 +10,7 @@
 							<span>Customer Services</span>
 							<div class="text">Our Customer Service Center is ready to assist you at all times.
 							<br />We'll be glad to tell you more about online therapy services.</div>
-							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Contact us</a></div>
+							<div class="btn-box"><a href="contact-us" class="theme-btn-two">Contact Us</a></div>
 						</div>
 					</div>
 			</div>
@@ -22,7 +22,7 @@
 							<div class="text">Be brave, take the first step. Get to us. Here you're not alone.
 			                <br/>Talk to one of our qualified counselors today.
 							</div>
-							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Book a Session</a></div>
+							<div class="btn-box"><a href="booking" class="theme-btn-two">Book a Session</a></div>
 						</div>
 					</div>
 			</div>
@@ -33,7 +33,7 @@
 							<span>Get Help</span>
 							<div class="text">Helping yourself is the best investment you can make. Period.
 							<br/>It's also the best way to help people around you. Start now!</div>
-							<div class="btn-box"><a href="contact.html" class="theme-btn-two">Book a Session</a></div>
+							<div class="btn-box"><a href="booking" class="theme-btn-two">Schedule an Appointment</a></div>
 						</div>
 					</div>
 			</div>
@@ -59,7 +59,7 @@
 							<p>Start today! Talk with a qualified psychologist, therapist or counselor from the comfort of your home or office. It’s easy, safe and affordable.
 							</p>
 						</div>
-						<div class="btn-box"><a href="contact.html" class="theme-btn">Book a Session</a></div>
+						<div class="btn-box"><a href="booking" class="theme-btn">Book a Session</a></div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12 video-column">
@@ -193,7 +193,7 @@
 								<div class="date">24<br /><span>October</span></div>
 								<h3><a href="#">Personal Growth</a></h3>
 								<div class="text">Join this event to talk about personal growth, self exploration and much more.</div>
-								<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+								<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
 					</div>
@@ -206,7 +206,7 @@
 								<div class="date">25<br /><span>October</span></div>
 								<h3><a href="#">Life Changes</a></h3>
 								<div class="text">Join this event to talk about major life changes and how to cope with them.</div>
-								<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+								<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
 					</div>
@@ -219,7 +219,7 @@
 									<div class="date">26<br /><span>October</span></div>
 									<h3><a href="#">Counselor Training</a></h3>
 									<div class="text">Join this free training session to find out more about our online counseling methods.</div>
-									<div class="btn-box"><a href="#" class="theme-btn-two">Read More</a></div>
+									<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 								</div>
 							</div>
 						</div>
@@ -411,8 +411,8 @@
 						<div class="inner-box">
 							<figure class="image-box"><a href="blog-details.html"><img src="{{ asset('/assets/images/resource/news-1.jpg') }}" alt=""></a></figure>
 							<div class="categorie-list">
-								<a href="#">Clinical</a>
-								<a href="#">Psychotherapy</a>
+								<a href="#">Clinical Psychotherapy</a>
+								<a href="#">Life Coaching</a>
 							</div>
 							<div class="lower-content">
 								<ul class="post-info">
@@ -420,7 +420,7 @@
 									<li>Clinical Professional Counselor</li>
 								</ul>
 								<h3><a href="blog-details.html">Life in the time of Covid-19: What has changed and what has not?</a></h3>
-								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
+								<div class="btn-box"><a href="https://onlinetherapyarticles.wordpress.com/" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
 					</div>
@@ -430,8 +430,8 @@
 						<div class="inner-box">
 							<figure class="image-box"><a href="blog-details.html"><img src="{{ asset('/assets/images/resource/news-2.jpg') }}" alt=""></a></figure>
 							<div class="categorie-list">
-								<a href="#">Cognitive-Behavioral</a>
-								<a href="#">Therapy</a>
+								<a href="#">Cognitive-Behavioral Therapy</a>
+								<a href="#">CBT</a>
 							</div>
 							<div class="lower-content">
 								<ul class="post-info">
@@ -439,7 +439,7 @@
 									<li>Integrative Therapist</li>
 								</ul>
 								<h3><a href="blog-details.html">Remote counselling & video-conference based CBT</a></h3>
-								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
+								<div class="btn-box"><a href="https://onlinetherapyarticles.wordpress.com/" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
 					</div>
@@ -458,7 +458,7 @@
 									<li>Psychologist, Therapion CEO</li>
 								</ul>
 								<h3><a href="blog-details.html">Therapion Newsletter tells you the latest news</a></h3>
-								<div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
+								<div class="btn-box"><a href="https://onlinetherapyarticles.wordpress.com/" class="theme-btn-two">Read More</a></div>
 							</div>
 						</div>
 					</div>
