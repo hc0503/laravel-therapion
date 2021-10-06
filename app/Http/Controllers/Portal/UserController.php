@@ -17,7 +17,7 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        $pageTitle = __('admin.users.list');
+        $pageTitle = __('admin.user.list');
 
         if ($request->ajax()) {
             $users = User::all();
@@ -32,7 +32,7 @@ class UserController extends Controller
                         $disabled = 'disabled';
                     else
                         $disabled = '';
-                        
+
                     $btn = '<a href="'. route('admin.users.show', $row->id) .'" data-id="'.$row->id.'" class="btn btn-success btn-sm mb-1 mr-1"><i class="far fa-eye"></i></a>';
 
                     $btn .= '<a href="'. route('admin.users.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
@@ -60,7 +60,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $pageTitle = __('admin.user.create');
+        return view('portal.user.create', compact('pageTitle'));
     }
 
     /**
@@ -71,7 +72,22 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'email', 'unique:users', 'max:255'],
+            'password' => ['required', 'min:8', 'confirmed']
+        ]);
+        $user = User::create($validated);
+        if ($request->exit === 'true')
+            return redirect()
+                ->route('admin.user.index')
+                ->with('status', 'success')
+                ->with('message', __('admin.user.msg.saveSuccess'));
+        else
+            return redirect()
+                ->back()
+                ->with('status', 'success')
+                ->with('message', __('admin.user.msg.saveSuccess'));
     }
 
     /**

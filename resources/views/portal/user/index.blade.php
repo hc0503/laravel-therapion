@@ -27,7 +27,7 @@
 			<div class="card">
 				<div class="card-body">
 					<a href="{{ route('admin.users.create') }}" class="btn waves-effect waves-light btn-secondary">
-						<i class="fas fa-plus"></i> {{ __('admin.users.create') }}
+						<i class="fas fa-plus"></i> {{ __('admin.user.create') }}
 					</a>
 					<div class="table-responsive mt-2">
 						<table id="dataTable" class="datatables-demo table table-striped table-bordered">
@@ -85,8 +85,8 @@
 
 	function deleteUser(userId) {
 		Swal.fire({
-			title: "{{ __('global.swal.delete.title') }}", 
-			text: "{{ __('global.swal.delete.text') }}",
+			title: "{{ __('admin.swal.del.title') }}", 
+			text: "{{ __('admin.swal.del.text') }}",
 			type: 'warning',
 			showCancelButton: true,
 			customClass: {
