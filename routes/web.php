@@ -5,6 +5,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Portal\HomeController;
 use App\Http\Controllers\Portal\UserController;
+use App\Http\Controllers\Portal\CounselorController;
 
 use App\Http\Controllers\DBMigrateController;
 
@@ -41,9 +42,12 @@ Route::get('/privacy-policy', [LandingController::class, 'getPrivacyPolicy'])->n
 Route::get('/about-us', [LandingController::class, 'getAboutUs'])->name('about-us');
 Route::get('/friends', [LandingController::class, 'getFriends'])->name('friends');
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
-	Route::get('/', [HomeController::class, 'index'])->name('home');
-	Route::resource('users', UserController::class);
+Route::middleware(['auth'])->group( function () {
+	Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+		Route::get('/', [HomeController::class, 'index'])->name('home');
+		Route::resource('users', UserController::class);
+		Route::resource('counselors', CounselorController::class);
+	});
 });
 
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);

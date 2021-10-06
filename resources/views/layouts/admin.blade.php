@@ -13,7 +13,7 @@
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	
-	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+	<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
 
@@ -59,12 +59,12 @@
 	<div class="layout-wrapper layout-2">
 		<div class="layout-inner">
 
-			@include('partials.portals.leftbar')
+			@include('partials.admin.leftbar')
 
 			<!-- Layout container -->
 			<div class="layout-container">
 				
-				@include('partials.portals.topbar')
+				@include('partials.admin.topbar')
 
 				@if (session()->get('me') != auth()->user()->guid)
 				<div class="alert alert-dark-warning text-center">
@@ -80,7 +80,7 @@
 					</div>
 					<!-- / Content -->
 
-					@include('partials.portals.footer')
+					@include('partials.admin.footer')
 
 				</div>
 				<!-- Layout content -->

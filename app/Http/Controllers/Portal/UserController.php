@@ -48,7 +48,7 @@ class UserController extends Controller
                 ->rawColumns(['action'])
                 ->make(true);
         }
-        return view('portal.user.index', compact('pageTitle'));
+        return view('admin.user.index', compact('pageTitle'));
     }
 
     /**
@@ -59,7 +59,7 @@ class UserController extends Controller
     public function create()
     {
         $pageTitle = __('admin.user.create');
-        return view('portal.user.create', compact('pageTitle'));
+        return view('admin.user.create', compact('pageTitle'));
     }
 
     /**
@@ -108,7 +108,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $pageTitle = __('admin.user.edit');
-        return view('portal.user.edit', compact('pageTitle', 'user'));
+        return view('admin.user.edit', compact('pageTitle', 'user'));
     }
 
     /**
