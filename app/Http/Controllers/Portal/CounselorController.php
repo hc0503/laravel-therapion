@@ -34,11 +34,11 @@ class CounselorController extends Controller
                 ->addColumn('action', function ($row) {
                     $btn = '<a href="'. route('admin.counselors.show', $row->id) .'" data-id="'.$row->id.'" class="btn btn-success btn-sm mb-1 mr-1"><i class="far fa-eye"></i></a>';
 
-                    $btn .= '<a href="'. route('admin.users.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
+                    $btn .= '<a href="'. route('admin.counselors.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
 
-                    $btn .= ' <button onclick="deleteUser('. "'$row->id'" .')" data-id="'.$row->id.'" class="btn btn-danger btn-sm mb-1"><i class="far fa-trash-alt"></i></button>';
+                    $btn .= ' <button onclick="deleteData('. "'$row->id'" .')" data-id="'.$row->id.'" class="btn btn-danger btn-sm mb-1"><i class="far fa-trash-alt"></i></button>';
 
-                    $btn .= '<form id="deleteForm'. $row->id .'" action="'. route('admin.users.destroy', $row->id) .'" method="POST" style="display: none">
+                    $btn .= '<form id="deleteForm'. $row->id .'" action="'. route('admin.counselors.destroy', $row->id) .'" method="POST" style="display: none">
                     <input type="hidden" name="_token" value="'. csrf_token() .'">
                     <input type="hidden" name="_method" value="DELETE">
                     @method("DELETE")
@@ -141,6 +141,11 @@ class CounselorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $psychologist = Psychologist::findOrFail($id);
+        $psychologist->delete();
+        return redirect()
+            ->route('admin.counselors.index')
+            ->with('status', 'success')
+            ->with('message', __('admin.counselor.delSuccess'));
     }
 }
