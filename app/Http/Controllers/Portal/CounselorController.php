@@ -26,7 +26,7 @@ class CounselorController extends Controller
             return DataTables::of($counselors)
                 ->addIndexColumn()
                 ->editColumn('photo', function ($row) {
-                    return '<img src="'. asset('storage') .'/'. $row->photo .'" alt="'. $row->name .'" height="100"/>';
+                    return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" height="100"/>';
                 })
                 ->editColumn('created_at', function ($row) {
                     return Carbon::parse($row->created_at)->toDateString();

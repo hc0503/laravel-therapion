@@ -23,7 +23,7 @@
 					<div class="team-block-one">
 						<div class="inner-box">
 							<figure class="image-box">
-								<img src="{{ asset('storage/profiles/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}">
+								<img src="{{ asset('storage/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}">
 								<ul class="social-icons">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fab fa-twitter"></i></a></li>

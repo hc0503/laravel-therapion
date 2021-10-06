@@ -13,7 +13,7 @@
 		</li>
 		<li class="sidenav-item {{ request()->is('admin/counselors') ? 'active' : '' }}">
 			<a href="{{ route('admin.counselors.index') }}" class="sidenav-link">
-				<i class="sidenav-icon ion ion-md-people"></i>
+				<i class="sidenav-icon ion ion-md-jet"></i>
 				<div>{{ __('admin.counselor.title') }}</div>
 			</a>
 		</li>

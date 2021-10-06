@@ -21,7 +21,7 @@
 			<div class="inner-box">
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12 image-column">
-						<figure class="image-box"><img src="{{ asset('storage/profiles/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}"></figure>
+						<figure class="image-box"><img src="{{ asset('storage/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}"></figure>
 					</div>
 					<div class="col-lg-7 col-md-12 col-sm-12 content-column">
 						<div class="content-box">
