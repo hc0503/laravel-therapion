@@ -8,7 +8,8 @@ return [
 		'edit' => 'User Edit',
 		'msg' => [
 			'saveSuccess' => 'The user is stored successfully.',
-			'updateSuccess' => 'The user is updated successfully.'
+			'updateSuccess' => 'The user is updated successfully.',
+			'delSuccess' => 'The user is deleted successfully.',
 		],
 		'name' => 'Name',
 		'email' => 'Email',
