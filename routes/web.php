@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Portal\HomeController;
+use App\Http\Controllers\Portal\UserController;
 
 use App\Http\Controllers\DBMigrateController;
 
@@ -42,6 +43,7 @@ Route::get('/friends', [LandingController::class, 'getFriends'])->name('friends'
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
 	Route::get('/', [HomeController::class, 'index'])->name('home');
+	Route::resource('users', UserController::class);
 });
 
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
