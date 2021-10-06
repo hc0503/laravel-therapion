@@ -7,7 +7,8 @@ return [
 		'create' => 'User Create',
 		'edit' => 'User Edit',
 		'msg' => [
-			'saveSuccess' => 'The user is stored successfully.'
+			'saveSuccess' => 'The user is stored successfully.',
+			'updateSuccess' => 'The user is updated successfully.'
 		],
 		'name' => 'Name',
 		'email' => 'Email',

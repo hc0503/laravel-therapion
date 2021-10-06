@@ -30,15 +30,15 @@
 			<div class="card">
 				<div class="card-body">
                 <!-- Form -->
-                <form id="form" method="POST" action="{{ route('admin.users.store') }}">
+                <form id="form" method="POST" action="{{ route('admin.users.update', $user->id) }}">
 						
 						@csrf
+						@method('PUT')
 
-						<input id="exit" name="exit" value="true" hidden/>
 						<div class="form-row">
 							<div class="form-group col-md-6 col-sm-12">
 								<label class="form-label" for="name">{{ __('admin.user.name') }} *</label>
-								<input id="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autofocus>
+								<input id="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" autofocus>
 								@error('name')
 									<span class="invalid-feedback" role="alert">
 										<strong>{{ $message }}</strong>
@@ -48,7 +48,7 @@
 	
 							<div class="form-group col-md-6 col-sm-12">
 								<label class="form-label" for="email">{{ __('admin.user.email') }} *</label>
-								<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="off">
+								<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}" autocomplete="off">
 								@error('email')
 									<span class="invalid-feedback" role="alert">
 										<strong>{{ $message }}</strong>
@@ -76,9 +76,8 @@
                     </div>
 						</div>
 
-						<div class="d-flex justify-content-between align-items-center m-0">
-							<button type="submit" class="btn btn-info" onclick="saveAnother();">{{ __('admin.saveAnother') }}</button>
-							<button type="submit" class="btn btn-secondary" onclick="saveExit();">{{ __('admin.saveExit') }}</button>
+						<div class="text-right m-0">
+							<button type="submit" class="btn btn-secondary">{{ __('admin.saveExit') }}</button>
 						</div>
 				  </form>
 				  <!-- / Form -->
@@ -88,19 +87,3 @@
 	</div>
 </div>
 @endsection
-
-@push('js')
-<script>
-	function saveAnother() {
-		event.preventDefault();
-		$('#exit').val(false);
-		$('#form').submit();
-	}
-
-	function saveExit() {
-		event.preventDefault();
-		$('#exit').val(true);
-		$('#form').submit();
-	}
-</script>
-@endpush

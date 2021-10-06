@@ -33,9 +33,7 @@ class UserController extends Controller
                     else
                         $disabled = '';
 
-                    $btn = '<a href="'. route('admin.users.show', $row->id) .'" data-id="'.$row->id.'" class="btn btn-success btn-sm mb-1 mr-1"><i class="far fa-eye"></i></a>';
-
-                    $btn .= '<a href="'. route('admin.users.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
+                    $btn = '<a href="'. route('admin.users.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
 
                     $btn .= ' <button onclick="deleteUser('. "'$row->id'" .')" data-id="'.$row->id.'" class="btn btn-danger btn-sm mb-1" '. $disabled .'><i class="far fa-trash-alt"></i></button>';
 
@@ -107,9 +105,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        $pageTitle = __('admin.user.edit');
+        return view('portal.user.edit', compact('pageTitle', 'user'));
     }
 
     /**
@@ -119,9 +118,18 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
-        //
+        $validated = $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'email', 'unique:users,email,'.$user->id, 'max:255'],
+            'password' => ['min:8', 'confirmed', 'nullable'],
+        ]);
+        $user->update($validated);
+        return redirect()
+            ->route('admin.users.index')
+            ->with('status', 'success')
+            ->with('message', __('admin.user.msg.updateSuccess'));
     }
 
     /**
