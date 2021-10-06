@@ -39,16 +39,6 @@
 	<script src="{{ asset('assets/vendor/js/material-ripple.js') }}"></script>
 	<script src="{{ asset('assets/vendor/js/layout-helpers.js') }}"></script>
 
-	<!-- Theme settings -->
-	<!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
-	{{-- <script src="{{ asset('assets/vendor/js/theme-settings.js') }}"></script>
-	<script>
-		window.themeSettings = new ThemeSettings({
-			cssPath: "{{ asset('assets/vendor/css/rtl') }}/",
-			themesPath: "{{ asset('assets/vendor/css/rtl/') }}/"
-		});
-	</script> --}}
-
 	<!-- Core scripts -->
 	<script src="{{ asset('assets/vendor/js/pace.js') }}"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

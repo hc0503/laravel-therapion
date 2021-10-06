@@ -46,7 +46,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
 
 Route::get('/lang/{locale}',[LanguageController::class, 'swap']);
 
-Auth::routes();
+Auth::routes([
+	'register' => false
+]);
 
 
 
