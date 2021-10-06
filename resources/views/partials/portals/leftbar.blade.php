@@ -5,8 +5,8 @@
 		</a>
 	</div>
 	<ul class="sidenav-inner py-1">
-		<li class="sidenav-item {{ request()->is('portal/genres') ? 'active' : '' }}">
-			<a href="#" class="sidenav-link">
+		<li class="sidenav-item {{ request()->is('admin/users') ? 'active' : '' }}">
+			<a href="{{ route('admin.users.index') }}" class="sidenav-link">
 				<i class="sidenav-icon ion ion-md-people"></i>
 				<div>{{ __('admin.users.title') }}</div>
 			</a>
