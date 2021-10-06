@@ -37,7 +37,7 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-6 col-sm-12">
-								<label class="form-label" for="name">{{ __('admin.user.name') }} *</label>
+								<label class="form-label" for="name">{{ __('admin.user.field.name') }} *</label>
 								<input id="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" autofocus>
 								@error('name')
 									<span class="invalid-feedback" role="alert">
@@ -47,7 +47,7 @@
 							</div>
 	
 							<div class="form-group col-md-6 col-sm-12">
-								<label class="form-label" for="email">{{ __('admin.user.email') }} *</label>
+								<label class="form-label" for="email">{{ __('admin.user.field.email') }} *</label>
 								<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}" autocomplete="off">
 								@error('email')
 									<span class="invalid-feedback" role="alert">
@@ -60,7 +60,7 @@
 						<div class="form-row">
 							<div class="form-group col-md-6 col-sm-12">
 								<label class="form-label" for="password">
-								<div>{{ __('admin.user.password') }}</div>
+								<div>{{ __('admin.user.field.password') }}</div>
 								</label>
 								<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="off">
 								@error('password')
@@ -71,7 +71,7 @@
 							</div>
 							
 							<div class="form-group col-md-6 col-sm-12">
-                        <label class="form-label" for="password-confirm">{{ __('admin.user.confirmPassword') }}</label>
+                        <label class="form-label" for="password-confirm">{{ __('admin.user.field.confirmPassword') }}</label>
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="off">
                     </div>
 						</div>

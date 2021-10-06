@@ -16,7 +16,7 @@ class CreatePsychologistsTable extends Migration
         Schema::create('psychologists', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('email')->nullable();
             $table->string('title')->nullable();
             $table->text('info')->nullable();
