@@ -35,7 +35,7 @@ class UserController extends Controller
 
                     $btn = '<a href="'. route('admin.users.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
 
-                    $btn .= ' <button onclick="deleteUser('. "'$row->id'" .')" data-id="'.$row->id.'" class="btn btn-danger btn-sm mb-1" '. $disabled .'><i class="far fa-trash-alt"></i></button>';
+                    $btn .= ' <button onclick="deleteData('. "'$row->id'" .')" data-id="'.$row->id.'" class="btn btn-danger btn-sm mb-1" '. $disabled .'><i class="far fa-trash-alt"></i></button>';
 
                         $btn .= '<form id="deleteForm'. $row->id .'" action="'. route('admin.users.destroy', $row->id) .'" method="POST" style="display: none">
                         <input type="hidden" name="_token" value="'. csrf_token() .'">
@@ -48,7 +48,7 @@ class UserController extends Controller
                 ->rawColumns(['action'])
                 ->make(true);
         }
-        return view('portal.user.index', compact('pageTitle'));
+        return view('admin.user.index', compact('pageTitle'));
     }
 
     /**
@@ -59,7 +59,7 @@ class UserController extends Controller
     public function create()
     {
         $pageTitle = __('admin.user.create');
-        return view('portal.user.create', compact('pageTitle'));
+        return view('admin.user.create', compact('pageTitle'));
     }
 
     /**
@@ -78,7 +78,7 @@ class UserController extends Controller
         $user = User::create($validated);
         if ($request->exit === 'true')
             return redirect()
-                ->route('admin.user.index')
+                ->route('admin.users.index')
                 ->with('status', 'success')
                 ->with('message', __('admin.user.msg.saveSuccess'));
         else
@@ -108,7 +108,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $pageTitle = __('admin.user.edit');
-        return view('portal.user.edit', compact('pageTitle', 'user'));
+        return view('admin.user.edit', compact('pageTitle', 'user'));
     }
 
     /**
