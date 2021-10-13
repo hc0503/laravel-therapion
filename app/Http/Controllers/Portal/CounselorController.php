@@ -25,6 +25,9 @@ class CounselorController extends Controller
 
             return DataTables::of($counselors)
                 ->addIndexColumn()
+                ->editColumn('email', function ($row) {
+                    return '<a href="mailto:'. $row->email .'">'. $row->email .'</a>';
+                })
                 ->editColumn('photo', function ($row) {
                     return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" height="100"/>';
                 })
@@ -46,7 +49,7 @@ class CounselorController extends Controller
 
                     return $btn;
                 })
-                ->rawColumns(['photo', 'action'])
+                ->rawColumns(['email', 'photo', 'action'])
                 ->make(true);
         }
         return view('admin.counselor.index', compact('pageTitle'));
