@@ -15,6 +15,17 @@
 </section>
 <!--End Page Title-->
 
+<section class="team-section centred">
+	<div class="container">
+		<div class="sec-title">
+			<div class="title">appointment scheduling and booking</div>
+			<h1>Book a Session</h1>
+			<br/>
+			<p>Choose your counselor first. After that you can choose the session type. 
+				Private counseling sessions are available by e-mail, chat, video conferencing and phone.</p>
+		</div>
+
+
 <section class="team-section">
 	<div class="container">
 		<div class="row">
@@ -24,11 +35,10 @@
 						<div class="inner-box">
 							<figure class="image-box">
 								<img src="{{ asset('storage/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}">
-								<ul class="social-icons">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-									<li><a href="mailto:{{ $psychologist->email }}"><i class="fab fa-google-plus-g"></i></a></li>
+						    	<ul class="social-icons">
+								<li><a href="https://www.facebook.com/therapion"><i class="fab fa-facebook-f"></i></a></li>
+			            		<li><a href="https://www.youtube.com/user/therapion"><i class="fab fa-youtube"></i></a></li>
+			            		<li><a href="https://www.linkedin.com/company/therapion-consulting"><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</figure>
 							<div class="lower-content">

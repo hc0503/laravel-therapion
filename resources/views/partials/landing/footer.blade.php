@@ -24,8 +24,8 @@
 							<div class="widget-content">
 								<ul>
 									<li><a href="{{ route('about-us') }}">{{ __('global.footer.quickLink.aboutUs') }}</a></li>
-									<li><a href="#">{{ __('global.footer.quickLink.pressMedia') }}</a></li>
-									<li><a href="#">{{ __('global.footer.quickLink.collaborateUs') }}</a></li>
+									<li><a href="{{ route('friends') }}">{{ __('global.footer.quickLink.pressMedia') }}</a></li>
+									<li><a href="{{ route('friends') }}">{{ __('global.footer.quickLink.collaborateUs') }}</a></li>
 									<li><a href="{{ route('training') }}">{{ __('global.footer.quickLink.trainingCounselor') }}</a></li>
 								</ul>
 							</div>

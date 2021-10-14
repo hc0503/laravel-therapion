@@ -184,12 +184,15 @@
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 news-block">
 							<div class="news-block-one">
+								
 								<div class="inner-box">
 									<figure class="image-box">
 										<a href="blog-details.html">
 											<img src="{{ asset('assets/images/resource/news-8.jpg')}}" alt="">
 										</a>
 									</figure>
+
+
 									<div class="categorie-list">
 										<a href="#">Couples</a>
 										<a href="#">Therapy</a>
@@ -219,13 +222,15 @@
 			<div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
 				<div class="sidebar blog-sidebar">
 					<div class="sidebar-about sidebar-widget">
-						<h2 class="sidebar-title">About Me</h2>
+						<h2 class="sidebar-title">Our Community</h2>
 						<div class="widget-content">
 							<figure class="author-image">
 								<img src="{{ asset('assets/images/resource/author.png') }}" alt="">
 							</figure>
-							<h4>I am Marvin Beitner</h4>
-							<div class="text">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deser unt mollit anim id est laborum.</div>
+							<div class="text">
+							<h4>Collaboration & Friends</h4>
+							Therapion collaborates with trade unions, civil associations, NGOs and other type of organizations.
+                            Contact us for further information. We'll be glad to assist you.</div>
 							<figure class="signature">
 								<img src="{{ asset('assets/images/resource/signature.png') }}" alt="">
 							</figure>
