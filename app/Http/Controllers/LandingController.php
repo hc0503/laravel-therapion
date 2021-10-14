@@ -22,7 +22,7 @@ class LandingController extends Controller
     public function getBooking()
     {
         $pageTitle = 'Appointment Scheduling and Booking';
-        $locale = session()->get('locale') ?? 'en';
+        $locale = app()->getLocale() ?? 'en';
         $psychologists = Psychologist::query()->where('country_code', $locale)->get();
 
         return view('landing.booking.all', compact('pageTitle', 'psychologists'));
