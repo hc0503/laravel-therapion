@@ -120,12 +120,42 @@
 						
 						<div class="row">
 							<div class="form-group col-md-6 col-12">
-								<label class="form-label" for="team">{{ __('admin.counselor.field.team') }}</label>
-								<select id="team" name="team" class="form-control" style="width: 100%">
-									<option value="1" {{ old('team') == '1' ? 'selected' : '' }}>{{ __('global.magazines.field.active') }}</option>
-									<option value="0" {{ old('team') == '0' ? 'selected' : '' }}>{{ __('global.magazines.field.inactive') }}</option>
+								<label class="form-label" for="team">Team</label>
+								<select id="team" name="team" class="form-control">
+									<option value="0">Chinese</option>
+									<option value="1">Japnese</option>
+									<option value="2">English</option>
 								</select>
 								@error('team')
+									<span class="invalid-feedback" role="alert">
+										<strong>{{ $message }}</strong>
+									</span>
+								@enderror
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6 col-12">
+								<label class="form-label" for="services">Counseling methods</label>
+								<select id="services" name="services[]" class="form-control @error('services') is-invalid @enderror" multiple>
+									@foreach ($services as $service)
+									<option value="{{ $service->id }}" {{ (collect(old('services'))->contains($service->id)) ? 'selected' : '' }}>{{ $service->title }}</option>
+									@endforeach
+								</select>
+								@error('services')
+									<span class="invalid-feedback" role="alert">
+										<strong>{{ $message }}</strong>
+									</span>
+								@enderror
+							</div>
+
+							<div class="form-group col-md-6 col-12">
+								<label class="form-label" for="status">Therapion program</label>
+								<select id="status" name="status" class="form-control">
+									<option value="1">Active</option>
+									<option value="0">Inactive</option>
+								</select>
+								@error('status')
 									<span class="invalid-feedback" role="alert">
 										<strong>{{ $message }}</strong>
 									</span>
@@ -150,12 +180,18 @@
 <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}">
 <link href="{{ asset('assets/libs/summernote/summernote-bs4.css') }}" rel="stylesheet" />
 <style>
-	.account-settings-fileinput{
+	.account-settings-fileinput {
 		position: absolute;
 		visibility: hidden;
 		width: 1px;
 		height: 1px;
 		opacity: 0
+	}
+	.invalid-feedback {
+		display: block;
+	}
+	select.is-invalid+span .select2-selection {
+		border-color: #d9534f !important;
 	}
 </style>
 @endpush
@@ -171,12 +207,17 @@
 		maxHeight: null,             // set maximum height of editor
 		focus: false                 // set focus to editable area after initializing summernote
 	});
-
 	$('#team')
 		.wrap('<div class="position-relative"></div>')
 		.select2({
 			placeholder: 'Select value',
 			dropdownParent: $('#team').parent()
+		});
+	$('#services')
+		.wrap('<div class="position-relative"></div>')
+		.select2({
+			placeholder: 'Select value',
+			dropdownParent: $('#services').parent()
 		});
 
 	function saveAnother() {

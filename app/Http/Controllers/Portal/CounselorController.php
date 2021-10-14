@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Portal;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Psychologist;
+use App\Models\Service;
 use Carbon\Carbon;
 use DataTables;
 use Illuminate\Support\Str;
@@ -25,16 +26,22 @@ class CounselorController extends Controller
 
             return DataTables::of($counselors)
                 ->addIndexColumn()
-                ->editColumn('email', function ($row) {
+                ->editColumn('email', function($row) {
                     return '<a href="mailto:'. $row->email .'">'. $row->email .'</a>';
                 })
-                ->editColumn('photo', function ($row) {
+                ->editColumn('photo', function($row) {
                     return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" height="100"/>';
                 })
-                ->editColumn('created_at', function ($row) {
+                ->editColumn('status', function($row) {
+                    if ($row->status)
+                        return '<span class="badge badge-success">Active</span>';
+                    else
+                        return '<span class="badge badge-warning">Inactive</span>';
+                })
+                ->editColumn('created_at', function($row) {
                     return Carbon::parse($row->created_at)->toDateString();
                 })
-                ->addColumn('action', function ($row) {
+                ->addColumn('action', function($row) {
                     $btn = '<a href="'. route('admin.counselors.show', $row->id) .'" data-id="'.$row->id.'" class="btn btn-success btn-sm mb-1 mr-1"><i class="far fa-eye"></i></a>';
 
                     $btn .= '<a href="'. route('admin.counselors.edit', $row->id) .'" data-id="'.$row->id.'" class="btn btn-primary btn-sm mb-1"><i class="far fa-edit"></i></a>';
@@ -49,7 +56,7 @@ class CounselorController extends Controller
 
                     return $btn;
                 })
-                ->rawColumns(['email', 'photo', 'action'])
+                ->rawColumns(['email', 'photo', 'status', 'action'])
                 ->make(true);
         }
         return view('admin.counselor.index', compact('pageTitle'));
@@ -63,7 +70,8 @@ class CounselorController extends Controller
     public function create()
     {
         $pageTitle = __('admin.counselor.create');
-        return view('admin.counselor.create', compact('pageTitle'));
+        $services = Service::all();
+        return view('admin.counselor.create', compact('pageTitle', 'services'));
     }
 
     /**
@@ -83,13 +91,16 @@ class CounselorController extends Controller
             'education' => [],
             'topic' => [],
             'about' => [],
-            'country_code' => []
+            'team' => ['required'],
+            'services' => ['required'],
+            'status' => ['required'],
         ]);
 
         if ($request->hasFile('photo')) {
             $validated['photo'] = $request->file('photo')->store('counselors', 'public');
         }
-        Psychologist::create($validated);
+        $psychologist = Psychologist::create($validated);
+        $psychologist->services()->sync($validated['services']);
         if ($request->exit === 'true')
             return redirect()
                 ->route('admin.counselors.index')

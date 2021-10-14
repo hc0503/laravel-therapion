@@ -13,8 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \Schema::disableForeignKeyConstraints();
+
         $this->call([
-            UserSeeder::class
+            UserSeeder::class,
+            ServiceSeeder::class
         ]);
+
+        \Schema::enableForeignKeyConstraints();
     }
 }
