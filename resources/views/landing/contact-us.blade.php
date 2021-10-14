@@ -28,7 +28,7 @@
 								<div class="single-item">
 									<h4>Helsinki</h4>
 									<div class="text">
-										<a href="tel:(+358) 9 2316 4346"> (+358) 9 2316 4346</a>
+										
 									</div>
 								</div>
 							</div>
