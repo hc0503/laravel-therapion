@@ -30,7 +30,7 @@ class CounselorController extends Controller
                     return '<a href="mailto:'. $row->email .'">'. $row->email .'</a>';
                 })
                 ->editColumn('photo', function($row) {
-                    return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" height="100"/>';
+                    return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" class="counselor-avatar"/>';
                 })
                 ->editColumn('status', function($row) {
                     if ($row->status)
@@ -91,7 +91,7 @@ class CounselorController extends Controller
             'education' => [],
             'topic' => [],
             'about' => [],
-            'team' => ['required'],
+            'country_code' => ['required'],
             'services' => ['required'],
             'status' => ['required'],
         ]);
