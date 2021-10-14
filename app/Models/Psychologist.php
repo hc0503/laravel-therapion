@@ -20,4 +20,9 @@ class Psychologist extends Model
         'about',
         'country_code'
     ];
+
+    public function services()
+    {
+        return $this->belongsToMany(Service::class);
+    }
 }

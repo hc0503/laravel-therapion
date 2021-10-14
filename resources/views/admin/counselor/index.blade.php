@@ -38,8 +38,9 @@
 									<th>Title</th>
 									<th>Photo</th>
 									<th>Email</th>
-									<th>Created At</th>
-									<th style="min-width: 142px;">Action</th>
+									<th>Status</th>
+									<th style="min-width: 88px">Created At</th>
+									<th style="min-width: 118px;">Action</th>
 								</tr>
 							</thead>
 							<tfoot>
@@ -49,8 +50,9 @@
 									<th>Title</th>
 									<th>Photo</th>
 									<th>Email</th>
-									<th>Created At</th>
-									<th style="min-width: 142px;">Action</th>
+									<th>Status</th>
+									<th style="min-width: 88px">Created At</th>
+									<th style="min-width: 118px;">Action</th>
 								</tr>
 							</tfoot>
 						</table>
@@ -84,6 +86,7 @@
 			{'data': 'title'},
 			{'data': 'photo'},
 			{'data': 'email'},
+			{'data': 'status'},
 			{'data': 'created_at'},
 			{'data': 'action'},
 		]
