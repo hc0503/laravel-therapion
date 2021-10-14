@@ -2,12 +2,12 @@
 <header class="main-header">
     <div class="header-top clearfix">
         <div class="top-left pull-left">
-            <div class="text">Online therapy and counseling for individuals, couples and families.</div>
+            <div class="text">{{ __('global.description') }}</div>
         </div>
         <div class="top-right pull-right">
             <ul class="topbar-info">
-                <li><i class="far fa-clock"></i>We are always open</li>
-                <li><i class="fas fa-phone"></i><a href="tel:(+358) 9 2316 43462">(+358) 9 2316 43462</a></li>
+                <li><i class="far fa-clock"></i>{{ __('global.footer.contactUs.description') }}</li>
+                <li><i class="fas fa-phone"></i><a href="tel: {{ config('therapion.contact.phone') }}">{{ config('therapion.contact.phone') }}</a></li>
             </ul>
         </div>
     </div>
@@ -30,12 +30,13 @@
                             </div>
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="{{ request()->route()->getName() == 'home' ? 'current' : '' }}"><a href="{{ route('home') }}">{{ __('global.home') }}</a></li> 
-                                    <li class="{{ request()->route()->getName() == 'booking.all' ? 'current' : '' }}"><a href="{{ route('booking.all') }}">Book a Session</a></li>
-                                    <li class="{{ request()->route()->getName() == 'fee-cost' ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
-                                    <li class="{{ request()->route()->getName() == 'services.all' ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
-                                    <li class="{{ request()->route()->getName() == 'jobs' ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
-                                    <li class="dropdown"><a href="#">Language</a>
+                                    <li class="{{ request()->route()->getName() == 'home' ? 'current' : '' }}"><a href="{{ route('home') }}">{{ __('global.nav.home') }}</a></li> 
+                                    <li class="{{ request()->route()->getName() == 'booking.all' ? 'current' : '' }}"><a href="{{ route('booking.all') }}">{{ __('global.nav.book') }}</a></li>
+                                    <li class="{{ request()->route()->getName() == 'fee-cost' ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">{{ __('global.nav.fee') }}</a></li>
+                                    <li class="{{ request()->route()->getName() == 'services.all' ? 'current' : '' }}"><a href="{{ route('services.all') }}">{{ __('global.nav.service') }}</a></li>
+                                    <li class="{{ request()->route()->getName() == 'jobs' ? 'current' : '' }}"><a href="{{ route('jobs') }}">{{ __('global.nav.job') }}</a></li>
+                                    <li class="dropdown">
+                                        <a href="#">{{ __('global.nav.lang') }}</a>
                                         <ul>
                                             <li><a href="{{ route(request()->route()->getName(), ['locale' => 'en']) }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
                                             <li><a href="{{ route(request()->route()->getName(), ['locale' => 'es']) }}">{{ flag('es:1x1','w-12', ['id'=>'flag-es']) }} Español</a></li>
@@ -79,12 +80,13 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="{{ request()->route()->getName() == 'home' ? 'current' : '' }}"><a href="{{ route('home') }}">{{ __('global.home') }}</a></li> 
-                            <li class="{{ request()->route()->getName() == 'booking.all' ? 'current' : '' }}"><a href="{{ route('booking.all') }}">Book a Session</a></li>
-                            <li class="{{ request()->route()->getName() == 'fee-cost' ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">Fees and Costs</a></li>
-                            <li class="{{ request()->route()->getName() == 'services.all' ? 'current' : '' }}"><a href="{{ route('services.all') }}">Our Services</a></li>
-                            <li class="{{ request()->route()->getName() == 'jobs' ? 'current' : '' }}"><a href="{{ route('jobs') }}">Jobs</a></li>
-                            <li class="dropdown"><a href="#">Language</a>
+                            <li class="{{ request()->route()->getName() == 'home' ? 'current' : '' }}"><a href="{{ route('home') }}">{{ __('global.nav.home') }}</a></li> 
+                            <li class="{{ request()->route()->getName() == 'booking.all' ? 'current' : '' }}"><a href="{{ route('booking.all') }}">{{ __('global.nav.book') }}</a></li>
+                            <li class="{{ request()->route()->getName() == 'fee-cost' ? 'current' : '' }}"><a href="{{ route('fee-cost') }}">{{ __('global.nav.fee') }}</a></li>
+                            <li class="{{ request()->route()->getName() == 'services.all' ? 'current' : '' }}"><a href="{{ route('services.all') }}">{{ __('global.nav.service') }}</a></li>
+                            <li class="{{ request()->route()->getName() == 'jobs' ? 'current' : '' }}"><a href="{{ route('jobs') }}">{{ __('global.nav.job') }}</a></li>
+                            <li class="dropdown">
+                                <a href="#">{{ __('global.nav.lang') }}</a>
                                 <ul>
                                     <li><a href="{{ route(request()->route()->getName(), ['locale' => 'en']) }}">{{ flag('us:1x1','w-12', ['id'=>'flag-us']) }} English</a></li>
                                     <li><a href="{{ route(request()->route()->getName(), ['locale' => 'es']) }}">{{ flag('es:1x1','w-12', ['id'=>'flag-es']) }} Español</a></li>

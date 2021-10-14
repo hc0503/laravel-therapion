@@ -12,35 +12,34 @@
 										alt=""></a></figure>
 							<div class="widget-content">
 								<div class="text">
-									<p>Therapion is a leading provider of online mental health care and counseling services.
-										We promote positive change in individuals, couples, families and communities.</p>
+									<p>{{ __('global.footer.description') }}</p>
 								</div>
-								<div class="btn-box"><a href="{{ route('contact-us') }}" class="theme-btn">Contact Us</a></div>
+								<div class="btn-box"><a href="{{ route('contact-us') }}" class="theme-btn">{{ __('global.footer.contactUs.title') }}</a></div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 footer-column">
 						<div class="links-widget footer-widget">
-							<h3 class="widget-title">Quick links</h3>
+							<h3 class="widget-title">{{ __('global.footer.quickLink.title') }}</h3>
 							<div class="widget-content">
 								<ul>
-									<li><a href="{{ route('about-us') }}">About Us</a></li>
-									<li><a href="#">Press and Media</a></li>
-									<li><a href="#">Collaborate with Us</a></li>
-									<li><a href="{{ route('training') }}">Training for Counselors</a></li>
+									<li><a href="{{ route('about-us') }}">{{ __('global.footer.quickLink.aboutUs') }}</a></li>
+									<li><a href="#">{{ __('global.footer.quickLink.pressMedia') }}</a></li>
+									<li><a href="#">{{ __('global.footer.quickLink.collaborateUs') }}</a></li>
+									<li><a href="{{ route('training') }}">{{ __('global.footer.quickLink.trainingCounselor') }}</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 footer-column">
 						<div class="contact-widget footer-widget">
-							<h3 class="widget-title">Contact Us</h3>
+							<h3 class="widget-title">{{ __('global.footer.contactUs.title') }}</h3>
 							<div class="widget-content">
-								<div class="text">We are always open</div>
+								<div class="text">{{ __('global.footer.contactUs.description') }}</div>
 								<ul class="info-list">
-							    	<li><a href="tel: (+358) 9 2316 4346">(+358) 9 2316 43462</a></li>
-									<li><a href="Skype: therapion">Skype: therapion</a></li>
-									<li><a href="mailto:info@therapion.com">info@therapion.com</a></li>
+							    	<li><a href="tel: {{ config('therapion.contact.phone') }}">{{ config('therapion.contact.phone') }}</a></li>
+									<li><a href="Skype: {{ config('therapion.contact.skype') }}">Skype: {{ config('therapion.contact.skype') }}</a></li>
+									<li><a href="mailto: {{ config('therapion.contact.email') }}">{{ config('therapion.contact.email') }}</a></li>
 								</ul>
 							</div>
 						</div>
@@ -57,8 +56,8 @@
 				</div>
 				<div class="right-content pull-right">
 					<ul class="footer-nav">
-						<li><a href="{{ route('terms-of-service') }}">Terms of Service</a></li>
-						<li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+						<li><a href="{{ route('terms-of-service') }}">{{ __('global.footer.term') }}</a></li>
+						<li><a href="{{ route('privacy-policy') }}">{{ __('global.footer.privacy') }}</a></li>
 					</ul>
 					<ul class="footer-social">
 						<li><a href="https://www.facebook.com/therapion"><i class="fab fa-facebook-f"></i></a></li>
