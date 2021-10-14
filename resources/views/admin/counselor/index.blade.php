@@ -67,6 +67,13 @@
 @push('css')
 <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables/datatables.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}">
+<style>
+	.counselor-avatar {
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+	}
+</style>
 @endpush
 
 @push('js')

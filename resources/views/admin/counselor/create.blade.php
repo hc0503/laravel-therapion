@@ -120,13 +120,13 @@
 						
 						<div class="row">
 							<div class="form-group col-md-6 col-12">
-								<label class="form-label" for="team">Team</label>
-								<select id="team" name="team" class="form-control">
-									<option value="0">Chinese</option>
-									<option value="1">Japnese</option>
-									<option value="2">English</option>
+								<label class="form-label" for="country_code">Team</label>
+								<select id="country_code" name="country_code" class="form-control">
+									<option value="cn">Chinese</option>
+									<option value="jp">Japnese</option>
+									<option value="en">English</option>
 								</select>
-								@error('team')
+								@error('country_code')
 									<span class="invalid-feedback" role="alert">
 										<strong>{{ $message }}</strong>
 									</span>
@@ -207,11 +207,11 @@
 		maxHeight: null,             // set maximum height of editor
 		focus: false                 // set focus to editable area after initializing summernote
 	});
-	$('#team')
+	$('#country_code')
 		.wrap('<div class="position-relative"></div>')
 		.select2({
 			placeholder: 'Select value',
-			dropdownParent: $('#team').parent()
+			dropdownParent: $('#country_code').parent()
 		});
 	$('#services')
 		.wrap('<div class="position-relative"></div>')
