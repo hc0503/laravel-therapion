@@ -25,7 +25,7 @@
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
 	</div>
 	@endif
-	@error('cover_image')
+	@error('photo')
 	<div class="alert alert-danger">
 		<i class="ti-user"></i> {{ $message }}
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
@@ -36,16 +36,14 @@
 			<div class="card">
 				<div class="card-body">
                 <!-- Form -->
-                <form id="form" method="POST" action="{{ route('admin.counselors.store') }}" enctype="multipart/form-data">
+                <form id="form" method="POST" action="{{ route('admin.counselors.update', $psychologist->id) }}" enctype="multipart/form-data">
 						
 						@csrf
-
-						<input id="exit" name="exit" value="true" hidden/>
-
+						@method('PUT')
 
 						<div class="row">
 							<div class="media align-items-center col-md-4 col-sm-12">
-								<img src="" alt="" class="d-block ui-w-140" id="previewImage">
+								<img src="{{ asset('storage/'. $psychologist->photo) }}" alt="" class="d-block ui-w-140" id="previewImage">
 								<div class="media-body ml-4">
 									<label class="btn btn-outline-primary mt-1">
 										{{ __('admin.upload') }}
@@ -60,7 +58,7 @@
 							<div class="col-md-8 sm-12">
 								<div class="form-group">
 									<label class="form-label" for="name">{{ __('admin.counselor.field.name') }} *</label>
-									<input id="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autofocus>
+									<input id="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $psychologist->name }}" autofocus>
 									@error('name')
 										<span class="invalid-feedback" role="alert">
 											<strong>{{ $message }}</strong>
@@ -69,7 +67,7 @@
 								</div>
 								<div class="form-group">
 									<label class="form-label" for="email">{{ __('admin.counselor.field.email') }} *</label>
-									<input id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}">
+									<input id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $psychologist->email }}">
 									@error('email')
 										<span class="invalid-feedback" role="alert">
 											<strong>{{ $message }}</strong>
@@ -78,7 +76,7 @@
 								</div>
 								<div class="form-group">
 									<label class="form-label" for="title">{{ __('admin.counselor.field.title') }} *</label>
-									<input id="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
+									<input id="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ $psychologist->title }}">
 									@error('title')
 										<span class="invalid-feedback" role="alert">
 											<strong>{{ $message }}</strong>
@@ -90,7 +88,7 @@
 						
 						<div class="form-group">
 							<label class="form-label" for="info">{{ __('admin.counselor.field.info') }}</label>
-							<textarea id="info" name="info" class="form-control @error('description') is-invalid @enderror">{{ old('info') }}</textarea>
+							<textarea id="info" name="info" class="form-control @error('description') is-invalid @enderror">{{ $psychologist->info }}</textarea>
 							@error('info')
 								<span class="invalid-feedback" role="alert">
 									<strong>{{ $message }}</strong>
@@ -100,7 +98,7 @@
 
 						<div class="form-group">
 							<label class="form-label" for="topic">{{ __('admin.counselor.field.topic') }}</label>
-							<textarea id="topic" class="form-control @error('topic') is-invalid @enderror" name="topic" rows="3">{{ old('topic') }}</textarea>
+							<textarea id="topic" class="form-control @error('topic') is-invalid @enderror" name="topic" rows="3">{{ $psychologist->topic }}</textarea>
 							@error('topic')
 								<span class="invalid-feedback" role="alert">
 									<strong>{{ $message }}</strong>
@@ -110,7 +108,7 @@
 
 						<div class="form-group">
 							<label class="form-label" for="about">{{ __('admin.counselor.field.about') }}</label>
-							<textarea id="about" class="form-control @error('about') is-invalid @enderror" name="about" rows="3">{{ old('about') }}</textarea>
+							<textarea id="about" class="form-control @error('about') is-invalid @enderror" name="about" rows="3">{{ $psychologist->about }}</textarea>
 							@error('about')
 								<span class="invalid-feedback" role="alert">
 									<strong>{{ $message }}</strong>
@@ -122,21 +120,21 @@
 							<div class="form-group col-md-6 col-12">
 								<label class="form-label" for="country_code">Team</label>
 								<select id="country_code" name="country_code" class="form-control">
-									<option value="en">English</option>
-									<option value="es">Español</option>
-									<option value="pt">EnglPortuguêsish</option>
-									<option value="fi">Suomi</option>
-									<option value="se">Svenska</option>
-									<option value="no">Norsk</option>
-									<option value="dk">Dansk</option>
-									<option value="de">Deutsch</option>
-									<option value="nl">Nederlands</option>
-									<option value="fr">Français</option>
-									<option value="it">Italiano</option>
-									<option value="ru">По-русски</option>
-									<option value="tr">Türkçe</option>
-									<option value="jp">日本語</option>
-									<option value="cn">中文</option>
+									<option value="en" {{ $psychologist->country_code == 'en' ? 'selected' : '' }}>English</option>
+									<option value="es" {{ $psychologist->country_code == 'es' ? 'selected' : '' }}>Español</option>
+									<option value="pt" {{ $psychologist->country_code == 'pt' ? 'selected' : '' }}>EnglPortuguêsish</option>
+									<option value="fi" {{ $psychologist->country_code == 'fi' ? 'selected' : '' }}>Suomi</option>
+									<option value="se" {{ $psychologist->country_code == 'se' ? 'selected' : '' }}>Svenska</option>
+									<option value="no" {{ $psychologist->country_code == 'no' ? 'selected' : '' }}>Norsk</option>
+									<option value="dk" {{ $psychologist->country_code == 'dk' ? 'selected' : '' }}>Dansk</option>
+									<option value="de" {{ $psychologist->country_code == 'de' ? 'selected' : '' }}>Deutsch</option>
+									<option value="nl" {{ $psychologist->country_code == 'nl' ? 'selected' : '' }}>Nederlands</option>
+									<option value="fr" {{ $psychologist->country_code == 'fr' ? 'selected' : '' }}>Français</option>
+									<option value="it" {{ $psychologist->country_code == 'it' ? 'selected' : '' }}>Italiano</option>
+									<option value="ru" {{ $psychologist->country_code == 'ru' ? 'selected' : '' }}>По-русски</option>
+									<option value="tr" {{ $psychologist->country_code == 'tr' ? 'selected' : '' }}>Türkçe</option>
+									<option value="jp" {{ $psychologist->country_code == 'jp' ? 'selected' : '' }}>日本語</option>
+									<option value="cn" {{ $psychologist->country_code == 'cn' ? 'selected' : '' }}>中文</option>
 								</select>
 								@error('country_code')
 									<span class="invalid-feedback" role="alert">
@@ -152,12 +150,12 @@
 								<select id="services" name="services[]" class="form-control @error('services') is-invalid @enderror" multiple>
 									<optgroup label="SINGLE SESSIONS:">
 										@foreach ($singleServices as $service)
-											<option value="{{ $service->id }}" {{ collect(old('services'))->contains($service->id) ? 'selected' : '' }}>{{ $service->title }}</option>
+											<option value="{{ $service->id }}" {{ collect($psychologist->services()->pluck('id'))->contains($service->id) ? 'selected' : '' }}>{{ $service->title }}</option>
 										@endforeach
 									</optgroup>
 									<optgroup label="THERAPY PROGRAMS:">
 										@foreach ($programServices as $service)
-											<option value="{{ $service->id }}" {{ collect(old('services'))->contains($service->id) ? 'selected' : '' }}>{{ $service->title }}</option>
+											<option value="{{ $service->id }}" {{ collect($psychologist->services()->pluck('id'))->contains($service->id) ? 'selected' : '' }}>{{ $service->title }}</option>
 										@endforeach
 									</optgroup>
 								</select>
@@ -170,7 +168,6 @@
 						</div>
 
 						<div class="d-flex justify-content-between align-items-center m-0">
-							<button type="submit" class="btn btn-info" onclick="saveAnother();">{{ __('admin.saveAnother') }}</button>
 							<button type="submit" class="btn btn-secondary" onclick="saveExit();">{{ __('admin.saveExit') }}</button>
 						</div>
 				  </form>

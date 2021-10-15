@@ -38,7 +38,6 @@
 									<th>Title</th>
 									<th>Photo</th>
 									<th>Email</th>
-									<th>Status</th>
 									<th style="min-width: 88px">Created At</th>
 									<th style="min-width: 118px;">Action</th>
 								</tr>
@@ -50,7 +49,6 @@
 									<th>Title</th>
 									<th>Photo</th>
 									<th>Email</th>
-									<th>Status</th>
 									<th style="min-width: 88px">Created At</th>
 									<th style="min-width: 118px;">Action</th>
 								</tr>
@@ -93,7 +91,6 @@
 			{'data': 'title'},
 			{'data': 'photo'},
 			{'data': 'email'},
-			{'data': 'status'},
 			{'data': 'created_at'},
 			{'data': 'action'},
 		]

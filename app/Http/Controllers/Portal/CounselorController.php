@@ -9,6 +9,7 @@ use App\Models\Service;
 use Carbon\Carbon;
 use DataTables;
 use Illuminate\Support\Str;
+use File;
 
 class CounselorController extends Controller
 {
@@ -32,12 +33,6 @@ class CounselorController extends Controller
                 ->editColumn('photo', function($row) {
                     return '<img src="'. asset('storage/'. $row->photo) .'" alt="'. $row->name .'" class="counselor-avatar"/>';
                 })
-                ->editColumn('status', function($row) {
-                    if ($row->status)
-                        return '<span class="badge badge-success">Active</span>';
-                    else
-                        return '<span class="badge badge-warning">Inactive</span>';
-                })
                 ->editColumn('created_at', function($row) {
                     return Carbon::parse($row->created_at)->toDateString();
                 })
@@ -56,7 +51,7 @@ class CounselorController extends Controller
 
                     return $btn;
                 })
-                ->rawColumns(['email', 'photo', 'status', 'action'])
+                ->rawColumns(['email', 'photo', 'action'])
                 ->make(true);
         }
         return view('admin.counselor.index', compact('pageTitle'));
@@ -70,8 +65,9 @@ class CounselorController extends Controller
     public function create()
     {
         $pageTitle = __('admin.counselor.create');
-        $services = Service::all();
-        return view('admin.counselor.create', compact('pageTitle', 'services'));
+        $singleServices = Service::query()->where('type', 'SINGLE')->get();
+        $programServices = Service::query()->where('type', 'PROGRAM')->get();
+        return view('admin.counselor.create', compact('pageTitle', 'singleServices', 'programServices'));
     }
 
     /**
@@ -93,7 +89,6 @@ class CounselorController extends Controller
             'about' => [],
             'country_code' => ['required'],
             'services' => ['required'],
-            'status' => ['required'],
         ]);
 
         if ($request->hasFile('photo')) {
@@ -130,9 +125,13 @@ class CounselorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(int $id)
     {
-        //
+        $pageTitle = __('admin.counselor.edit');
+        $psychologist = Psychologist::findOrFail($id);
+        $singleServices = Service::query()->where('type', 'SINGLE')->get();
+        $programServices = Service::query()->where('type', 'PROGRAM')->get();
+        return view('admin.counselor.edit', compact('pageTitle', 'psychologist', 'singleServices', 'programServices'));
     }
 
     /**
@@ -144,7 +143,40 @@ class CounselorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'max:255', 'email'],
+            'title' => ['required', 'max:255'],
+            'photo' => ['mimes:jpeg,jpg,png', 'max:2048', 'image'],
+            'info' => [],
+            'education' => [],
+            'topic' => [],
+            'about' => [],
+            'country_code' => ['required'],
+            'services' => ['required'],
+        ]);
+        $psychologist = Psychologist::findOrFail($id);
+        if ($request->hasFile('photo')) {
+            $validated['photo'] = $request->file('photo')->store('counselors', 'public');
+            $imagePath = public_path("/storage/$psychologist->photo");
+            if (File::exists($imagePath) && $psychologist->photo != null) { // unlink or remove previous image from folder
+                unlink($imagePath);
+            }
+        } else {
+            if ($request->reset == '1') {
+                $imagePath = public_path("/storage/$psychologist->photo");
+                if (File::exists($imagePath) && $psychologist->photo != null) { // unlink or remove previous image from folder
+                    unlink($imagePath);
+                }
+
+                $validated['photo'] = null;
+            }
+        }
+        $psychologist->update($validated);
+        return redirect()
+            ->route('admin.counselors.index')
+            ->with('status', 'success')
+            ->with('message', __('admin.counselor.msg.updateSuccess'));
     }
 
     /**
