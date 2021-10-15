@@ -18,23 +18,8 @@ class SetLocale
     public function handle(Request $request, Closure $next)
     {
         $desiredLocale = $request->segment(1);
-        in_array($desiredLocale, [
-            'en' => 'en',
-            'es' => 'es',
-            'pt' => 'pt',
-            'fi' => 'fi',
-            'se' => 'se',
-            'no' => 'no',
-            'dk' => 'dk',
-            'de' => 'de',
-            'nl' => 'nl',
-            'fr' => 'fr',
-            'it' => 'it',
-            'ru' => 'ru',
-            'tr' => 'tr',
-            'jp' => 'jp',
-            'cn' => 'cn',
-        ]) ? app()->setLocale($desiredLocale) : app()->setLocale('en');
+        in_array($desiredLocale, config('app.languages')) ? app()->setLocale($desiredLocale) : app()->setLocale('en');
+        $request->route()->forgetParameter('locale');
         URL::defaults(['locale' => app()->getLocale()]);
         return $next($request);
     }

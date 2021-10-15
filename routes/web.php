@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
-use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Portal\HomeController;
 use App\Http\Controllers\Portal\UserController;
 use App\Http\Controllers\Portal\CounselorController;
