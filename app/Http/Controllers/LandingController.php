@@ -102,4 +102,14 @@ class LandingController extends Controller
         $pageTitle = 'Collaboration';
         return view('landing.collaboration', compact('pageTitle'));
     }
+    public function getPressMedia()
+    {
+        $pageTitle = 'Press Media';
+        return view('landing.press-media', compact('pageTitle'));
+    }
+    public function getAdditionalPayment()
+    {
+        $pageTitle = 'Additional Payment';
+        return view('landing.additional-payment', compact('pageTitle'));
+    }
 }
