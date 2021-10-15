@@ -167,7 +167,7 @@
 							</div>
 						</div>
 
-						<div class="d-flex justify-content-between align-items-center m-0">
+						<div class="m-0 text-right">
 							<button type="submit" class="btn btn-secondary" onclick="saveExit();">{{ __('admin.saveExit') }}</button>
 						</div>
 				  </form>

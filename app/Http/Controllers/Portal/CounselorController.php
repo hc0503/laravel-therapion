@@ -116,7 +116,11 @@ class CounselorController extends Controller
      */
     public function show($id)
     {
-        //
+        $pageTitle = __('admin.counselor.show');
+        $psychologist = Psychologist::findOrFail($id);
+        $singleServices = Service::query()->where('type', 'SINGLE')->get();
+        $programServices = Service::query()->where('type', 'PROGRAM')->get();
+        return view('admin.counselor.show', compact('pageTitle', 'psychologist', 'singleServices', 'programServices'));
     }
 
     /**

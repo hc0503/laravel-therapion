@@ -23,6 +23,7 @@ return [
 		'list' => 'Counselor List',
 		'create' => 'Counselor Create',
 		'edit' => 'Counselor Edit',
+		'show' => 'Counselor Show',
 		'field' => [
 			'name' => 'Name',
 			'email' => 'Email',
