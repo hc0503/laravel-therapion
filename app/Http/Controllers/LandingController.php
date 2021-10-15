@@ -97,9 +97,9 @@ class LandingController extends Controller
         $pageTitle = 'About Us';
         return view('landing.about-us', compact('pageTitle'));
     }
-    public function getFriends()
+    public function getCollaboration()
     {
-        $pageTitle = 'Friends';
-        return view('landing.friends', compact('pageTitle'));
+        $pageTitle = 'Collaboration';
+        return view('landing.collaboration', compact('pageTitle'));
     }
 }
