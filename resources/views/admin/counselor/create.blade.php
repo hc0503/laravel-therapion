@@ -135,27 +135,21 @@
 						</div>
 						
 						<div class="row">
-							<div class="form-group col-md-6 col-12">
-								<label class="form-label" for="services">Counseling methods</label>
+							<div class="form-group col-12">
+								<label class="form-label" for="services">Service alternatives</label>
 								<select id="services" name="services[]" class="form-control @error('services') is-invalid @enderror" multiple>
-									@foreach ($services as $service)
-									<option value="{{ $service->id }}" {{ (collect(old('services'))->contains($service->id)) ? 'selected' : '' }}>{{ $service->title }}</option>
-									@endforeach
+									<optgroup label="SINGLE SESSIONS:">
+										@foreach ($singleServices as $service)
+											<option value="{{ $service->id }}" {{ (collect(old('services'))->contains($service->id)) ? 'selected' : '' }}>{{ $service->title }}</option>
+										@endforeach
+									</optgroup>
+									<optgroup label="THERAPY PROGRAMS:">
+										@foreach ($programServices as $service)
+											<option value="{{ $service->id }}" {{ (collect(old('services'))->contains($service->id)) ? 'selected' : '' }}>{{ $service->title }}</option>
+										@endforeach
+									</optgroup>
 								</select>
 								@error('services')
-									<span class="invalid-feedback" role="alert">
-										<strong>{{ $message }}</strong>
-									</span>
-								@enderror
-							</div>
-
-							<div class="form-group col-md-6 col-12">
-								<label class="form-label" for="status">Therapion program</label>
-								<select id="status" name="status" class="form-control">
-									<option value="1">Active</option>
-									<option value="0">Inactive</option>
-								</select>
-								@error('status')
 									<span class="invalid-feedback" role="alert">
 										<strong>{{ $message }}</strong>
 									</span>

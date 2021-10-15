@@ -14,11 +14,15 @@ class ServiceSeeder extends Seeder
      */
     public function run()
     {
+        $type = ['SINGLE', 'PROGRAM'];
         $services = [
-            ['title' => 'Email'],
-            ['title' => 'Videoconference'],
-            ['title' => 'Phone'],
-            ['title' => 'Chat'],
+            ['title' => 'E-mail Counseling', 'type' => $type[0]],
+            ['title' => 'Chat Counseling', 'type' => $type[0]],
+            ['title' => 'Videoconference Counseling', 'type' => $type[0]],
+            ['title' => 'Phone Counseling', 'type' => $type[0]],
+            ['title' => 'Program One: 4 x E-mail Counseling', 'type' => $type[1]],
+            ['title' => 'Program Two: 4 x Chat Counseling', 'type' => $type[1]],
+            ['title' => 'Program Three: 4 x Videoconference Counseling', 'type' => $type[1]],
         ];
         Service::truncate();
         foreach ($services as $service) {
