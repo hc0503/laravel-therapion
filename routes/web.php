@@ -43,7 +43,7 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::get('/terms-of-service', [LandingController::class, 'getTermsOfService'])->name('terms-of-service');
 	Route::get('/privacy-policy', [LandingController::class, 'getPrivacyPolicy'])->name('privacy-policy');
 	Route::get('/about-us', [LandingController::class, 'getAboutUs'])->name('about-us');
-	Route::get('/friends', [LandingController::class, 'getFriends'])->name('friends');
+	Route::get('/collaboration', [LandingController::class, 'getCollaboration'])->name('collaboration');
 });
 
 Route::middleware(['auth'])->group( function () {
