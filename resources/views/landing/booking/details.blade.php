@@ -101,14 +101,10 @@
 									<label>Type of Session</label>
 									<div class="select-box">
 										<select class="selectmenu">
-											<option selected="selected">Choose one</option>
-											<option>E-mail Counseling</option>
-											<option>Chat Counseling</option>
-											<option>Video Conferencing</option>
-											<option>Phone Counseling</option>
-											<option>Therapy Package # 1</option>
-											<option>Therapy Package # 2</option>
-											<option>Therapy Package # 3</option>
+											<option value="0" selected disabled>Choose one</option>
+											@foreach ($psychologist->services as $item)
+											<option value="{{ $item->id }}">{{ $item->title }}</option>
+											@endforeach
 										</select>
 									</div>
 								</div>
