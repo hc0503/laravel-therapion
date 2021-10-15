@@ -80,12 +80,12 @@ class UserController extends Controller
             return redirect()
                 ->route('admin.users.index')
                 ->with('status', 'success')
-                ->with('message', __('admin.user.msg.saveSuccess'));
+                ->with('message', __('admin.msg.saveSuccess', ['attribute' => 'user']));
         else
             return redirect()
                 ->back()
                 ->with('status', 'success')
-                ->with('message', __('admin.user.msg.saveSuccess'));
+                ->with('message', __('admin.msg.saveSuccess', ['attribute' => 'user']));
     }
 
     /**
@@ -129,7 +129,7 @@ class UserController extends Controller
         return redirect()
             ->route('admin.users.index')
             ->with('status', 'success')
-            ->with('message', __('admin.user.msg.updateSuccess'));
+            ->with('message', __('admin.msg.updateSuccess', ['attribute' => 'user']));
     }
 
     /**
@@ -144,6 +144,6 @@ class UserController extends Controller
         return redirect()
             ->route('admin.users.index')
             ->with('status', 'success')
-            ->with('message', __('admin.user.msg.delSuccess'));
+            ->with('message', __('admin.msg.delSuccess', ['attribute' => 'user']));
     }
 }

@@ -100,12 +100,12 @@ class CounselorController extends Controller
             return redirect()
                 ->route('admin.counselors.index')
                 ->with('status', 'success')
-                ->with('message', __('admin.counselor.msg.saveSuccess'));
+                ->with('message', __('admin.msg.saveSuccess', ['attribute' => 'counselor']));
         else
             return redirect()
                 ->back()
                 ->with('status', 'success')
-                ->with('message', __('admin.sounselor.msg.saveSuccess'));
+                ->with('message', __('admin.msg.saveSuccess', ['attribute' => 'counselor']));
     }
 
     /**
@@ -176,7 +176,7 @@ class CounselorController extends Controller
         return redirect()
             ->route('admin.counselors.index')
             ->with('status', 'success')
-            ->with('message', __('admin.counselor.msg.updateSuccess'));
+            ->with('message', __('admin.msg.updateSuccess', ['attribute' => 'counselor']));
     }
 
     /**
@@ -192,6 +192,6 @@ class CounselorController extends Controller
         return redirect()
             ->route('admin.counselors.index')
             ->with('status', 'success')
-            ->with('message', __('admin.counselor.delSuccess'));
+            ->with('message', __('admin.msg.delSuccess', ['attribute' => 'counselor']));
     }
 }

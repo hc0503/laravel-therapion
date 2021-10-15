@@ -1,16 +1,16 @@
 <?php
 
 return [
+	'msg' => [
+		'saveSuccess' => 'The :attribute is stored successfully.',
+		'updateSuccess' => 'The :attribute is updated successfully.',
+		'delSuccess' => 'The :attribute is deleted successfully.',
+	],
 	'user' => [
 		'title' => 'Users',
 		'list' => 'User List',
 		'create' => 'User Create',
 		'edit' => 'User Edit',
-		'msg' => [
-			'saveSuccess' => 'The user is stored successfully.',
-			'updateSuccess' => 'The user is updated successfully.',
-			'delSuccess' => 'The user is deleted successfully.',
-		],
 		'field' => [
 			'name' => 'Name',
 			'email' => 'Email',
@@ -23,11 +23,6 @@ return [
 		'list' => 'Counselor List',
 		'create' => 'Counselor Create',
 		'edit' => 'Counselor Edit',
-		'msg' => [
-			'saveSuccess' => 'The counselor is stored successfully.',
-			'updateSuccess' => 'The counselor is updated successfully.',
-			'delSuccess' => 'The counselor is deleted successfully.',
-		],
 		'field' => [
 			'name' => 'Name',
 			'email' => 'Email',
