@@ -21,10 +21,10 @@
 			<div class="inner-box">
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12 image-column">
-						<figure class="image-box"><img src="{{ asset('storage/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}"></figure>
+						<figure class="image-box"><img class="avatar" src="{{ asset('storage/' . $psychologist->photo) }}" alt="{{ $psychologist->name }}"></figure>
 					</div>
 					<div class="col-lg-7 col-md-12 col-sm-12 content-column">
-						<div class="content-box">
+						<div class="content-box detail-info">
 							<h1>{{ $psychologist->name }}</h1>
 							<span class="designation">{{ $psychologist->title }}</span>
 							<span class="designation">{{ $psychologist->education }}</span>
@@ -73,7 +73,7 @@
 							
 							<h3>Office Hours</h3>
 
-							<div class="text">{{ $psychologist->info }}</div>	
+							<div class="text">{!! $psychologist->info !!}</div>	
 
 						</div>
 
@@ -130,6 +130,19 @@
 @endsection
 
 @push('css')
+<style>
+	.avatar {
+		height: 400px;
+		object-fit: cover;
+	}
+	.detail-info {
+		padding-bottom: 75px;
+	}
+	.image-column {
+		display: flex;
+		align-items: center;
+	}
+</style>
 @endpush('css')
 
 @push('js')

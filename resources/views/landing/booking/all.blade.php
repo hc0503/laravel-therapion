@@ -42,7 +42,7 @@
 							</figure>
 							<div class="lower-content">
 								<h3><a href="{{ route('booking.details', $psychologist->id) }}">{{ $psychologist->name }}</a></h3>
-								<span class="designation">{{ $psychologist->title }}</span>
+								<span class="designation text-truncate">{{ $psychologist->title }}</span>
 								<div class="text">{{ $psychologist->about }}</div>
 							</div>
 						</div>
@@ -66,6 +66,12 @@
 		width: 100%;
 		height: 100%;
 		padding: 0 10px 0 10px;
+	}
+	.text {
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 </style>
 @endpush('css')
