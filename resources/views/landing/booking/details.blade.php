@@ -90,17 +90,9 @@
 							<div class="text">Here you can book a personal counseling session with me.</div>
 							<form action="#" method="post">
 								<div class="form-group">
-									<label>Your Name</label>
-									<input type="text" name="name" required="">
-								</div>
-								<div class="form-group">
-									<label>Your Email</label>
-									<input type="email" name="name" required="">
-								</div>
-								<div class="form-group">
 									<label>Type of Session</label>
 									<div class="select-box">
-										<select class="selectmenu">
+										<select class="selectmenu" id="services" onchange="handleType();">
 											<option value="0" selected disabled>Choose one</option>
 											@foreach ($psychologist->services as $item)
 											<option value="{{ $item->id }}">{{ $item->title }}</option>
@@ -108,11 +100,35 @@
 										</select>
 									</div>
 								</div>
-								<div class="form-group">
-									<label>Schedule Your Session</label>
-									<input type="email" name="info" required="">
+								<div class="form-group" id="name">
+									<label>Your Name</label>
+									<input type="text" name="name" required>
 								</div>
-								<div class="form-group">
+								<div class="form-group" id="email">
+									<label>Your Email</label>
+									<input type="email" name="email" required>
+								</div>
+								<div class="form-group" id="town">
+									<label>Town & Country</label>
+									<input type="text" name="town" required>
+								</div>
+								<div class="form-group service-item" id="service_rovider">
+									<label>Service Provider</label>
+									<input type="text" name="service_provider">
+								</div>
+								<div class="form-group service-item" id="username">
+									<label>Username</label>
+									<input type="text" name="username">
+								</div>
+								<div class="form-group service-item" id="phone">
+									<label>Your Phone Number</label>
+									<input type="text" name="phone">
+								</div>
+								<div class="form-group service-item" id="suggest_time">
+									<label>Suggest a time and date for your session</label>
+									<input type="text" name="suggest_time">
+								</div>
+								<div class="form-group service-item" id="message">
 									<label>Your Message</label>
 									<textarea name="message"></textarea>
 								</div>
@@ -146,5 +162,52 @@
 @endpush('css')
 
 @push('js')
-
+<script>
+	hideServices();
+	function handleType() {
+		var service = $('#services option:selected').val();
+		switch(service) {
+			case '1':	// Email
+				hideServices();
+				$('#message').show();
+				break;
+			case '2':	// Chat
+				hideServices();
+				$('#service_provide').show();
+				$('#username').show();
+				$('#suggest_time').show();
+				break;
+			case '3':	// Videoconference
+				hideServices();
+				$('#service_provide').show();
+				$('#username').show();
+				$('#suggest_time').show();
+				break;
+			case '4':	// Phone
+				hideServices();
+				$('#phone').show();
+				$('#suggest_time').show();
+				break;
+			case '5':	// Program One
+				hideServices();
+				$('#message').show();
+				break;
+			case 6:	// Program Two
+				hideServices();
+				$('#service_provide').show();
+				$('#username').show();
+				$('#suggest_time').show();
+				break;
+			case '7':	// Program Three
+				hideServices();
+				$('#service_provide').show();
+				$('#username').show();
+				$('#suggest_time').show();
+				break;
+		}
+	}
+	function hideServices() {
+		$('.service-item').hide();
+	}
+</script>
 @endpush('js')
