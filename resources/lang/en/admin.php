@@ -36,6 +36,10 @@ return [
 			'team' => 'Team'
 		]
 	],
+	'booking' => [
+		'title' => 'Bookings',
+		'list' => 'Booking List'
+	],
 	'home' => 'Home',
 	'logout' => 'Logout',
 	'saveAnother' => 'Save & Another',

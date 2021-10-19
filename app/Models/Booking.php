@@ -21,4 +21,10 @@ class Booking extends Model
         'suggest_time',
         'message'
     ];
+    public function psychologist() {
+        return $this->belongsTo(Psychologist::class);
+    }
+    public function service() {
+        return $this->belongsTo(Service::class);
+    }
 }

@@ -55,6 +55,10 @@ Route::middleware(['auth'])->group( function () {
 		Route::get('/', [HomeController::class, 'index'])->name('home');
 		Route::resource('users', UserController::class);
 		Route::resource('counselors', CounselorController::class);
+		Route::group(['prefix' => 'bookings', 'as' => 'bookings.'], function() {
+			Route::get('/', [BookingController::class, 'getBookings'])->name('index');
+			Route::delete('/destroy/{id}', [BookingController::class, 'destroy'])->name('destroy');
+		});
 	});
 });
 
