@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\Portal\HomeController;
 use App\Http\Controllers\Portal\UserController;
 use App\Http\Controllers\Portal\CounselorController;
@@ -35,6 +36,7 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::group(['prefix' => 'booking', 'as' => 'booking.'], function() {
 		Route::get('/', [LandingController::class, 'getBooking'])->name('all');
 		Route::get('/{psychologist}/details', [LandingController::class, 'getDetails'])->name('details');
+		Route::post('/book/{id}', [BookingController::class, 'postBook'])->name('book');
 	});
 	Route::get('/fee-cost', [LandingController::class, 'getFeeCost'])->name('fee-cost');
 	Route::get('/jobs', [LandingController::class, 'getJobs'])->name('jobs');

@@ -25,4 +25,9 @@ class Psychologist extends Model
     {
         return $this->belongsToMany(Service::class);
     }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }

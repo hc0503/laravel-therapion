@@ -88,11 +88,12 @@
 						<div class="sidebar-form">
 						<h3>Book A Session</h3>
 							<div class="text">Here you can book a personal counseling session with me.</div>
-							<form action="#" method="post">
+							<form action="{{ route('booking.book', $psychologist->id) }}" method="post">
+								@csrf
 								<div class="form-group">
 									<label>Type of Session</label>
 									<div class="select-box">
-										<select class="selectmenu" id="services" onchange="handleType();">
+										<select class="selectmenu" name="service_id" id="services" onchange="handleType();">
 											<option value="0" selected disabled>Choose one</option>
 											@foreach ($psychologist->services as $item)
 											<option value="{{ $item->id }}">{{ $item->title }}</option>
@@ -128,6 +129,10 @@
 									<label>Suggest a time and date for your session</label>
 									<input type="text" name="suggest_time">
 								</div>
+								<div class="form-group">
+									<label>Suggest a time and date for your session</label>
+									<input type="text" name="suggest_time" class="form_datetime" readonly>
+								</div>
 								<div class="form-group service-item" id="message">
 									<label>Your Message</label>
 									<textarea name="message"></textarea>
@@ -146,6 +151,7 @@
 @endsection
 
 @push('css')
+<link href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" media="screen">
 <style>
 	.avatar {
 		height: 400px;
@@ -162,7 +168,14 @@
 @endpush('css')
 
 @push('js')
+<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}" charset="UTF-8"></script>
 <script>
+	$(".form_datetime").datetimepicker({
+		format: "dd MM yyyy - hh:ii",
+		autoclose: true,
+		startDate: "2013-02-14 10:00",
+		minuteStep: 10
+	});
 	hideServices();
 	function handleType() {
 		var service = $('#services option:selected').val();
