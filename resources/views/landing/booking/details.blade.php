@@ -112,7 +112,7 @@
 									<label>Town & Country</label>
 									<input type="text" name="town" required>
 								</div>
-								<div class="form-group service-item" id="service_rovider">
+								<div class="form-group service-item" id="service_provider">
 									<label>Service Provider</label>
 									<input type="text" name="service_provider">
 								</div>
@@ -173,13 +173,13 @@
 				break;
 			case '2':	// Chat
 				hideServices();
-				$('#service_provide').show();
+				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
 				break;
 			case '3':	// Videoconference
 				hideServices();
-				$('#service_provide').show();
+				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
 				break;
@@ -194,13 +194,13 @@
 				break;
 			case 6:	// Program Two
 				hideServices();
-				$('#service_provide').show();
+				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
 				break;
 			case '7':	// Program Three
 				hideServices();
-				$('#service_provide').show();
+				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
 				break;
