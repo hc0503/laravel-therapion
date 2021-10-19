@@ -177,6 +177,7 @@ class CounselorController extends Controller
             }
         }
         $psychologist->update($validated);
+        $psychologist->services()->sync($validated['services']);
         return redirect()
             ->route('admin.counselors.index')
             ->with('status', 'success')
