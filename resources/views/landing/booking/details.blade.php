@@ -127,10 +127,6 @@
 								</div>
 								<div class="form-group service-item" id="suggest_time">
 									<label>Suggest a time and date for your session</label>
-									<input type="text" name="suggest_time">
-								</div>
-								<div class="form-group">
-									<label>Suggest a time and date for your session</label>
 									<input type="text" name="suggest_time" class="form_datetime" readonly>
 								</div>
 								<div class="form-group service-item" id="message">

@@ -14,17 +14,17 @@ class StripePaymentController extends Controller
     public function __construct() {
         \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
     }
-    public function getCheckout() {
-        return view('landing.stripe');
-    }
     public function postCheckout(Request $request) {
+        $validated = $request->validate([
+            'price' => ['required']
+        ]);
         $session = \Stripe\Checkout\Session::create([
             'payment_method_types' => ['card'],
             'line_items' => [
                 [
                     'price_data' => [
                         'currency' => 'usd',
-                        'unit_amount' => 2000,
+                        'unit_amount' => $validated['price'] * 100,
                         'product_data' => [
                             'name' => 'Stubborn Attachments',
                         ],
