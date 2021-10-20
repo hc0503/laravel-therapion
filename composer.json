@@ -16,6 +16,7 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
+        "stripe/stripe-php": "^7.100",
         "yajra/laravel-datatables-oracle": "^9.18"
     },
     "require-dev": {
