@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\StripePaymentController;
 use App\Http\Controllers\Portal\HomeController;
 use App\Http\Controllers\Portal\UserController;
 use App\Http\Controllers\Portal\CounselorController;
@@ -48,6 +49,13 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::get('/collaboration', [LandingController::class, 'getCollaboration'])->name('collaboration');
 	Route::get('/press-media', [LandingController::class, 'getPressMedia'])->name('press-media');
 	Route::get('/additional-payment', [LandingController::class, 'getAdditionalPayment'])->name('additional-payment');
+
+	Route::group(['prefix' => 'stripe', 'as' => 'stripe.'], function() {
+		Route::get('/checkout', [StripePaymentController::class, 'getCheckout']);
+		Route::post('/checkout', [StripePaymentController::class, 'postCheckout'])->name('checkout');
+		Route::get('/success', [StripePaymentController::class, 'getSuccess'])->name('success');
+		Route::get('/cancel', [StripePaymentController::class, 'getCancel'])->name('cancel');
+	});
 });
 
 Route::middleware(['auth'])->group( function () {
