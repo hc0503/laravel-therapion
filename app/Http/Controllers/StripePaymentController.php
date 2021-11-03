@@ -14,6 +14,11 @@ class StripePaymentController extends Controller
     public function __construct() {
         \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
     }
+    public function getCheckout(Request $request) {
+        $pageTitle = 'Demo Stripe';
+
+        return view('landing.booking.payment', compact('pageTitle'));
+    }
     public function postCheckout(Request $request) {
         $validated = $request->validate([
             'price' => ['required']

@@ -53,6 +53,7 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::get('/additional-payment', [LandingController::class, 'getAdditionalPayment'])->name('additional-payment');
 
 	Route::group(['prefix' => 'stripe', 'as' => 'stripe.'], function() {
+		Route::get('/checkout', [StripePaymentController::class, 'getCheckout']);
 		Route::post('/checkout', [StripePaymentController::class, 'postCheckout'])->name('checkout');
 		Route::get('/success', [StripePaymentController::class, 'getSuccess'])->name('success');
 		Route::get('/cancel', [StripePaymentController::class, 'getCancel'])->name('cancel');
