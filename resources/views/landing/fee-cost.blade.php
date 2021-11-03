@@ -39,36 +39,38 @@
 				<div class="pricing-table">
 					<div class="table-header">
 						<span>Program One</span>
-						<h1>$153.00 <span></span></h1>
+						<h1>$90.00 <span></span></h1>
 					</div>
 					<div class="table-content">
 						<ul>
 							<li>1 User</li>
 							<li>Four private sessions with your counselor</li>
-							<li>Includes 2 x e-mail + 2 x videoconference sessions</li>
+							<li>Includes 4 x e-mail sessions</li>
 							<li>Estimated duration: 4 weeks</li>
 							<li>The price includes a 10% discount</li>
+							<li>Ideal for those users who like to write about their personal situation without any rush</li>
 						</ul>
 					</div>
-					<div class="table-footer"><a href="#">Select A Program</a></div>
+					<div class="table-footer"><a href="{{ route('booking.all') }}">Select A Program</a></div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
 				<div class="pricing-table">
 					<div class="table-header">
 						<span>Program Two</span>
-						<h1>$180.00 <span></span></h1>
+						<h1>$144.00 <span></span></h1>
 					</div>
 					<div class="table-content">
 						<ul>
 							<li>1 User</li>
 							<li>Four private sessions with your counselor</li>
-							<li>Includes 2 x chat + 2 x videoconference sessions</li>
+							<li>Includes 4 x chat sessions</li>
 							<li>Estimated duration: 4 weeks</li>
 							<li>The price includes a 10% discount</li>
+							<li>Ideal for those users who like to write about their personal situation and get instant feedback</li>
 						</ul>
 					</div>
-					<div class="table-footer"><a href="#">Select A Program</a></div>
+					<div class="table-footer"><a href="{{ route('booking.all') }}">Select A Program</a></div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
@@ -84,9 +86,11 @@
 							<li>Includes 4 x videoconference sessions</li>
 							<li>Estimated duration: 4 weeks</li>
 							<li>The price includes a 10% discount</li>
+							<li>Ideal for those users who like to talk about their personal situation and get instant feedback,  
+							with or without a webcam</li>
 						</ul>
 					</div>
-					<div class="table-footer"><a href="#">Select A Program</a></div>				
+					<div class="table-footer"><a href="{{ route('booking.all') }}">Select A Program</a></div>				
 				</div>
 			</div>
 		</div>
