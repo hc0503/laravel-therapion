@@ -103,42 +103,38 @@
 								</div>
 								<div class="form-group" id="name">
 									<label>Your Name</label>
-									<input type="text" name="name" required>
+									<input type="text" name="name" value="{{ old('name') }}" required>
 								</div>
 								<div class="form-group" id="email">
 									<label>Your Email</label>
-									<input type="email" name="email" required>
+									<input type="email" name="email" value="{{ old('email') }}" required>
 								</div>
 								<div class="form-group" id="town">
 									<label>Town & Country</label>
-									<input type="text" name="town" required>
+									<input type="text" name="town" value="{{ old('town') }}" required>
 								</div>
 								<div class="form-group service-item" id="service_provider">
 									<label>Service Provider</label>
-									<input type="text" name="service_provider">
+									<input type="text" name="service_provider" value="{{ old('service_provider') }}">
 								</div>
 								<div class="form-group service-item" id="username">
 									<label>Username</label>
-									<input type="text" name="username">
+									<input type="text" name="username" value="{{ old('username') }}">
 								</div>
 								<div class="form-group service-item" id="phone">
 									<label>Your Phone Number</label>
-									<input type="text" name="phone">
+									<input type="text" name="phone" value="{{ old('phone') }}">
 								</div>
 								<div class="form-group service-item" id="suggest_time">
 									<label>Suggest a time and date for your session</label>
-									<input type="text" name="suggest_time">
-								</div>
-								<div class="form-group">
-									<label>Suggest a time and date for your session</label>
-									<input type="text" name="suggest_time" class="form_datetime" readonly>
+									<input type="text" name="suggest_time" class="form_datetime" value="{{ old('suggest_time') }}" readonly>
 								</div>
 								<div class="form-group service-item" id="message">
 									<label>Your Message</label>
-									<textarea name="message"></textarea>
+									<textarea name="message">{{ old('message') }}</textarea>
 								</div>
 								<div class="form-group message-btn">
-									<button type="submit" class="theme-btn">Confirm Your Booking</button>
+									<button id="btn-book" type="submit" class="theme-btn">Confirm Your Booking</button>
 								</div>
 							</form>
 						</div>
@@ -183,44 +179,52 @@
 			case '1':	// Email
 				hideServices();
 				$('#message').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case '2':	// Chat
 				hideServices();
 				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case '3':	// Videoconference
 				hideServices();
 				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case '4':	// Phone
 				hideServices();
 				$('#phone').show();
 				$('#suggest_time').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case '5':	// Program One
 				hideServices();
 				$('#message').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case 6:	// Program Two
 				hideServices();
 				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 			case '7':	// Program Three
 				hideServices();
 				$('#service_provider').show();
 				$('#username').show();
 				$('#suggest_time').show();
+				$('#btn-book').prop('disabled', false);
 				break;
 		}
 	}
 	function hideServices() {
 		$('.service-item').hide();
+		$('#btn-book').prop('disabled', true);
 	}
 </script>
 @endpush('js')

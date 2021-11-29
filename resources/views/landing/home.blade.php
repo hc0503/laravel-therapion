@@ -145,7 +145,7 @@
 								<div class="number">1</div>
 								<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-1.png') }}" alt=""></figure>
 							</div>
-							<h3><a href="#">Book a Session</a></h3>
+							<h3><a href="{{ route('booking.all') }}">Book a Session</a></h3>
 							<div class="text">Book a session as you like it. <br>
 							It can by e-mail, chat, video conferencing or phone.</div>
 						</div>
@@ -156,7 +156,7 @@
 									<div class="number">2</div>
 									<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-2.png') }}" alt=""></figure>
 								</div>
-								<h3><a href="#">Talk with the Counselor</a></h3>
+								<h3><a href="{{ route('booking.all') }}">Talk with the Counselor</a></h3>
 								<div class="text">Talk with your counselor, either in a private online counseling
 									session or by e-mail.</div>
 						</div>
@@ -167,7 +167,7 @@
 								<div class="number">3</div>
 								<figure class="icon"><img src="{{ asset('/assets/images/icons/work-icon-3.png') }}" alt=""></figure>
 							</div>
-							<h3><a href="#">Enjoy Our Programs</a></h3>
+							<h3><a href="{{ route('booking.all') }}">Enjoy Our Programs</a></h3>
 							<div class="text">You can as well move on and enjoy one of our special Therapy Programs. They are practical and affordable 4-session packages.</div>
 						</div>
 					</div>
@@ -191,7 +191,7 @@
 							<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-1.jpg') }}" alt=""></figure>
 							<div class="lower-content">
 								<div class="date">24<br /><span>October</span></div>
-								<h3><a href="#">Personal Growth</a></h3>
+								<h3>Personal Growth</h3>
 								<div class="text">Join this event to talk about personal growth, self exploration and much more.</div>
 								<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 							</div>
@@ -204,7 +204,7 @@
 							<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-2.jpg') }}" alt=""></figure>
 							<div class="lower-content">
 								<div class="date">25<br /><span>October</span></div>
-								<h3><a href="#">Life Changes</a></h3>
+								<h3>Life Changes</h3>
 								<div class="text">Join this event to talk about major life changes and how to cope with them.</div>
 								<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 							</div>
@@ -217,7 +217,7 @@
 								<figure class="image-box"><img src="{{ asset('/assets/images/resource/event-3.jpg') }}" alt=""></figure>
 								<div class="lower-content">
 									<div class="date">26<br /><span>October</span></div>
-									<h3><a href="#">Counselor Training</a></h3>
+									<h3>Counselor Training</h3>
 									<div class="text">Join this free training session to find out more about our online counseling methods.</div>
 									<div class="btn-box"><a href="https://www.facebook.com/therapion" class="theme-btn-two">Read More</a></div>
 								</div>

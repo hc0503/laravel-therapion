@@ -15,4 +15,7 @@ class Transaction extends Model
         'currency',
         'status',
     ];
+    public function booking() {
+        return $this->belongsTo(Booking::class);
+    }
 }

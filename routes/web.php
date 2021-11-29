@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
-use App\Http\Controllers\BookingController;
 use App\Http\Controllers\StripePaymentController;
+use App\Http\Controllers\BookingController as LandingBookingController;
 use App\Http\Controllers\Portal\HomeController;
+use App\Http\Controllers\Portal\BookingController;
 use App\Http\Controllers\Portal\UserController;
 use App\Http\Controllers\Portal\CounselorController;
 
@@ -37,7 +38,8 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::group(['prefix' => 'booking', 'as' => 'booking.'], function() {
 		Route::get('/', [LandingController::class, 'getBooking'])->name('all');
 		Route::get('/{psychologist}/details', [LandingController::class, 'getDetails'])->name('details');
-		Route::post('/book/{id}', [BookingController::class, 'postBook'])->name('book');
+		Route::post('/book/{id}', [LandingBookingController::class, 'postBook'])->name('book');
+		Route::get('/payment', [LandingBookingController::class, 'showPayment'])->name('show-payment');
 	});
 	Route::get('/fee-cost', [LandingController::class, 'getFeeCost'])->name('fee-cost');
 	Route::get('/jobs', [LandingController::class, 'getJobs'])->name('jobs');
@@ -51,9 +53,9 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function() {
 	Route::get('/additional-payment', [LandingController::class, 'getAdditionalPayment'])->name('additional-payment');
 
 	Route::group(['prefix' => 'stripe', 'as' => 'stripe.'], function() {
-		Route::get('/checkout', [StripePaymentController::class, 'getCheckout']);
-		Route::post('/checkout', [StripePaymentController::class, 'postCheckout'])->name('checkout');
-		Route::get('/success', [StripePaymentController::class, 'getSuccess'])->name('success');
+		Route::get('/{booking}/checkout', [StripePaymentController::class, 'getCheckout'])->name('checkout.show');
+		Route::post('/{booking}/checkout', [StripePaymentController::class, 'postCheckout'])->name('checkout');
+		Route::get('/{booking}/success', [StripePaymentController::class, 'getSuccess'])->name('success');
 		Route::get('/cancel', [StripePaymentController::class, 'getCancel'])->name('cancel');
 	});
 });
