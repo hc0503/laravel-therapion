@@ -21,8 +21,9 @@ class BookingController extends Controller
         ]);
         $validated['ip'] = $request->ip();
         $psychologist = Psychologist::findOrFail($id);
-        $psychologist->bookings()->create($validated);
-        return redirect()->back();
+        $book = $psychologist->bookings()->create($validated);
+
+        return redirect()->route('stripe.checkout.show', $book->id);
     }
     public function showPayment(Request $request) {
         $pageTitle = 'Booking Payment';

@@ -15,6 +15,7 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('booking_id')->constrained();
             $table->enum('payment_method', ['STRIPE', 'PAYPAL']);
             $table->string('transaction_id');
             $table->double('amount');
