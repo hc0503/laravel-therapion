@@ -26,41 +26,27 @@
 				<h1>Pay Now</h1>
 				<p>Please make your payment now.</p>
 
-				<div class="mt-4">
-					<h2 class="mb-3">Payment in dollars</h2>
-					<form action="{{ route('stripe.checkout', $booking->id) }}" method="POST">
-						@csrf
-						<select name="price" id="price">
-							<option value="60">Phone counseling - 60.00USD</option>
-							<option value="110">Email counseling - 110.00USD</option>
-						</select>
-						<button class="theme-btn" type="submit">Pay Now</button>
-					</form>
-				</div>
+				@foreach ($prices as $item)
+					 <div class="mt-4">
+						@if ($item->currency === 'USD')
+							<h2 class="mb-3">Payment in dollars</h2>
+						@elseif ($item->currency === 'EUR')
+							<h2 class="mb-3">Payment in euros</h2>
+						@elseif ($item->currency === 'GBP')
+							<h2 class="mb-3">Payment in British pounds</h2>
+						@endif
+						<form action="{{ route('stripe.checkout', $booking->id) }}" method="POST">
+							@csrf
+							
+							<input type="hidden" name="currency" value="{{ $item->currency }}" />
+							<select name="price" id="price">
+								<option value={{ $item->price }}>{{ $item->service->title }} - {{ $item->price }}{{ $item->currency }}</option>
+							</select>
+							<button class="theme-btn" type="submit">Pay Now</button>
+						</form>
+					</div>
+				@endforeach
 
-				<div class="mt-3">
-					<h2 class="mb-3">Payment in euros</h2>
-					<form action="{{ route('stripe.checkout', $booking->id) }}" method="POST">
-						@csrf
-						<select name="price" id="price">
-							<option value="60">Phone counseling - 40.00EUR</option>
-							<option value="110">Email counseling - 60.00EUR</option>
-						</select>
-						<button class="theme-btn" type="submit">Pay Now</button>
-					</form>
-				</div>
-
-				<div class="mt-3">
-					<h2 class="mb-3">Payment in British pounds</h2>
-					<form action="{{ route('stripe.checkout', $booking->id) }}" method="POST">
-						@csrf
-						<select name="price" id="price">
-							<option value="60">Phone counseling - 35.00GBP</option>
-							<option value="110">Email counseling - 50.00GBP</option>
-						</select>
-						<button class="theme-btn" type="submit">Pay Now</button>
-					</form>
-				</div>
 				<div class="mt-5">
 					<h2 class="mb-3">Therapy programs</h2>
 					<p>Program one = 2 X e-mail + 2 X videoconference counseling</p>

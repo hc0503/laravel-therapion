@@ -25,6 +25,7 @@ class BookingController extends Controller
 
         return redirect()->route('stripe.checkout.show', $book->id);
     }
+    
     public function showPayment(Request $request) {
         $pageTitle = 'Booking Payment';
         return view('landing.booking.payment', compact('pageTitle'));
