@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'payment_method',
         'transaction_id',
@@ -15,6 +16,7 @@ class Transaction extends Model
         'currency',
         'status',
     ];
+    
     public function booking() {
         return $this->belongsTo(Booking::class);
     }

@@ -12,24 +12,29 @@ class StripePaymentController extends Controller
         'STRIPE',
         'PAYPAL'
     ];
+
     public function __construct() {
         \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
     }
+
     public function getCheckout(Request $request, Booking $booking) {
         $pageTitle = 'Booking Payment';
+        $prices = $booking->service->prices;
 
-        return view('landing.booking.payment', compact('pageTitle', 'booking'));
+        return view('landing.booking.payment', compact('pageTitle', 'booking', 'prices'));
     }
+
     public function postCheckout(Request $request, Booking $booking) {
         $validated = $request->validate([
-            'price' => ['required']
+            'price' => ['required'],
+            'currency' => ['required'],
         ]);
         $session = \Stripe\Checkout\Session::create([
             'payment_method_types' => ['card'],
             'line_items' => [
                 [
                     'price_data' => [
-                        'currency' => 'usd',
+                        'currency' => $validated['currency'],
                         'unit_amount' => $validated['price'] * 100,
                         'product_data' => [
                             'name' => 'Stubborn Attachments',
@@ -44,6 +49,7 @@ class StripePaymentController extends Controller
         ]);
         return redirect($session->url, 303);
     }
+
     public function getSuccess(Request $request, Booking $booking) {
         $session = \Stripe\Checkout\Session::retrieve($request->session_id);
         $transaction = $booking->transactions()->create([
@@ -56,6 +62,7 @@ class StripePaymentController extends Controller
 
         return redirect()->route('home');
     }
+
     public function getCancel(Request $request) {
 
     }
